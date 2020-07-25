@@ -1,0 +1,160 @@
+.block > h2 {
+  text-align: center;
+  margin: 20px 0 1px 0;
+}
+
+.block > hr {
+  width: 200px;
+  color: #0077ff;
+  background-color: #0077ff;
+  border: 1px solid #0077ff;
+  margin: 10px auto 20px auto;
+}
+
+.between-block {
+  margin-top: 60px;
+}
+
+#about-1 > .block-left > img {
+  width: 100%;
+}
+
+#about-1 > .block-right > p {
+  font-size: 18px;
+  text-indent: 2em;
+}
+
+#about-2 > .card-deck > .card > .card-body {
+  padding: 20px;
+}
+
+#about-2 > .card-deck > .card > .card-body > ul {
+  padding-left: 20px;
+}
+
+#about-2 > .card-deck > .card > .card-body > ul > li {
+  font-size: 18px;
+}
+
+.about-3-block {
+  margin-bottom: 30px;
+}
+
+.about-3-left-text > p {
+  text-indent: 2em;
+  font-size: 18px;
+}
+
+.about-3-right-card > .card-body > ul > li {
+  font-size: 18px;
+}
+
+#about-4 > p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 992px) {
+  #wrapper {
+    width: 100%;
+    height: calc(100% - 60px);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #left {
+    height: 90%;
+  }
+
+  #left > .btn-group-vertical {
+    margin-top: 10px;
+  }
+
+  #right {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    width: 70%;
+    max-width: 1050px;
+    height: 90%;
+    margin: 10px 10px 10px 0;
+    padding: 10px;
+    overflow-y: auto;
+  }
+
+  .block {
+    margin: 0 40px 0 40px;
+  }
+
+  #about-1 > .block-left {
+    float: left;
+    width: 40%;
+    max-width: 400px;
+  }
+
+  #about-1 > .block-right {
+    margin: 0 0 0 calc(40% + 20px);
+  }
+
+  #about-4 > p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 991.98px) {
+  #wrapper {
+    width: 100%;
+    height: calc(100% - 60px);
+    position: absolute;
+    top: 60px;
+    left: 0;
+  }
+
+  #right {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    width: 95%;
+    height: calc(100% - 20px);
+    margin: 10px auto 10px auto;
+    padding: 10px;
+    overflow-y: auto;
+  }
+
+  .block {
+    margin: 0 20px 0 20px;
+  }
+
+  #about-1 > .block-left {
+    width: 100%;
+  }
+
+  #about-1 > .block-left > img {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto 10px auto;
+  }
+
+  #about-4 > p {
+    text-indent: 2em;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-3-left-text {
+    float: left;
+    width: calc(100% - 320px);
+  }
+
+  .about-3-right-card {
+    float: right;
+    width: 300px;
+  }
+
+  .about-3-right-card > .card-body {
+    display: flex;
+  }
+}
