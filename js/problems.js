@@ -2,6 +2,7 @@ let infoRanklist = document.querySelector('#info-ranklist');
 let infoWebsite = document.querySelector('#info-website');
 let infoProbNum = document.querySelector('#info-prob-num');
 let infoPdf = document.querySelector('#info-pdf');
+let infoEditorial = document.querySelector('#info-editorial');
 let infoPractice = document.querySelector('#info-practice');
 
 function getChartObj(title, xText, yText, cat, datOff, datUnoff) {
@@ -82,9 +83,9 @@ function update(idx) {
 
   let prob = problems[idx];
 
-  let keys = [infoRanklist, infoWebsite, infoPdf, infoPractice];
-  let values = [prob.ranklist, prob.website, prob.pdf, prob.practice];
-  for (let i = 0; i < 4; i++) {
+  let keys = [infoRanklist, infoWebsite, infoPdf, infoEditorial, infoPractice];
+  let values = [prob.ranklist, prob.website, prob.pdf, prob.editorial, prob.practice];
+  for (let i = 0; i < keys.length; i++) {
     let k = keys[i];
     let v = values[i];
     if (v != null) {
