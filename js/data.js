@@ -1,5 +1,18 @@
 let problems = [
   {
+    name: '2021 四川省大学生程序设计竞赛',
+    ranklist: 'https://raw.githubusercontent.com/Suimei-University-of-the-Arts/Suimei-University-of-the-Arts.github.io/master/assets/sc2021_rankings.pdf',
+    website: null,
+    probNum: 13,
+    pdf: 'https://raw.githubusercontent.com/Suimei-University-of-the-Arts/Suimei-University-of-the-Arts.github.io/master/assets/sc2021_problems.pdf',
+    editorial: 'https://raw.githubusercontent.com/Suimei-University-of-the-Arts/Suimei-University-of-the-Arts.github.io/master/assets/sc2021_editorial.pdf',
+    practice: 'https://codeforces.com/gym/103117',
+    probOffAc: [178, 107, 0, 128, 16, 9, 0, 163, 2, 17, 136, 44, 96],
+    probUnoffAc: [47, 41, 0, 42, 10, 13, 2, 45, 6, 11, 44, 20, 39],
+    teamOffAc: [1, 11, 22, 22, 19, 12, 46, 22, 13, 6, 4, 1, 0, 0],
+    teamUnoffAc: [0, 2, 1, 1, 2, 3, 17, 5, 6, 3, 0, 6, 1, 0]
+  },
+  {
     name: '2020 ICPC 亚洲区域赛南京站',
     ranklist: 'https://ac.nowcoder.com/acm/contest/10272#rank',
     website: null,
