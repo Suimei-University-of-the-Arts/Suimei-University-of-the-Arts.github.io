@@ -5,6 +5,23 @@ date: 2022-12-20
 
 # 2022 ICPC 亚洲区域赛南京站
 
+## 基本信息
+
+<table>
+<tr>
+<td><b>竞赛日期</b></td><td>2022/12/18</td>
+</tr>
+<tr>
+<td><b>竞赛试题</b></td><td><a href="contest-en.pdf">English</a> | <a href="contest-zh.pdf">中文</a></td>
+</tr>
+<tr>
+<td><b>竞赛榜单</b></td><td><a href="https://board.xcpcio.com/icpc/47th/nanjing">XCPC Board</a></td>
+</tr>
+<tr>
+<td><b>在线练习</b></td><td><a href="https://codeforces.com/gym/104128">Codeforces Gym</a></td>
+</tr>
+</table>
+
 ## 统计数据
 
 ```vegalite
