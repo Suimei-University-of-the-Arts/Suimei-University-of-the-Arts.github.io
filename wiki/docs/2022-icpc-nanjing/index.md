@@ -18,7 +18,7 @@ date: 2022-12-20
 <td><b>竞赛榜单</b></td><td><a href="https://board.xcpcio.com/icpc/47th/nanjing">XCPC Board</a></td>
 </tr>
 <tr>
-<td><b>在线练习</b></td><td><a href="https://codeforces.com/gym/104128">Codeforces Gym</a></td>
+<td><b>在线练习</b></td><td><a href="https://codeforces.com/gym/104128">Codeforces Gym</a> | <a href="https://qoj.ac/contest/1093">QOJ</a></td>
 </tr>
 </table>
 
@@ -229,3 +229,19 @@ date: 2022-12-20
   ]
 }
 ```
+
+## 题解列表
+
+* [A - Stop, Yesterday Please No More](a.md)
+* [B - Ropeway](b.md)
+* [C - Fabulous Fungus Frenzy](c.md)
+* [D - Chat Program](d.md)
+* [E - Color the Tree](e.md)
+* [F - Triangles](f.md)
+* [G - Inscryption](g.md)
+* [H - Factories Once More](h.md)
+* [I - Perfect Palindrome](i.md)
+* [J - Perfect Matching](j.md)
+* [K - NaN in a Heap](k.md)
+* [L - Proposition Composition](l.md)
+* [M - Drain the Water Tank](m.md)
