@@ -5,7 +5,7 @@ date: 2023-03-24
 
 # H - Mirror
 
-## 基本信息
+## Basic Information
 
 <table>
 <tr>

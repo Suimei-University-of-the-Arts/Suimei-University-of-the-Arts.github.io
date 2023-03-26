@@ -70,7 +70,7 @@ $$
 
 When the problem size becomes small enough (in the data range of this problem, when $d=4$ we have $n \leq 605$, which is small enough), we can directly compute the answer.
 
-The value of the polynomial can be evaluated by [Lagrange interpolation](https://oi-wiki.org/math/poly/lagrange/).Note that every time we recurse, the degree of the polynomial will increase by $1$ and then multiply by $2$. Taking the deepest recursion level to be $D=4$, the degree of the polynomial will be $K=30$, and the maximum value of $n$ will be $N=605$. By appropriate pre-processing (see solution below), the pre-processing time complexity can be reduced to $\mathcal{O}(K^2+DK+DN)$, and the time complexity of a single case can be reduced to $\mathcal{O}(2^{D+1}K)$ (assuming the time complexity of high-precision arithmetic is a constant).
+The value of the polynomial can be evaluated by [Lagrange interpolation](https://oi-wiki.org/math/poly/lagrange/). Note that every time we recurse, the degree of the polynomial will increase by $1$ and then multiply by $2$. Taking the deepest recursion level to be $D=4$, the degree of the polynomial will be $K=30$, and the maximum value of $n$ will be $N=605$. By appropriate pre-processing (see solution below), the pre-processing time complexity can be reduced to $\mathcal{O}(K^2+DK+DN)$, and the time complexity of a single case can be reduced to $\mathcal{O}(2^{D+1}K)$ (assuming the time complexity of high-precision arithmetic is a constant).
 
 ## Solution
 

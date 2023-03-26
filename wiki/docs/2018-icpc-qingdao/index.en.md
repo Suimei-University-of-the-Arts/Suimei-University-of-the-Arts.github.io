@@ -15,10 +15,10 @@ date: 2023-03-25
 <td><b>Problemset</b></td><td><a href="contest-en.pdf">English</a></td>
 </tr>
 <tr>
-<td><b>Ranklist</b></td><td><a href="https://board.xcpcio.com/icpc/47th/nanjing">XCPC Board</a></td>
+<td><b>Ranklist</b></td><td><a href="https://web.archive.org/web/20181205151843/http://acm.upc.edu.cn/rank/">Web Archive</a> | <a href="https://codeforces.com/gym/104270/standings">Codeforces Gym</a> (including UCUP participants)</td>
 </tr>
 <tr>
-<td><b>Online Practice</b></td><td><a href="https://codeforces.com/gym/104128">Codeforces Gym</a> | <a href="https://qoj.ac/contest/1093">QOJ</a></td>
+<td><b>Online Practice</b></td><td><a href="https://codeforces.com/gym/104270">Codeforces Gym</a> | <a href="https://qoj.ac/contest/1187">QOJ</a></td>
 </tr>
 </table>
 
@@ -237,6 +237,7 @@ date: 2023-03-25
 * [C - Flippy Sequence](c.md)
 * [D - Magic Multiplication](d.md)
 * [E - Plants vs. Zombies](e.md)
+* [F - Tournament](f.md)
 * [G - Repair the Artwork](g.md)
 * [H - Mirror](h.md)
 * [I - Soldier Game](i.md)
