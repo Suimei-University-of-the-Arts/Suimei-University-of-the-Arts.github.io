@@ -20,7 +20,7 @@ date: 2023-03-26
 
 如果只是以过题为目标，可以通过打表找规律的方式，发现必须有 $k \le \text{lowbit}(n) - 1$ 才有解，且第 $i$ 场比赛（$i$ 从 $1$ 到 $k$），选手 $j$（$j$ 从 $0$ 到 $(n - 1)$）的对手就是 $i \oplus j$，其中 $\oplus$ 是异或运算。时间复杂度 $\mathcal{O}(nk)$。
 
-详细的证明参见 [IMO 2006 C5 题](https://www.imo-official.org/problems/IMO2006SL.pdf)。
+详细的证明参见 [IMO 2006 C5 题](https://www.imo-official.org/problems/IMO2006SL.pdf)（感谢 hos.lyric）。
 
 ## 参考代码
 

@@ -20,7 +20,7 @@ date: 2023-03-26
 
 If you only aim at solving the problem, you can calculate the first few answers and look for the pattern. You can see that there must be $k \leq \text{lowbit}(n) - 1$ in order for there to be a solution, and in the $i$-th round of the competition ($i\in [1, k]$), player $j$ ($j \in [0, n-1]$) will compete against player $i \oplus j$, where $\oplus$ denotes the XOR operation. The time complexity is $\mathcal{O}(nk)$.
 
-For a detailed proof, please refer to [IMO 2006  problem C5](https://www.imo-official.org/problems/IMO2006SL.pdf).
+For a detailed proof, please refer to [IMO 2006  problem C5](https://www.imo-official.org/problems/IMO2006SL.pdf) (Thanks for hos.lyric).
 
 ## Solution
 
