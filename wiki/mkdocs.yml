@@ -1,4 +1,5 @@
 site_name: SUA Wiki
+site_url: https://sua.ac/wiki/
 
 theme:
   name: material
@@ -59,8 +60,8 @@ extra_javascript:
 extra:
   alternate:
     - name: 中文
-      link: ""
+      link: /wiki/
       lang: zh
     - name: English
-      link: /en/ 
+      link: /wiki/en/
       lang: en
