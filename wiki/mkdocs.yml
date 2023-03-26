@@ -17,6 +17,7 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
+  language: zh
 
 plugins:
   - search:
@@ -24,6 +25,15 @@ plugins:
   - awesome-pages
   - charts:
       vega_theme_dark: default
+  - i18n:
+      default_language: zh
+      languages:
+        zh: 中文
+        en: english
+      nav_translations:
+        en:
+          2022 ICPC 亚洲区域赛南京站: The 2022 ICPC Asia Nanjing Regional Contest
+          2018 ICPC 亚洲区域赛青岛站: The 2018 ICPC Asia Qingdao Regional Contest
 
 markdown_extensions:
   - pymdownx.arithmatex:
@@ -45,3 +55,12 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/vega@5
   - https://cdn.jsdelivr.net/npm/vega-lite@5
   - https://cdn.jsdelivr.net/npm/vega-embed@6
+
+extra:
+  alternate:
+    - name: 中文
+      link: ""
+      lang: zh
+    - name: English
+      link: /en/ 
+      lang: en

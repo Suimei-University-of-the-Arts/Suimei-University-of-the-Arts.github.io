@@ -5,3 +5,4 @@
 ## 竞赛列表
 
 * [2022 ICPC 亚洲区域赛南京站](2022-icpc-nanjing)
+* [2018 ICPC 亚洲区域赛青岛站](2018-icpc-qingdao)
