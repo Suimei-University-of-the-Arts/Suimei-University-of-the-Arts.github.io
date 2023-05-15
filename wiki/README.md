@@ -13,6 +13,7 @@ SUA Wiki 基于 `mkdocs-material` 开发。构建 SUA Wiki 之前，需要准备
 pip install mkdocs-material
 pip install mkdocs-awesome-pages-plugin
 pip install mkdocs-charts-plugin
+pip install mkdocs-static-i18n
 ```
 
 ## 预览
@@ -20,7 +21,7 @@ pip install mkdocs-charts-plugin
 运行以下命令：
 
 ```bash
-python -m mkdocs servev
+python -m mkdocs serve
 ```
 
-即可访问 `127.0.0.1:8000` 以预览 SUA Wiki。
+即可访问 `127.0.0.1:8000/wiki` 以预览 SUA Wiki。

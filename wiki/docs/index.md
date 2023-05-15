@@ -4,5 +4,6 @@
 
 ## 竞赛列表
 
+* [2023 广东省大学生程序设计竞赛](2023-provincial-guangdong)
 * [2022 ICPC 亚洲区域赛南京站](2022-icpc-nanjing)
 * [2018 ICPC 亚洲区域赛青岛站](2018-icpc-qingdao)
