@@ -1,6 +1,6 @@
 ---
-title: 竞赛信息
-date: 2022-12-20
+title: 2023 广东省大学生程序设计竞赛
+date: 2023-05-15
 ---
 
 # 2023 广东省大学生程序设计竞赛
@@ -12,7 +12,7 @@ date: 2022-12-20
 <td><b>竞赛日期</b></td><td>2023/05/14</td>
 </tr>
 <tr>
-<td><b>竞赛试题</b></td><td></td>
+<td><b>竞赛试题</b></td><td><a href="contest-en.pdf">English</a> | <a href="contest-zh.pdf">中文</a></td>
 </tr>
 <tr>
 <td><b>竞赛榜单</b></td><td><a href="https://board.xcpcio.com/provincial-contest/2023/guangdong">XCPC Board</a></td>
@@ -22,7 +22,7 @@ date: 2022-12-20
 </tr>
 </table>
 
-广东省赛将在 5 月 27 ~ 28 日作为 [Universal Cup](https://ucup.ac/zh/) Stage 18。题面、题解与在线练习将在 UCUP 赛后一并提供。
+广东省赛将在 5 月 27 ~ 28 日作为 [Universal Cup](https://ucup.ac/zh/) Stage 18。题解与在线练习将在 UCUP 赛后一并提供。
 
 ## 统计数据
 

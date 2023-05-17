@@ -19,6 +19,8 @@ theme:
         icon: material/brightness-4
         name: Switch to light mode
   language: zh
+  features:
+    - navigation.indexes
 
 plugins:
   - search:
@@ -33,7 +35,10 @@ plugins:
         en: english
       nav_translations:
         en:
+          2023 广东省大学生程序设计竞赛: The 2023 Guangdong Provincial Collegiate Programming Contest
           2022 ICPC 亚洲区域赛南京站: The 2022 ICPC Asia Nanjing Regional Contest
+          2021 ICPC 亚洲区域赛澳门站: The 2021 ICPC Asia Macau Regional Contest
+          2021 ICPC 亚洲区域赛南京站: The 2021 ICPC Asia Nanjing Regional Contest
           2018 ICPC 亚洲区域赛青岛站: The 2018 ICPC Asia Qingdao Regional Contest
 
 markdown_extensions:
