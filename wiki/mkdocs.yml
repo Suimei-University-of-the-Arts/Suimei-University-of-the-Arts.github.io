@@ -40,6 +40,7 @@ plugins:
           2021 ICPC 亚洲区域赛澳门站: The 2021 ICPC Asia Macau Regional Contest
           2021 ICPC 亚洲区域赛南京站: The 2021 ICPC Asia Nanjing Regional Contest
           2018 ICPC 亚洲区域赛青岛站: The 2018 ICPC Asia Qingdao Regional Contest
+          2017 浙江大学程序设计竞赛: The 2017 Zhejiang University Programming Contest
 
 markdown_extensions:
   - pymdownx.arithmatex:
