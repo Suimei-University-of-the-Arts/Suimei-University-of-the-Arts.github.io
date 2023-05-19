@@ -8,6 +8,7 @@
 * [2022 ICPC 亚洲区域赛南京站](2022-icpc-nanjing)
 * [2021 ICPC 亚洲区域赛澳门站](2021-icpc-macau)
 * [2021 ICPC 亚洲区域赛南京站](2021-icpc-nanjing)
+* [2021 四川省大学生程序设计竞赛](2021-provincial-sichuan)
 * [2020 ICPC 亚洲区域赛南京站](2020-icpc-nanjing)
 * [2018 ICPC 亚洲区域赛青岛站](2018-icpc-qingdao)
 * [2017 浙江大学程序设计竞赛](2017-school-zju)
