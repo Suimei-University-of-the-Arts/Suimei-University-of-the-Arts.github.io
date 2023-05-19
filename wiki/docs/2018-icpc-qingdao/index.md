@@ -21,6 +21,9 @@ date: 2023-03-25
 <tr>
 <td><b>在线练习</b></td><td><a href="https://codeforces.com/gym/104270">Codeforces Gym</a> | <a href="https://qoj.ac/contest/1187">QOJ</a></td>
 </tr>
+<tr>
+<td><b>选手评价</b></td><td><a href="https://www.zhihu.com/question/299957526">zhihu</a></td>
+</tr>
 </table>
 
 ## 统计数据
@@ -232,6 +235,8 @@ date: 2023-03-25
 ```
 
 ## 题解列表
+
+### 详细题解
 
 * [A - Sequence and Sequence](a.md)
 * [B - Kawa Exam](b.md)

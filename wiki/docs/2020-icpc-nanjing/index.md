@@ -1,27 +1,27 @@
 ---
-title: 2021 ICPC 亚洲区域赛澳门站
+title: 2020 ICPC 亚洲区域赛南京站
 date: 2023-05-17
 ---
 
-# 2021 ICPC 亚洲区域赛澳门站
+# 2020 ICPC 亚洲区域赛南京站
 
 ## 基本信息
 
 <table>
 <tr>
-<td><b>竞赛日期</b></td><td>2022/04/03</td>
+<td><b>竞赛日期</b></td><td>2020/12/20</td>
 </tr>
 <tr>
 <td><b>竞赛试题</b></td><td><a href="contest-en.pdf">English</a></a></td>
 </tr>
 <tr>
-<td><b>竞赛榜单</b></td><td><a href="https://board.xcpcio.com/icpc/46th/macau">XCPC Board</a> | <a href="board">SUA Board</a></td>
+<td><b>竞赛榜单</b></td><td><a href="https://board.xcpcio.com/icpc/2020/nanjing">XCPC Board</a> | <a href="board">SUA Board</a></td>
 </tr>
 <tr>
-<td><b>在线练习</b></td><td><a href="https://codeforces.com/gym/104373">Codeforces Gym</a> | <a href="https://qoj.ac/contest/911">QOJ</a></td>
+<td><b>在线练习</b></td><td><a href="https://codeforces.com/gym/102992">Codeforces Gym</a> | <a href="https://qoj.ac/contest/1235">QOJ</a></td>
 </tr>
 <tr>
-<td><b>选手评价</b></td><td><a href="https://www.zhihu.com/question/462046077">zhihu</a></td>
+<td><b>选手评价</b></td><td><a href="https://www.zhihu.com/question/434669683">zhihu</a></td>
 </tr>
 </table>
 
@@ -35,28 +35,32 @@ date: 2023-05-17
   },
   "data": {
     "values": [
-      {"id": "A", "ac": 100, "type": "正式赛队"},
-      {"id": "A", "ac": 51, "type": "非正式赛队"},
+      {"id": "A", "ac": 6, "type": "正式赛队"},
+      {"id": "A", "ac": 0, "type": "非正式赛队"},
       {"id": "B", "ac": 0, "type": "正式赛队"},
       {"id": "B", "ac": 0, "type": "非正式赛队"},
-      {"id": "C", "ac": 37, "type": "正式赛队"},
-      {"id": "C", "ac": 15, "type": "非正式赛队"},
+      {"id": "C", "ac": 1, "type": "正式赛队"},
+      {"id": "C", "ac": 0, "type": "非正式赛队"},
       {"id": "D", "ac": 7, "type": "正式赛队"},
       {"id": "D", "ac": 0, "type": "非正式赛队"},
-      {"id": "E", "ac": 21, "type": "正式赛队"},
-      {"id": "E", "ac": 6, "type": "非正式赛队"},
-      {"id": "F", "ac": 81, "type": "正式赛队"},
-      {"id": "F", "ac": 38, "type": "非正式赛队"},
-      {"id": "G", "ac": 20, "type": "正式赛队"},
-      {"id": "G", "ac": 3, "type": "非正式赛队"},
-      {"id": "H", "ac": 1, "type": "正式赛队"},
-      {"id": "H", "ac": 0, "type": "非正式赛队"},
-      {"id": "I", "ac": 7, "type": "正式赛队"},
-      {"id": "I", "ac": 4, "type": "非正式赛队"},
-      {"id": "J", "ac": 0, "type": "正式赛队"},
+      {"id": "E", "ac": 322, "type": "正式赛队"},
+      {"id": "E", "ac": 2, "type": "非正式赛队"},
+      {"id": "F", "ac": 240, "type": "正式赛队"},
+      {"id": "F", "ac": 2, "type": "非正式赛队"},
+      {"id": "G", "ac": 2, "type": "正式赛队"},
+      {"id": "G", "ac": 0, "type": "非正式赛队"},
+      {"id": "H", "ac": 60, "type": "正式赛队"},
+      {"id": "H", "ac": 1, "type": "非正式赛队"},
+      {"id": "I", "ac": 29, "type": "正式赛队"},
+      {"id": "I", "ac": 0, "type": "非正式赛队"},
+      {"id": "J", "ac": 14, "type": "正式赛队"},
       {"id": "J", "ac": 0, "type": "非正式赛队"},
-      {"id": "K", "ac": 95, "type": "正式赛队"},
-      {"id": "K", "ac": 43, "type": "非正式赛队"}
+      {"id": "K", "ac": 544, "type": "正式赛队"},
+      {"id": "K", "ac": 2, "type": "非正式赛队"},
+      {"id": "L", "ac": 481, "type": "正式赛队"},
+      {"id": "L", "ac": 2, "type": "非正式赛队"},
+      {"id": "M", "ac": 72, "type": "正式赛队"},
+      {"id": "M", "ac": 1, "type": "非正式赛队"}
     ]
   },
   "transform": [{
@@ -136,30 +140,34 @@ date: 2023-05-17
   },
   "data": {
     "values": [
-      {"ac": 0, "cnt": 7, "type": "正式赛队"},
-      {"ac": 0, "cnt": 6, "type": "非正式赛队"},
-      {"ac": 1, "cnt": 4, "type": "正式赛队"},
-      {"ac": 1, "cnt": 8, "type": "非正式赛队"},
-      {"ac": 2, "cnt": 20, "type": "正式赛队"},
-      {"ac": 2, "cnt": 5, "type": "非正式赛队"},
-      {"ac": 3, "cnt": 35, "type": "正式赛队"},
-      {"ac": 3, "cnt": 19, "type": "非正式赛队"},
-      {"ac": 4, "cnt": 21, "type": "正式赛队"},
-      {"ac": 4, "cnt": 12, "type": "非正式赛队"},
-      {"ac": 5, "cnt": 6, "type": "正式赛队"},
-      {"ac": 5, "cnt": 5, "type": "非正式赛队"},
-      {"ac": 6, "cnt": 8, "type": "正式赛队"},
-      {"ac": 6, "cnt": 2, "type": "非正式赛队"},
-      {"ac": 7, "cnt": 6, "type": "正式赛队"},
+      {"ac": 0, "cnt": 9, "type": "正式赛队"},
+      {"ac": 0, "cnt": 0, "type": "非正式赛队"},
+      {"ac": 1, "cnt": 62, "type": "正式赛队"},
+      {"ac": 1, "cnt": 0, "type": "非正式赛队"},
+      {"ac": 2, "cnt": 140, "type": "正式赛队"},
+      {"ac": 2, "cnt": 0, "type": "非正式赛队"},
+      {"ac": 3, "cnt": 124, "type": "正式赛队"},
+      {"ac": 3, "cnt": 0, "type": "非正式赛队"},
+      {"ac": 4, "cnt": 131, "type": "正式赛队"},
+      {"ac": 4, "cnt": 1, "type": "非正式赛队"},
+      {"ac": 5, "cnt": 42, "type": "正式赛队"},
+      {"ac": 5, "cnt": 0, "type": "非正式赛队"},
+      {"ac": 6, "cnt": 29, "type": "正式赛队"},
+      {"ac": 6, "cnt": 1, "type": "非正式赛队"},
+      {"ac": 7, "cnt": 12, "type": "正式赛队"},
       {"ac": 7, "cnt": 0, "type": "非正式赛队"},
-      {"ac": 8, "cnt": 2, "type": "正式赛队"},
+      {"ac": 8, "cnt": 3, "type": "正式赛队"},
       {"ac": 8, "cnt": 0, "type": "非正式赛队"},
       {"ac": 9, "cnt": 0, "type": "正式赛队"},
       {"ac": 9, "cnt": 0, "type": "非正式赛队"},
-      {"ac": 10, "cnt": 0, "type": "正式赛队"},
+      {"ac": 10, "cnt": 2, "type": "正式赛队"},
       {"ac": 10, "cnt": 0, "type": "非正式赛队"},
       {"ac": 11, "cnt": 0, "type": "正式赛队"},
-      {"ac": 11, "cnt": 0, "type": "非正式赛队"}
+      {"ac": 11, "cnt": 0, "type": "非正式赛队"},
+      {"ac": 12, "cnt": 0, "type": "正式赛队"},
+      {"ac": 12, "cnt": 0, "type": "非正式赛队"},
+      {"ac": 13, "cnt": 0, "type": "正式赛队"},
+      {"ac": 13, "cnt": 0, "type": "非正式赛队"}
     ]
   },
   "layer": [
@@ -229,4 +237,4 @@ date: 2023-05-17
 
 ### 简要题解
 
-* [pdf](tutorial-sketch-en.pdf)
+* [zhihu](https://zhuanlan.zhihu.com/p/338249705)

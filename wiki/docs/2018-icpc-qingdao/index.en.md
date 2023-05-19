@@ -20,6 +20,9 @@ date: 2023-03-25
 <tr>
 <td><b>Online Practice</b></td><td><a href="https://codeforces.com/gym/104270">Codeforces Gym</a> | <a href="https://qoj.ac/contest/1187">QOJ</a></td>
 </tr>
+<tr>
+<td><b>Contestants' Thoughts</b></td><td><a href="https://www.zhihu.com/question/299957526">zhihu</a></td>
+</tr>
 </table>
 
 ## Statistics
@@ -231,6 +234,8 @@ date: 2023-03-25
 ```
 
 ## Tutorials
+
+### Detailed Tutorials
 
 * [A - Sequence and Sequence](a.md)
 * [B - Kawa Exam](b.md)

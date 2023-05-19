@@ -20,6 +20,9 @@ date: 2023-05-17
 <tr>
 <td><b>在线练习</b></td><td><a href="https://codeforces.com/gym/103470">Codeforces Gym</a> | <a href="https://qoj.ac/contest/1236">QOJ</a></td>
 </tr>
+<tr>
+<td><b>选手评价</b></td><td><a href="https://www.zhihu.com/question/498925531">zhihu</a></td>
+</tr>
 </table>
 
 ## 统计数据
@@ -231,3 +234,7 @@ date: 2023-05-17
 ```
 
 ## 题解列表
+
+### 简要题解
+
+* [zhihu](https://zhuanlan.zhihu.com/p/441174109)

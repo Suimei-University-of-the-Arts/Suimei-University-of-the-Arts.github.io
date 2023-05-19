@@ -20,6 +20,9 @@ date: 2022-12-20
 <tr>
 <td><b>在线练习</b></td><td><a href="https://codeforces.com/gym/104128">Codeforces Gym</a> | <a href="https://qoj.ac/contest/1093">QOJ</a></td>
 </tr>
+<tr>
+<td><b>选手评价</b></td><td><a href="https://www.zhihu.com/question/572113636">zhihu</a></td>
+</tr>
 </table>
 
 ## 统计数据
@@ -231,6 +234,12 @@ date: 2022-12-20
 ```
 
 ## 题解列表
+
+### 简要题解
+
+* [pdf](tutorial-sketch-zh.pdf)
+
+### 详细题解
 
 * [A - Stop, Yesterday Please No More](a.md)
 * [B - Ropeway](b.md)

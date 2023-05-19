@@ -20,6 +20,9 @@ date: 2023-05-15
 <tr>
 <td><b>在线练习</b></td><td></td>
 </tr>
+<tr>
+<td><b>选手评价</b></td><td><a href="https://www.zhihu.com/question/600856118">zhihu</a></td>
+</tr>
 </table>
 
 广东省赛将在 5 月 27 ~ 28 日作为 [Universal Cup](https://ucup.ac/zh/) Stage 18。题解与在线练习将在 UCUP 赛后一并提供。
