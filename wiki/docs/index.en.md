@@ -10,6 +10,7 @@ This website contains the information and detailed tutorials/solutions of all pu
 * [The 2021 ICPC Asia Nanjing Regional Contest](2021-icpc-nanjing)
 * [The 2021 Sichuan Provincial Collegiate Programming Contest](2021-provincial-sichuan)
 * [The 2020 ICPC Asia Nanjing Regional Contest](2020-icpc-nanjing)
+* [The 2019 Shaanxi Provincial Collegiate Programming Contest](2019-provincial-shaanxi)
 * [The 2019 Shandong Provincial Collegiate Programming Contest](2019-provincial-shandong)
 * [The 2019 Zhejiang Provincial Collegiate Programming Contest](2019-provincial-zhejiang)
 * [The 2018 ICPC Asia Qingdao Regional Contest](2018-icpc-qingdao)
