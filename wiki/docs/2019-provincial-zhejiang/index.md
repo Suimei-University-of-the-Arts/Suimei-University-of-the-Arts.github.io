@@ -1,27 +1,27 @@
 ---
-title: 2021 四川省大学生程序设计竞赛
-date: 2023-05-19
+title: 2019 浙江省大学生程序设计竞赛
+date: 2023-05-20
 ---
 
-# 2021 四川省大学生程序设计竞赛
+# 2019 浙江省大学生程序设计竞赛
 
 ## 基本信息
 
 <table>
 <tr>
-<td><b>竞赛日期</b></td><td>2021/05/30</td>
+<td><b>竞赛日期</b></td><td>2019/04/27</td>
 </tr>
 <tr>
 <td><b>竞赛试题</b></td><td><a href="contest-en.pdf">English</a></a></td>
 </tr>
 <tr>
-<td><b>竞赛榜单</b></td><td><a href="board">SUA Board</a> | <a href="rankings.pdf">pdf</a></td>
+<td><b>竞赛榜单</b></td><td><a href="board">SUA Board</a></td>
 </tr>
 <tr>
-<td><b>在线练习</b></td><td><a href="https://codeforces.com/gym/103117">Codeforces Gym</a></td>
+<td><b>在线练习</b></td><td><a href="https://pintia.cn/problem-sets/91827364500/exam/problems/type/7?page=30">ZOJ 4100 ~ 4112</a></td>
 </tr>
 <tr>
-<td><b>选手评价</b></td><td><a href="https://www.zhihu.com/question/461892045">zhihu</a></td>
+<td><b>选手评价</b></td><td><a href="https://www.zhihu.com/question/321950600">zhihu</a></td>
 </tr>
 </table>
 
@@ -35,32 +35,32 @@ date: 2023-05-19
   },
   "data": {
     "values": [
-      {"id": "A", "ac": 178, "type": "正式赛队"},
-      {"id": "A", "ac": 47, "type": "非正式赛队"},
-      {"id": "B", "ac": 107, "type": "正式赛队"},
-      {"id": "B", "ac": 41, "type": "非正式赛队"},
-      {"id": "C", "ac": 0, "type": "正式赛队"},
-      {"id": "C", "ac": 0, "type": "非正式赛队"},
-      {"id": "D", "ac": 128, "type": "正式赛队"},
-      {"id": "D", "ac": 42, "type": "非正式赛队"},
-      {"id": "E", "ac": 16, "type": "正式赛队"},
-      {"id": "E", "ac": 10, "type": "非正式赛队"},
-      {"id": "F", "ac": 9, "type": "正式赛队"},
-      {"id": "F", "ac": 13, "type": "非正式赛队"},
-      {"id": "G", "ac": 0, "type": "正式赛队"},
-      {"id": "G", "ac": 2, "type": "非正式赛队"},
-      {"id": "H", "ac": 163, "type": "正式赛队"},
-      {"id": "H", "ac": 45, "type": "非正式赛队"},
-      {"id": "I", "ac": 2, "type": "正式赛队"},
-      {"id": "I", "ac": 6, "type": "非正式赛队"},
-      {"id": "J", "ac": 17, "type": "正式赛队"},
+      {"id": "A", "ac": 5, "type": "正式赛队"},
+      {"id": "A", "ac": 7, "type": "非正式赛队"},
+      {"id": "B", "ac": 70, "type": "正式赛队"},
+      {"id": "B", "ac": 11, "type": "非正式赛队"},
+      {"id": "C", "ac": 22, "type": "正式赛队"},
+      {"id": "C", "ac": 10, "type": "非正式赛队"},
+      {"id": "D", "ac": 11, "type": "正式赛队"},
+      {"id": "D", "ac": 8, "type": "非正式赛队"},
+      {"id": "E", "ac": 186, "type": "正式赛队"},
+      {"id": "E", "ac": 11, "type": "非正式赛队"},
+      {"id": "F", "ac": 280, "type": "正式赛队"},
+      {"id": "F", "ac": 11, "type": "非正式赛队"},
+      {"id": "G", "ac": 286, "type": "正式赛队"},
+      {"id": "G", "ac": 11, "type": "非正式赛队"},
+      {"id": "H", "ac": 221, "type": "正式赛队"},
+      {"id": "H", "ac": 11, "type": "非正式赛队"},
+      {"id": "I", "ac": 242, "type": "正式赛队"},
+      {"id": "I", "ac": 11, "type": "非正式赛队"},
+      {"id": "J", "ac": 82, "type": "正式赛队"},
       {"id": "J", "ac": 11, "type": "非正式赛队"},
-      {"id": "K", "ac": 136, "type": "正式赛队"},
-      {"id": "K", "ac": 44, "type": "非正式赛队"},
-      {"id": "L", "ac": 44, "type": "正式赛队"},
-      {"id": "L", "ac": 20, "type": "非正式赛队"},
-      {"id": "M", "ac": 96, "type": "正式赛队"},
-      {"id": "M", "ac": 39, "type": "非正式赛队"}
+      {"id": "K", "ac": 59, "type": "正式赛队"},
+      {"id": "K", "ac": 10, "type": "非正式赛队"},
+      {"id": "L", "ac": 0, "type": "正式赛队"},
+      {"id": "L", "ac": 0, "type": "非正式赛队"},
+      {"id": "M", "ac": 0, "type": "正式赛队"},
+      {"id": "M", "ac": 2, "type": "非正式赛队"}
     ]
   },
   "transform": [{
@@ -140,32 +140,32 @@ date: 2023-05-19
   },
   "data": {
     "values": [
-      {"ac": 0, "cnt": 1, "type": "正式赛队"},
+      {"ac": 0, "cnt": 0, "type": "正式赛队"},
       {"ac": 0, "cnt": 0, "type": "非正式赛队"},
-      {"ac": 1, "cnt": 11, "type": "正式赛队"},
-      {"ac": 1, "cnt": 2, "type": "非正式赛队"},
-      {"ac": 2, "cnt": 22, "type": "正式赛队"},
-      {"ac": 2, "cnt": 1, "type": "非正式赛队"},
-      {"ac": 3, "cnt": 22, "type": "正式赛队"},
-      {"ac": 3, "cnt": 1, "type": "非正式赛队"},
-      {"ac": 4, "cnt": 19, "type": "正式赛队"},
-      {"ac": 4, "cnt": 2, "type": "非正式赛队"},
-      {"ac": 5, "cnt": 12, "type": "正式赛队"},
-      {"ac": 5, "cnt": 3, "type": "非正式赛队"},
-      {"ac": 6, "cnt": 46, "type": "正式赛队"},
-      {"ac": 6, "cnt": 17, "type": "非正式赛队"},
-      {"ac": 7, "cnt": 22, "type": "正式赛队"},
-      {"ac": 7, "cnt": 5, "type": "非正式赛队"},
-      {"ac": 8, "cnt": 13, "type": "正式赛队"},
-      {"ac": 8, "cnt": 6, "type": "非正式赛队"},
-      {"ac": 9, "cnt": 6, "type": "正式赛队"},
+      {"ac": 1, "cnt": 6, "type": "正式赛队"},
+      {"ac": 1, "cnt": 0, "type": "非正式赛队"},
+      {"ac": 2, "cnt": 35, "type": "正式赛队"},
+      {"ac": 2, "cnt": 0, "type": "非正式赛队"},
+      {"ac": 3, "cnt": 21, "type": "正式赛队"},
+      {"ac": 3, "cnt": 0, "type": "非正式赛队"},
+      {"ac": 4, "cnt": 44, "type": "正式赛队"},
+      {"ac": 4, "cnt": 0, "type": "非正式赛队"},
+      {"ac": 5, "cnt": 84, "type": "正式赛队"},
+      {"ac": 5, "cnt": 0, "type": "非正式赛队"},
+      {"ac": 6, "cnt": 25, "type": "正式赛队"},
+      {"ac": 6, "cnt": 0, "type": "非正式赛队"},
+      {"ac": 7, "cnt": 24, "type": "正式赛队"},
+      {"ac": 7, "cnt": 0, "type": "非正式赛队"},
+      {"ac": 8, "cnt": 21, "type": "正式赛队"},
+      {"ac": 8, "cnt": 1, "type": "非正式赛队"},
+      {"ac": 9, "cnt": 20, "type": "正式赛队"},
       {"ac": 9, "cnt": 3, "type": "非正式赛队"},
-      {"ac": 10, "cnt": 4, "type": "正式赛队"},
+      {"ac": 10, "cnt": 3, "type": "正式赛队"},
       {"ac": 10, "cnt": 0, "type": "非正式赛队"},
-      {"ac": 11, "cnt": 1, "type": "正式赛队"},
-      {"ac": 11, "cnt": 6, "type": "非正式赛队"},
+      {"ac": 11, "cnt": 3, "type": "正式赛队"},
+      {"ac": 11, "cnt": 5, "type": "非正式赛队"},
       {"ac": 12, "cnt": 0, "type": "正式赛队"},
-      {"ac": 12, "cnt": 1, "type": "非正式赛队"},
+      {"ac": 12, "cnt": 2, "type": "非正式赛队"},
       {"ac": 13, "cnt": 0, "type": "正式赛队"},
       {"ac": 13, "cnt": 0, "type": "非正式赛队"}
     ]
@@ -234,7 +234,3 @@ date: 2023-05-19
 ```
 
 ## 题解列表
-
-### 简要题解
-
-* [pdf](tutorial-sketch-zh.pdf)
