@@ -1,9 +1,9 @@
 ---
-title: 2019 浙江省大学生程序设计竞赛
+title: 2019 山东省大学生程序设计竞赛
 date: 2023-05-20
 ---
 
-# 2019 浙江省大学生程序设计竞赛
+# 2019 山东省大学生程序设计竞赛
 
 ## 基本信息
 
@@ -18,7 +18,7 @@ date: 2023-05-20
 <td><b>竞赛榜单</b></td><td><a href="board">SUA Board</a></td>
 </tr>
 <tr>
-<td><b>在线练习</b></td><td><a href="https://pintia.cn/problem-sets/91827364500/exam/problems/type/7?page=31">ZOJ 4113 ~ 4125</a></td>
+<td><b>在线练习</b></td><td><a href="https://board.xcpcio.com/provincial-contest/2019/sdcpc">XCPC Board</a> | <a href="https://pintia.cn/problem-sets/91827364500/exam/problems/type/7?page=31">ZOJ 4113 ~ 4125</a></td>
 </tr>
 <tr>
 <td><b>选手评价</b></td><td><a href="https://www.zhihu.com/question/319681005">zhihu</a></td>
