@@ -1,9 +1,9 @@
 ---
-title: H - Factories Once More
+title: H - 工厂重现
 date: 2022-12-17
 ---
 
-# H - Factories Once More
+# H - 工厂重现
 
 ## 基本信息
 
@@ -13,9 +13,6 @@ date: 2022-12-17
 </tr>
 <tr>
 <td><b>队伍通过率</b></td><td>0/465 (0.0%)</td>
-</tr>
-<tr>
-<td><b>提交通过率</b></td><td>0/11 (0.0%)</td>
 </tr>
 </table>
 

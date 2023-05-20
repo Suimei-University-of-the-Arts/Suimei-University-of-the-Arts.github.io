@@ -1,9 +1,9 @@
 ---
-title: C - Fabulous Fungus Frenzy
+title: C - 智巧灵蕈大竞逐
 date: 2022-12-16
 ---
 
-# C - Fabulous Fungus Frenzy
+# C - 智巧灵蕈大竞逐
 
 ## 基本信息
 
@@ -13,9 +13,6 @@ date: 2022-12-16
 </tr>
 <tr>
 <td><b>队伍通过率</b></td><td>1/465 (0.2%)</td>
-</tr>
-<tr>
-<td><b>提交通过率</b></td><td>1/14 (7.1%)</td>
 </tr>
 </table>
 

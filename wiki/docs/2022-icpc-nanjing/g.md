@@ -1,9 +1,9 @@
 ---
-title: G - Inscryption
+title: G - 邪恶铭刻
 date: 2022-12-16
 ---
 
-# G - Inscryption
+# G - 邪恶铭刻
 
 ## 基本信息
 
@@ -13,9 +13,6 @@ date: 2022-12-16
 </tr>
 <tr>
 <td><b>队伍通过率</b></td><td>406/465 (87.3%)</td>
-</tr>
-<tr>
-<td><b>提交通过率</b></td><td>406/1527 (26.6%)</td>
 </tr>
 </table>
 

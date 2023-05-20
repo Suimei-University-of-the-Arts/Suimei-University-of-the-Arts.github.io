@@ -1,9 +1,9 @@
 ---
-title: K - NaN in a Heap
+title: K - 堆里的 NaN
 date: 2022-12-16
 ---
 
-# K - NaN in a Heap
+# K - 堆里的 NaN
 
 ## 基本信息
 
@@ -13,9 +13,6 @@ date: 2022-12-16
 </tr>
 <tr>
 <td><b>队伍通过率</b></td><td>7/465 (1.5%)</td>
-</tr>
-<tr>
-<td><b>提交通过率</b></td><td>7/40 (17.5%)</td>
 </tr>
 </table>
 

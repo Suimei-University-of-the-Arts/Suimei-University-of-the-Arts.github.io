@@ -1,9 +1,9 @@
 ---
-title: F - Triangles
+title: F - 三角形
 date: 2022-12-17
 ---
 
-# F - Triangles
+# F - 三角形
 
 ## 基本信息
 
@@ -13,9 +13,6 @@ date: 2022-12-17
 </tr>
 <tr>
 <td><b>队伍通过率</b></td><td>2/465 (0.4%)</td>
-</tr>
-<tr>
-<td><b>提交通过率</b></td><td>2/84 (2.4%)</td>
 </tr>
 </table>
 

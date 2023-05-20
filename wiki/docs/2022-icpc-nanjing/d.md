@@ -1,9 +1,9 @@
 ---
-title: D - Chat Program
+title: D - 聊天程序
 date: 2022-12-16
 ---
 
-# D - Chat Program
+# D - 聊天程序
 
 ## 基本信息
 
@@ -13,9 +13,6 @@ date: 2022-12-16
 </tr>
 <tr>
 <td><b>队伍通过率</b></td><td>139/465 (29.9%)</td>
-</tr>
-<tr>
-<td><b>提交通过率</b></td><td>139/960 (14.5%)</td>
 </tr>
 </table>
 

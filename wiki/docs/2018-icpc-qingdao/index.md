@@ -16,10 +16,10 @@ date: 2023-03-25
 </tr>
 
 <tr>
-<td><b>竞赛榜单</b></td><td><a href="https://web.archive.org/web/20181205151843/http://acm.upc.edu.cn/rank/">Web Archive</a> | <a href="https://codeforces.com/gym/104270/standings">Codeforces Gym</a>（含 UCUP 参赛者）</td>
+<td><b>竞赛榜单</b></td><td><a href="https://web.archive.org/web/20181205151843/http://acm.upc.edu.cn/rank/">Web Archive</a> | <a href="board">SUA Board</a></td>
 </tr>
 <tr>
-<td><b>在线练习</b></td><td><a href="https://codeforces.com/gym/104270">Codeforces Gym</a> | <a href="https://qoj.ac/contest/1187">QOJ</a></td>
+<td><b>在线练习</b></td><td><a href="https://codeforces.com/gym/104270">Codeforces Gym</a> | <a href="https://qoj.ac/contest/1187">QOJ</a> | <a href="https://pintia.cn/problem-sets/91827364500/exam/problems/type/7?page=30">ZOJ 4058 ~ 4070</a></td>
 </tr>
 <tr>
 <td><b>选手评价</b></td><td><a href="https://www.zhihu.com/question/299957526">zhihu</a></td>

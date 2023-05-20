@@ -1,9 +1,9 @@
 ---
-title: L - Proposition Composition
+title: L - 命题作文
 date: 2022-12-25
 ---
 
-# L - Proposition Composition
+# L - 命题作文
 
 ## 基本信息
 
@@ -13,9 +13,6 @@ date: 2022-12-25
 </tr>
 <tr>
 <td><b>队伍通过率</b></td><td>0/465 (0.0%)</td>
-</tr>
-<tr>
-<td><b>提交通过率</b></td><td>0/11 (0.0%)</td>
 </tr>
 </table>
 

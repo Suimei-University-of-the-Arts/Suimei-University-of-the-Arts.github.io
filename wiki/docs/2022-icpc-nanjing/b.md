@@ -1,9 +1,9 @@
 ---
-title: B - Ropeway
+title: B - 索道
 date: 2022-12-16
 ---
 
-# B - Ropeway
+# B - 索道
 
 ## 基本信息
 
@@ -13,9 +13,6 @@ date: 2022-12-16
 </tr>
 <tr>
 <td><b>队伍通过率</b></td><td>93/465 (20.0%)</td>
-</tr>
-<tr>
-<td><b>提交通过率</b></td><td>93/398 (23.4%)</td>
 </tr>
 </table>
 

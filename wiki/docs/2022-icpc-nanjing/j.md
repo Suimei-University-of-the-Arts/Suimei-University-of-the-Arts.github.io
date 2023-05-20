@@ -1,9 +1,9 @@
 ---
-title: J - Perfect Matching
+title: J - 完美匹配
 date: 2022-12-16
 ---
 
-# J - Perfect Matching
+# J - 完美匹配
 
 ## 基本信息
 
@@ -13,9 +13,6 @@ date: 2022-12-16
 </tr>
 <tr>
 <td><b>队伍通过率</b></td><td>13/465 (2.8%)</td>
-</tr>
-<tr>
-<td><b>提交通过率</b></td><td>13/123 (10.6%)</td>
 </tr>
 </table>
 

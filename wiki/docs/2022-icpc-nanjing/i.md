@@ -1,9 +1,9 @@
 ---
-title: I - Perfect Palindrome
+title: I - 完美回文
 date: 2022-12-16
 ---
 
-# I - Perfect Palindrome
+# I - 完美回文
 
 ## 基本信息
 
@@ -13,9 +13,6 @@ date: 2022-12-16
 </tr>
 <tr>
 <td><b>队伍通过率</b></td><td>464/465 (99.8%)</td>
-</tr>
-<tr>
-<td><b>提交通过率</b></td><td>464/576 (80.6%)</td>
 </tr>
 </table>
 

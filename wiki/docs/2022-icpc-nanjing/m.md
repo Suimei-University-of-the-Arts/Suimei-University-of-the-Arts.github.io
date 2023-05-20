@@ -1,9 +1,9 @@
 ---
-title: M - Drain the Water Tank
+title: M - 清空水箱
 date: 2022-12-16
 ---
 
-# M - Drain the Water Tank
+# M - 清空水箱
 
 ## 基本信息
 
@@ -13,9 +13,6 @@ date: 2022-12-16
 </tr>
 <tr>
 <td><b>队伍通过率</b></td><td>124/465 (26.7%)</td>
-</tr>
-<tr>
-<td><b>提交通过率</b></td><td>124/899 (13.8%)</td>
 </tr>
 </table>
 

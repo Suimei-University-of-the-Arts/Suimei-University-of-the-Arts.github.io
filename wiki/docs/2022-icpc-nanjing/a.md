@@ -1,9 +1,9 @@
 ---
-title: A - Stop, Yesterday Please No More
+title: A - 停停，昨日请不要再重现
 date: 2022-12-16
 ---
 
-# A - Stop, Yesterday Please No More
+# A - 停停，昨日请不要再重现
 
 ## 基本信息
 
@@ -13,9 +13,6 @@ date: 2022-12-16
 </tr>
 <tr>
 <td><b>队伍通过率</b></td><td>237/465 (51.0%)</td>
-</tr>
-<tr>
-<td><b>提交通过率</b></td><td>237/1228 (19.3%)</td>
 </tr>
 </table>
 

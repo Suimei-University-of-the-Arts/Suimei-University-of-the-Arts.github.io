@@ -1,9 +1,9 @@
 ---
-title: E - Color the Tree
+title: E - 树的染色
 date: 2022-12-16
 ---
 
-# E - Color the Tree
+# E - 树的染色
 
 ## 基本信息
 
@@ -13,9 +13,6 @@ date: 2022-12-16
 </tr>
 <tr>
 <td><b>队伍通过率</b></td><td>30/465 (6.5%)</td>
-</tr>
-<tr>
-<td><b>提交通过率</b></td><td>30/133 (22.6%)</td>
 </tr>
 </table>
 
