@@ -14,7 +14,7 @@ let navCasesText = `<li class="nav-item ${active == "cases" ? "active" : ""}">
 </li>`;
 
 let navProblemsText = `<li class="nav-item ${active == "problems" ? "active" : ""}">
-  <a class="nav-link" href="/wiki">竞赛合集</a>
+  <a class="nav-link" href="/wiki" target="_blank">竞赛合集</a>
 </li>`;
 
 let navContactText = `<li class="nav-item">
