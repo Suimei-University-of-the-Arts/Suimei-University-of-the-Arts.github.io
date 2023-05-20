@@ -13,5 +13,6 @@ This website contains the information and detailed tutorials/solutions of all pu
 * [The 2019 Shaanxi Provincial Collegiate Programming Contest](2019-provincial-shaanxi)
 * [The 2019 Shandong Provincial Collegiate Programming Contest](2019-provincial-shandong)
 * [The 2019 Zhejiang Provincial Collegiate Programming Contest](2019-provincial-zhejiang)
+* [The 2019 Zhejiang University Programming Contest](2019-school-zju)
 * [The 2018 ICPC Asia Qingdao Regional Contest](2018-icpc-qingdao)
 * [The 2017 Zhejiang University Programming Contest](2017-school-zju)
