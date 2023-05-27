@@ -25,8 +25,6 @@ date: 2023-05-15
 </tr>
 </table>
 
-广东省赛将在 5 月 27 ~ 28 日作为 [Universal Cup](https://ucup.ac/zh/) Stage 18。题解与在线练习将在 UCUP 赛后一并提供。
-
 ## 统计数据
 
 ```vegalite
@@ -236,3 +234,23 @@ date: 2023-05-15
 ```
 
 ## 题解列表
+
+### 简要题解
+
+* [pdf](tutorial-sketch-zh.pdf)
+
+### 详细题解
+
+* [A - 算法竞赛](a.md)
+* [B - 基站建设](b.md)
+* [C - 市场交易](c.md)
+* [D - 新居规划](d.md)
+* [E - 新怀质问](e.md)
+* [F - 格子旅行](f.md)
+* [G - 交换操作](g.md)
+* [H - 流画溢彩](h.md)
+* [I - 路径规划](i.md)
+* [J - X 等于 Y](j.md)
+* [K - 独立钻石](k.md)
+* [L - 经典问题](l.md)
+* [M - 计算几何](m.md)
