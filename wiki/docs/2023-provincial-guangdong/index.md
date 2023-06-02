@@ -18,7 +18,7 @@ date: 2023-05-15
 <td><b>竞赛榜单</b></td><td><a href="https://board.xcpcio.com/provincial-contest/2023/guangdong">XCPC Board</a> | <a href="board">SUA Board</a></td>
 </tr>
 <tr>
-<td><b>在线练习</b></td><td></td>
+<td><b>在线练习</b></td><td><a href="https://codeforces.com/gym/104369">Codeforces Gym</a> | <a href="https://cpc.csgrandeur.cn/csgoj/problemset">CSG 1200 ~ 1212</a></td>
 </tr>
 <tr>
 <td><b>选手评价</b></td><td><a href="https://www.zhihu.com/question/600856118">zhihu</a></td>

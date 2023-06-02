@@ -234,3 +234,7 @@ date: 2023-05-20
 ```
 
 ## 题解列表
+
+### 详细题解
+
+* [K - Final Defense Line](k.md)
