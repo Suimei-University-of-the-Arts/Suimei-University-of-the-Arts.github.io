@@ -35,6 +35,7 @@ plugins:
         en: english
       nav_translations:
         en:
+          2023 山东省大学生程序设计竞赛: The 2023 Shandong Provincial Collegiate Programming Contest
           2023 广东省大学生程序设计竞赛: The 2023 Guangdong Provincial Collegiate Programming Contest
           2022 ICPC 亚洲区域赛南京站: The 2022 ICPC Asia Nanjing Regional Contest
           2021 ICPC 亚洲区域赛澳门站: The 2021 ICPC Asia Macau Regional Contest

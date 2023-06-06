@@ -1,29 +1,33 @@
 ---
-title: 2021 ICPC 亚洲区域赛澳门站
-date: 2023-05-17
+title: 2023 山东省大学生程序设计竞赛
+date: 2023-06-07
 ---
 
-# 2021 ICPC 亚洲区域赛澳门站
+# 2023 山东省大学生程序设计竞赛
 
 ## 基本信息
 
 <table>
 <tr>
-<td><b>竞赛日期</b></td><td>2022/04/03</td>
+<td><b>竞赛日期</b></td><td>2023/06/04</td>
 </tr>
 <tr>
-<td><b>竞赛试题</b></td><td><a href="contest-en.pdf">English</a></a></td>
+<td><b>竞赛试题</b></td><td><a href="contest-en.pdf">English</a> | <a href="contest-zh.pdf">中文</a></td>
 </tr>
 <tr>
-<td><b>竞赛榜单</b></td><td><a href="board">SUA Board</a> | <a href="https://board.xcpcio.com/icpc/46th/macau">XCPC Board</a></td>
+<td><b>竞赛榜单</b></td><td><a href="board">SUA Board</a> | <a href="https://board.xcpcio.com/provincial-contest/2023/shandong">XCPC Board</a></td>
 </tr>
 <tr>
-<td><b>在线练习</b></td><td><a href="https://codeforces.com/gym/104373">Codeforces Gym</a> | <a href="https://qoj.ac/contest/911">QOJ</a></td>
+<td><b>在线练习</b></td><td></td>
 </tr>
 <tr>
-<td><b>选手评价</b></td><td><a href="https://www.zhihu.com/question/462046077">zhihu</a></td>
+<td><b>选手评价</b></td><td><a href="https://www.zhihu.com/question/599924861">zhihu</a></td>
 </tr>
 </table>
+
+2023 山东省大学生程序设计竞赛将在 7 月 1 日作为 [Universal Cup](https://ucup.ac/) Stage 21 Shandong 的一部分，详细题解将在 Universal Cup 赛后公布。
+
+如果在此之前您需要补题，请加入 SD XCPC QQ 群（774192274）并查看群公告。
 
 ## 统计数据
 
@@ -35,28 +39,32 @@ date: 2023-05-17
   },
   "data": {
     "values": [
-      {"id": "A", "ac": 100, "type": "正式赛队"},
-      {"id": "A", "ac": 51, "type": "非正式赛队"},
-      {"id": "B", "ac": 0, "type": "正式赛队"},
-      {"id": "B", "ac": 0, "type": "非正式赛队"},
-      {"id": "C", "ac": 37, "type": "正式赛队"},
-      {"id": "C", "ac": 15, "type": "非正式赛队"},
-      {"id": "D", "ac": 7, "type": "正式赛队"},
-      {"id": "D", "ac": 0, "type": "非正式赛队"},
-      {"id": "E", "ac": 21, "type": "正式赛队"},
-      {"id": "E", "ac": 6, "type": "非正式赛队"},
-      {"id": "F", "ac": 81, "type": "正式赛队"},
-      {"id": "F", "ac": 38, "type": "非正式赛队"},
-      {"id": "G", "ac": 20, "type": "正式赛队"},
-      {"id": "G", "ac": 3, "type": "非正式赛队"},
-      {"id": "H", "ac": 1, "type": "正式赛队"},
+      {"id": "A", "ac": 233, "type": "正式赛队"},
+      {"id": "A", "ac": 33, "type": "非正式赛队"},
+      {"id": "B", "ac": 30, "type": "正式赛队"},
+      {"id": "B", "ac": 13, "type": "非正式赛队"},
+      {"id": "C", "ac": 0, "type": "正式赛队"},
+      {"id": "C", "ac": 2, "type": "非正式赛队"},
+      {"id": "D", "ac": 111, "type": "正式赛队"},
+      {"id": "D", "ac": 22, "type": "非正式赛队"},
+      {"id": "E", "ac": 43, "type": "正式赛队"},
+      {"id": "E", "ac": 14, "type": "非正式赛队"},
+      {"id": "F", "ac": 0, "type": "正式赛队"},
+      {"id": "F", "ac": 5, "type": "非正式赛队"},
+      {"id": "G", "ac": 187, "type": "正式赛队"},
+      {"id": "G", "ac": 28, "type": "非正式赛队"},
+      {"id": "H", "ac": 0, "type": "正式赛队"},
       {"id": "H", "ac": 0, "type": "非正式赛队"},
-      {"id": "I", "ac": 7, "type": "正式赛队"},
-      {"id": "I", "ac": 4, "type": "非正式赛队"},
-      {"id": "J", "ac": 0, "type": "正式赛队"},
-      {"id": "J", "ac": 0, "type": "非正式赛队"},
-      {"id": "K", "ac": 95, "type": "正式赛队"},
-      {"id": "K", "ac": 43, "type": "非正式赛队"}
+      {"id": "I", "ac": 239, "type": "正式赛队"},
+      {"id": "I", "ac": 37, "type": "非正式赛队"},
+      {"id": "J", "ac": 16, "type": "正式赛队"},
+      {"id": "J", "ac": 12, "type": "非正式赛队"},
+      {"id": "K", "ac": 2, "type": "正式赛队"},
+      {"id": "K", "ac": 6, "type": "非正式赛队"},
+      {"id": "L", "ac": 105, "type": "正式赛队"},
+      {"id": "L", "ac": 20, "type": "非正式赛队"},
+      {"id": "M", "ac": 11, "type": "正式赛队"},
+      {"id": "M", "ac": 9, "type": "非正式赛队"}
     ]
   },
   "transform": [{
@@ -136,30 +144,34 @@ date: 2023-05-17
   },
   "data": {
     "values": [
-      {"ac": 0, "cnt": 7, "type": "正式赛队"},
-      {"ac": 0, "cnt": 6, "type": "非正式赛队"},
-      {"ac": 1, "cnt": 4, "type": "正式赛队"},
-      {"ac": 1, "cnt": 8, "type": "非正式赛队"},
-      {"ac": 2, "cnt": 20, "type": "正式赛队"},
+      {"ac": 0, "cnt": 1, "type": "正式赛队"},
+      {"ac": 0, "cnt": 0, "type": "非正式赛队"},
+      {"ac": 1, "cnt": 5, "type": "正式赛队"},
+      {"ac": 1, "cnt": 4, "type": "非正式赛队"},
+      {"ac": 2, "cnt": 47, "type": "正式赛队"},
       {"ac": 2, "cnt": 5, "type": "非正式赛队"},
-      {"ac": 3, "cnt": 35, "type": "正式赛队"},
-      {"ac": 3, "cnt": 19, "type": "非正式赛队"},
-      {"ac": 4, "cnt": 21, "type": "正式赛队"},
-      {"ac": 4, "cnt": 12, "type": "非正式赛队"},
-      {"ac": 5, "cnt": 6, "type": "正式赛队"},
-      {"ac": 5, "cnt": 5, "type": "非正式赛队"},
-      {"ac": 6, "cnt": 8, "type": "正式赛队"},
+      {"ac": 3, "cnt": 57, "type": "正式赛队"},
+      {"ac": 3, "cnt": 4, "type": "非正式赛队"},
+      {"ac": 4, "cnt": 37, "type": "正式赛队"},
+      {"ac": 4, "cnt": 5, "type": "非正式赛队"},
+      {"ac": 5, "cnt": 47, "type": "正式赛队"},
+      {"ac": 5, "cnt": 4, "type": "非正式赛队"},
+      {"ac": 6, "cnt": 20, "type": "正式赛队"},
       {"ac": 6, "cnt": 2, "type": "非正式赛队"},
-      {"ac": 7, "cnt": 6, "type": "正式赛队"},
-      {"ac": 7, "cnt": 0, "type": "非正式赛队"},
-      {"ac": 8, "cnt": 2, "type": "正式赛队"},
-      {"ac": 8, "cnt": 0, "type": "非正式赛队"},
-      {"ac": 9, "cnt": 0, "type": "正式赛队"},
-      {"ac": 9, "cnt": 0, "type": "非正式赛队"},
-      {"ac": 10, "cnt": 0, "type": "正式赛队"},
-      {"ac": 10, "cnt": 0, "type": "非正式赛队"},
+      {"ac": 7, "cnt": 13, "type": "正式赛队"},
+      {"ac": 7, "cnt": 2, "type": "非正式赛队"},
+      {"ac": 8, "cnt": 6, "type": "正式赛队"},
+      {"ac": 8, "cnt": 3, "type": "非正式赛队"},
+      {"ac": 9, "cnt": 5, "type": "正式赛队"},
+      {"ac": 9, "cnt": 2, "type": "非正式赛队"},
+      {"ac": 10, "cnt": 2, "type": "正式赛队"},
+      {"ac": 10, "cnt": 1, "type": "非正式赛队"},
       {"ac": 11, "cnt": 0, "type": "正式赛队"},
-      {"ac": 11, "cnt": 0, "type": "非正式赛队"}
+      {"ac": 11, "cnt": 3, "type": "非正式赛队"},
+      {"ac": 12, "cnt": 0, "type": "正式赛队"},
+      {"ac": 12, "cnt": 2, "type": "非正式赛队"},
+      {"ac": 13, "cnt": 0, "type": "正式赛队"},
+      {"ac": 13, "cnt": 0, "type": "非正式赛队"}
     ]
   },
   "layer": [
@@ -226,7 +238,3 @@ date: 2023-05-17
 ```
 
 ## 题解列表
-
-### 简要题解
-
-* [pdf](tutorial-sketch-en.pdf)

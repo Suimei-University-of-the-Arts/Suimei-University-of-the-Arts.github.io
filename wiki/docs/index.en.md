@@ -4,6 +4,7 @@ This website contains the information and detailed tutorials/solutions of all pu
 
 ## Contest List
 
+* [The 2023 Shandong Provincial Collegiate Programming Contest](2023-provincial-shandong)
 * [The 2023 Guangdong Provincial Collegiate Programming Contest](2023-provincial-guangdong)
 * [The 2022 ICPC Asia Nanjing Regional Contest](2022-icpc-nanjing)
 * [The 2021 ICPC Asia Macau Regional Contest](2021-icpc-macau)

@@ -15,7 +15,7 @@ date: 2023-03-25
 <td><b>Problemset</b></td><td><a href="contest-en.pdf">English</a></td>
 </tr>
 <tr>
-<td><b>Ranklist</b></td><td><a href="https://web.archive.org/web/20181205151843/http://acm.upc.edu.cn/rank/">Web Archive</a> | <a href="https://codeforces.com/gym/104270/standings">Codeforces Gym</a> (including UCUP participants)</td>
+<td><b>Ranklist</b></td><td><a href="board">SUA Board</a> | <a href="https://web.archive.org/web/20181205151843/http://acm.upc.edu.cn/rank/">Web Archive</a></td>
 </tr>
 <tr>
 <td><b>Online Practice</b></td><td><a href="https://codeforces.com/gym/104270">Codeforces Gym</a> | <a href="https://qoj.ac/contest/1187">QOJ</a></td>

@@ -15,7 +15,7 @@ date: 2023-05-20
 <td><b>竞赛试题</b></td><td><a href="contest-en.pdf">English</a></a></td>
 </tr>
 <tr>
-<td><b>竞赛榜单</b></td><td><a href="https://board.xcpcio.com/provincial-contest/2019/sxcpc">XCPC Board</a> | <a href="board">SUA Board</a></td>
+<td><b>竞赛榜单</b></td><td><a href="board">SUA Board</a> | <a href="https://board.xcpcio.com/provincial-contest/2019/sxcpc">XCPC Board</a></td>
 </tr>
 <tr>
 <td><b>在线练习</b></td><td><a href="https://pintia.cn/problem-sets/91827364500/exam/problems/type/7?page=31">ZOJ 4126 ~ 4137</a></td>

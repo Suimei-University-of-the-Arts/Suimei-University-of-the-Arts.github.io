@@ -15,7 +15,7 @@ date: 2023-05-17
 <td><b>竞赛试题</b></td><td><a href="contest-en.pdf">English</a></a></td>
 </tr>
 <tr>
-<td><b>竞赛榜单</b></td><td><a href="https://board.xcpcio.com/icpc/2020/nanjing">XCPC Board</a> | <a href="board">SUA Board</a></td>
+<td><b>竞赛榜单</b></td><td><a href="board">SUA Board</a> | <a href="https://board.xcpcio.com/icpc/2020/nanjing">XCPC Board</a></td>
 </tr>
 <tr>
 <td><b>在线练习</b></td><td><a href="https://codeforces.com/gym/102992">Codeforces Gym</a> | <a href="https://qoj.ac/contest/1235">QOJ</a></td>

@@ -15,10 +15,10 @@ date: 2023-05-15
 <td><b>竞赛试题</b></td><td><a href="contest-en.pdf">English</a> | <a href="contest-zh.pdf">中文</a></td>
 </tr>
 <tr>
-<td><b>竞赛榜单</b></td><td><a href="https://board.xcpcio.com/provincial-contest/2023/guangdong">XCPC Board</a> | <a href="board">SUA Board</a></td>
+<td><b>竞赛榜单</b></td><td><a href="board">SUA Board</a> | <a href="https://board.xcpcio.com/provincial-contest/2023/guangdong">XCPC Board</a></td>
 </tr>
 <tr>
-<td><b>在线练习</b></td><td><a href="https://codeforces.com/gym/104369">Codeforces Gym</a> | <a href="https://cpc.csgrandeur.cn/csgoj/problemset">CSG 1200 ~ 1212</a></td>
+<td><b>在线练习</b></td><td><a href="https://codeforces.com/gym/104369">Codeforces Gym</a> | <a href="https://cpc.csgrandeur.cn/csgoj/problemset#search=%E5%B9%BF%E4%B8%9C%E7%9C%81%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%B1%8A%E5%A4%A7%E5%AD%A6%E7%94%9F%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AB%9E%E8%B5%9B%EF%BC%88GDCPC2023%EF%BC%89">CSG 1200 ~ 1212</a></td>
 </tr>
 <tr>
 <td><b>选手评价</b></td><td><a href="https://www.zhihu.com/question/600856118">zhihu</a></td>
