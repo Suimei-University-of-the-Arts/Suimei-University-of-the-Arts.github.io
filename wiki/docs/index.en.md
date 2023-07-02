@@ -1,5 +1,9 @@
 # Welcome to SUA Wiki
 
+<center>
+<img src="logo.png" style="max-width: 200px" />
+</center>
+
 This website contains the information and detailed tutorials/solutions of all public contests prepared by the SUA Problem Setter Team. Past contests will be added gradually.
 
 ## Contest List

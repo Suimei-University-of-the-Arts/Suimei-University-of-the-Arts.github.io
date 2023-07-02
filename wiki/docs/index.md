@@ -1,5 +1,9 @@
 # 欢迎来到 SUA Wiki
 
+<center>
+<img src="logo.png" style="max-width: 200px" />
+</center>
+
 本站收录 SUA 程序设计竞赛命题组所有公开试题的信息以及详细题解。之前的竞赛将会逐渐补充。
 
 ## 竞赛列表

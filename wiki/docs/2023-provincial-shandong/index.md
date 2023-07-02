@@ -18,16 +18,12 @@ date: 2023-06-07
 <td><b>竞赛榜单</b></td><td><a href="board">SUA Board</a> | <a href="https://board.xcpcio.com/provincial-contest/2023/shandong">XCPC Board</a></td>
 </tr>
 <tr>
-<td><b>在线练习</b></td><td></td>
+<td><b>在线练习</b></td><td><a href="https://codeforces.com/gym/104417">Codeforces Gym</a></td>
 </tr>
 <tr>
 <td><b>选手评价</b></td><td><a href="https://www.zhihu.com/question/599924861">zhihu</a></td>
 </tr>
 </table>
-
-2023 山东省大学生程序设计竞赛将在 7 月 1 日作为 [Universal Cup](https://ucup.ac/) Stage 21 Shandong 的一部分，详细题解将在 Universal Cup 赛后公布。
-
-如果在此之前您需要补题，请加入 SD XCPC QQ 群（774192274）并查看群公告。
 
 ## 统计数据
 
@@ -238,3 +234,23 @@ date: 2023-06-07
 ```
 
 ## 题解列表
+
+### 简要题解
+
+* [pdf](tutorial-sketch-zh.pdf)
+
+### 详细题解
+
+* [A - 订单](a.md)
+* [B - 建筑公司](b.md)
+* [C - 字典树](c.md)
+* [D - 负重越野](d.md)
+* [E - 数学问题](e.md)
+* [F - 多彩的线段](f.md)
+* [G - 匹配](g.md)
+* [H - 请小心 2](h.md)
+* [I - 三只骰子](i.md)
+* [J - 不是一道路径查询问题](j.md)
+* [K - 困难的构造题](k.md)
+* [L - 谜题：曲尺](l.md)
+* [M - 计算几何](m.md)

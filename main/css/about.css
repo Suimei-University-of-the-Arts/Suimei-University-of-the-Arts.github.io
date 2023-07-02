@@ -91,12 +91,12 @@
 
   #about-1 > .block-left {
     float: left;
-    width: 40%;
+    width: 20%;
     max-width: 400px;
   }
 
   #about-1 > .block-right {
-    margin: 0 0 0 calc(40% + 20px);
+    margin: 0 0 0 calc(20% + 20px);
   }
 
   #about-4 > p {
@@ -133,7 +133,7 @@
 
   #about-1 > .block-left > img {
     width: 100%;
-    max-width: 400px;
+    max-width: 200px;
     display: block;
     margin: 0 auto 10px auto;
   }
