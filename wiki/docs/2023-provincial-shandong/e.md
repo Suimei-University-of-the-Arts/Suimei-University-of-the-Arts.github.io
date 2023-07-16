@@ -30,57 +30,38 @@ date: 2023-07-01
 
 ```c++ linenums="1"
 #include <bits/stdc++.h>
-#define MAXN ((int) 1e5)
 using namespace std;
-typedef pair<long long, long long> pll;
 
-int n;
-
-pll A[MAXN + 10], B[MAXN + 10];
-
-// 检验答案 x，转换成贪心
-bool check(long long x) {
-    vector<long long> P, Q;
-    // 计算哪些队员可以背别人，即为贪心问题中每个人的能力值
-    for (int i = 1; i <= n; i++)
-        if (A[i].first >= x) P.push_back(A[i].first + A[i].second - x);
-    // 计算哪些队员需要别人背，即为贪心问题中工作的难度
-    for (int i = 1; i <= n; i++)
-        if (B[i].first < x) Q.push_back(B[i].second);
-    // 因为 A 和 B 已经从大到小排过序了，所以 P 和 Q 也已经是有序的，不需要 sort
-    // 把第 i 难的工作分给能力值第 i 大的人
-    if (P.size() < Q.size()) return false;
-    for (int i = 0; i < Q.size(); i++) if (P[i] < Q[i]) return false;
-    return true;
-}
+long long n, K, m, a, b;
 
 void solve() {
-    scanf("%d", &n);
-    for (int i = 1; i <= n; i++) {
-        long long v, w; scanf("%lld%lld", &v, &w);
-        A[i] = B[i] = pll(v, w);
-    }
-    // 将队员按 v_i + w_i 从大到小排序，记在 A 里
-    sort(A + 1, A + n + 1, [](pll &a, pll &b) {
-        return a.first + a.second > b.first + b.second;
-    });
-    // 将队员按 w_i 从大到小排序，记在 B 里
-    sort(B + 1, B + n + 1, [](pll &a, pll &b) {
-        return a.second > b.second;
-    });
+    scanf("%lld%lld%lld%lld%lld", &n, &K, &m, &a, &b);
+    if (n % m == 0) { printf("0\n"); return; }
+    if (K == 1) { printf("-1\n"); return; }
 
-    // 二分答案
-    long long head = A[1].first, tail = A[1].first;
-    for (int i = 2; i <= n; i++) {
-        head = min(head, A[i].first);
-        tail = max(tail, A[i].first);
+    long long ans = 1e18, cost = 0;
+    while (true) {
+        // base：乘法操作之后的范围区间左端点
+        // p：乘法操作之后范围区间的长度
+        long long base = n % m, p = 1;
+        for (int i = 0; ; i++) {
+            // 还需要几次操作才能到达下一个 m 的倍数
+            long long delta = (m - base) % m;
+            if (delta < p) {
+                // 范围区间覆盖了 m 的倍数，更新答案
+                ans = min(ans, cost + i * a);
+                break;
+            }
+            // 再做一次乘法操作
+            base = base * K % m;
+            p *= K;
+        }
+        if (n == 0) break;
+        // 枚举除法操作的次数
+        n /= K;
+        cost += b;
     }
-    while (head < tail) {
-        long long mid = (head + tail + 1) >> 1;
-        if (check(mid)) head = mid;
-        else tail = mid - 1;
-    }
-    printf("%lld\n", head);
+    printf("%lld\n", ans);
 }
 
 int main() {
