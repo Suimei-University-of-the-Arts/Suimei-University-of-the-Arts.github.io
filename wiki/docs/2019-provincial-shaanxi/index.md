@@ -18,7 +18,7 @@ date: 2023-05-20
 <td><b>竞赛榜单</b></td><td><a href="board">SUA Board</a> | <a href="https://board.xcpcio.com/provincial-contest/2019/sxcpc">XCPC Board</a></td>
 </tr>
 <tr>
-<td><b>在线练习</b></td><td><a href="https://pintia.cn/problem-sets/91827364500/exam/problems/type/7?page=31">ZOJ 4126 ~ 4137</a></td>
+<td><b>在线练习</b></td><td><a href="https://codeforces.com/gym/104460">Codeforces Gym</a> | <a href="https://qoj.ac/contest/1285">QOJ</a> | <a href="https://pintia.cn/problem-sets/91827364500/exam/problems/type/7?page=31">ZOJ 4126 ~ 4137</a></td>
 </tr>
 <tr>
 <td><b>选手评价</b></td><td><a href="https://www.zhihu.com/question/325169946">zhihu</a></td>
@@ -230,3 +230,18 @@ date: 2023-05-20
 ```
 
 ## 题解列表
+
+### 详细题解
+
+* [A - Digit Mode](a.md)
+* [B - Grid with Arrows](b.md)
+* [C - 0689](c.md)
+* [D - Pick Up](d.md)
+* [E - Turn It Off](e.md)
+* [F - K-hour Clock](f.md)
+* [G - Paper-cutting](g.md)
+* [H - To the Park](h.md)
+* [I - Unrooted Trie](i.md)
+* [J - Coolbits](j.md)
+* [K - Escape Plan](k.md)
+* [L - Digit Product](l.md)

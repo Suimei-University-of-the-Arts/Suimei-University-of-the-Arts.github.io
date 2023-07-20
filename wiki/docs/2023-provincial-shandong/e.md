@@ -45,7 +45,7 @@ void solve() {
         // p：乘法操作之后范围区间的长度
         long long base = n % m, p = 1;
         for (int i = 0; ; i++) {
-            // 还需要几次操作才能到达下一个 m 的倍数
+            // 距离下一个 m 的倍数还有多少
             long long delta = (m - base) % m;
             if (delta < p) {
                 // 范围区间覆盖了 m 的倍数，更新答案

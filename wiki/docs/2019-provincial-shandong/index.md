@@ -18,7 +18,7 @@ date: 2023-05-20
 <td><b>竞赛榜单</b></td><td><a href="board">SUA Board</a> | <a href="https://board.xcpcio.com/provincial-contest/2019/sdcpc">XCPC Board</a></td>
 </tr>
 <tr>
-<td><b>在线练习</b></td><td><a href="https://codeforces.com/gym/104459">Codeforces Gym</a> | <a href="https://pintia.cn/problem-sets/91827364500/exam/problems/type/7?page=31">ZOJ 4113 ~ 4125</a></td>
+<td><b>在线练习</b></td><td><a href="https://codeforces.com/gym/104459">Codeforces Gym</a> | <a href="https://qoj.ac/contest/1281">QOJ</a> | <a href="https://pintia.cn/problem-sets/91827364500/exam/problems/type/7?page=31">ZOJ 4113 ~ 4125</a></td>
 </tr>
 <tr>
 <td><b>选手评价</b></td><td><a href="https://www.zhihu.com/question/319681005">zhihu</a></td>
