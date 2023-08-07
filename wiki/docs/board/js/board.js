@@ -121,3 +121,79 @@ function concernclick(o){
 if(scrollParam != null ){
 	scrollPage();
 }
+
+var exportLink = document.createElement('a');
+exportLink.href = '#';
+exportLink.innerHTML = '导出数据';
+
+var exportTextArea = document.createElement('textarea');
+exportTextArea.rows = 20;
+exportTextArea.cols = 80;
+exportTextArea.style.display = 'none';
+
+var mainDiv = document.getElementById('maindiv');
+var boardTable = document.getElementById('board');
+
+mainDiv.insertBefore(exportLink, boardTable);
+mainDiv.insertBefore(exportTextArea, boardTable);
+
+exportLink.onclick = function() {
+	if (exportTextArea.style.display == 'none') {
+		exportTextArea.innerHTML = genCfGhostData();
+		exportTextArea.style.display = 'block';
+	} else {
+		exportTextArea.style.display = 'none';
+	}
+}
+
+function genCfGhostData() {
+	var result = `@contest "${document.getElementById('contest_title').innerHTML}"\n`;
+	result += `@contlen ${parseInt(document.getElementById('time_elapsed').getAttribute('sec')) / 60}\n`;
+	var numProbs = document.getElementsByClassName('prob_h').length / 2;
+	result += `@problems ${numProbs}\n`;
+
+	var teams = [];
+	var submissions = [];
+
+	var tbody = boardTable.children[1];
+	for (var i = 0; i < tbody.children.length; i++) {
+		var teamRow = tbody.children[i];
+
+		var teamName = teamRow.getElementsByClassName('team')[0].innerHTML;
+		var tdSchool = teamRow.getElementsByClassName('school');
+		if (tdSchool.length > 0) {
+			teamName += `（${tdSchool[0].innerHTML}）`;
+		}
+		teams.push(`@t ${i + 1},0,1,${teamName}`);
+
+		var probs = teamRow.getElementsByClassName('prob_d');
+		for (var j = 0; j < probs.length; j++) {
+			var prob = probs[j];
+			var probId = String.fromCharCode(65 + j);
+			if (prob.hasAttribute('rec')) {
+				var rec = prob.getAttribute('rec');
+				var time = 0, cnt = 0;
+				for (var k = 0; k < rec.length; k++) {
+					if (rec.charAt(k) == 'A' || rec.charAt(k) == 'R') {
+						cnt++;
+						submissions.push(`@s ${i + 1},${probId},${cnt},${time},${rec.charAt(k) == 'A' ? 'OK' : 'RJ'}`);
+						time = 0;
+					} else {
+						time = time * 10 + parseInt(rec.charAt(k));
+					}
+				}
+			}
+		}
+	}
+
+	result += `@teams ${teams.length}\n`;
+	result += `@submissions ${submissions.length}\n`;
+	for (var i = 0; i < numProbs; i++) {
+		var probId = String.fromCharCode(65 + i);
+		result += `@p ${probId},${probId},20,0\n`;
+	}
+	teams.push(`@t ${teams.length + 1},0,1,Пополнить команду`);
+
+	result += teams.join('\n') + '\n' + submissions.join('\n') + '\n';
+	return result;
+}
