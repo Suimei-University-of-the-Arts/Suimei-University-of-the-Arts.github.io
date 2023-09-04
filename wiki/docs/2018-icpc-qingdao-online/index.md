@@ -18,7 +18,7 @@ date: 2023-05-20
 <td><b>竞赛榜单</b></td><td></td>
 </tr>
 <tr>
-<td><b>在线练习</b></td><td><a href="https://pintia.cn/problem-sets/91827364500/exam/problems/type/7?page=30">ZOJ 4047 ~ 4057</a></td>
+<td><b>在线练习</b></td><td><a href="https://qoj.ac/contest/1339">QOJ</a> | <a href="https://pintia.cn/problem-sets/91827364500/exam/problems/type/7?page=30">ZOJ 4047 ~ 4057</a></td>
 </tr>
 <tr>
 <td><b>选手评价</b></td><td><a href="https://www.zhihu.com/question/294885868">zhihu</a></td>
@@ -226,3 +226,15 @@ date: 2023-05-20
 ```
 
 ## 题解列表
+
+* [A - Live Love](a.md)
+* [B - Red Black Tree](b.md)
+* [C - Halting Problem](c.md)
+* [D - Pixel Art](d.md)
+* [E - Infinite Parenthesis Sequence](e.md)
+* [F - Chaleur](f.md)
+* [G - Couleur](g.md)
+* [H - Traveling on the Axis](h.md)
+* I - Kuririn MIRACLE (WIP)
+* [J - Press the Button](j.md)
+* [K - XOR Clique](k.md)
