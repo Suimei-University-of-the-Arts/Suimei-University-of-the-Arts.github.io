@@ -235,6 +235,6 @@ date: 2023-05-20
 * [F - Chaleur](f.md)
 * [G - Couleur](g.md)
 * [H - Traveling on the Axis](h.md)
-* I - Kuririn MIRACLE (WIP)
+* [I - Kuririn MIRACLE](i.md)
 * [J - Press the Button](j.md)
 * [K - XOR Clique](k.md)
