@@ -46,7 +46,7 @@ $$
 t = \int_{0}^{\alpha} \frac{2rd\theta}{v_t(\theta)}
 $$
 
-这个积分没有代数解，可以使用 [自适应辛普森公式]() 近似计算。
+这个积分没有代数解，可以使用 [自适应辛普森公式](https://en.oi-wiki.org/math/integral/#_7) 近似计算。
 
 ### 第二段路径
 

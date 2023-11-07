@@ -5,22 +5,22 @@ date: 2023-09-01
 
 # B - Red Black Tree
 
-## 基本信息
+## Basic Information
 
 <table>
 <tr>
-<td><b>题目出处</b></td><td>2018 ICPC 亚洲区域赛青岛站网络赛</td>
+<td><b>Contest</b></td><td>The 2018 ICPC Asia Qingdao Regional Contest, Online</td>
 </tr>
 <tr>
-<td><b>队伍通过率</b></td><td>147/1550 (9.5%)</td>
+<td><b>Team AC Ratio</b></td><td>147/1550 (9.5%)</td>
 </tr>
 </table>
 
-## 题解
+## Tutorial
 
-设 $\text{cost}(v_i)$ 表示加入新红点之前，节点 $v_i$ 的代价。对于询问 $v_1, v_2, \cdots, v_k$，将所有节点按代价从大到小排序，如果不做任何修改，那么最大代价就是 $\text{cost}(v_1)$。
+Let $\text{cost}(v_i)$ be the cost of vertex $v_i$ before adding new red vertex. For the query $v_1, v_2, \cdots, v_k$, sort all vertices by cost in descending order. If no modifications are made, the maximum cost is $\text{cost}(v_1)$.
 
-为了让最大代价小于 $\text{cost}(v_i)$，新加入的红点要同时改变节点 $v_1, v_2, \cdots, v_i$ 的代价。为了让最大代价尽可能小，显然要把这个红点放在 $v_1, v_2, \cdots, v_i$ 的最近公共祖先（lca）处。设 $d(v_i)$ 表示从根到节点 $v_i$ 的距离，则最大代价变为
+In order the make the maximum cost less than $\text{cost}(v_i)$, the newly added red vertex must simultaneously affect the cost of vertices $v_1, v_2, \cdots, v_i$. To minimize the maximum cost, it is obvious that this red vertex should be placed at the lowest common ancestor (LCA) of $v_1, v_2, \cdots, v_i$. Let $d(v_i)$ denote the distance from the root to node $v_i$. Then, the maximum cost becomes
 
 $$
 \max\begin{cases}
@@ -29,11 +29,11 @@ $$
 \end{cases}
 $$
 
-从 $1$ 到 $k$ 枚举 $i$，并选择最小的最大代价即可。如果从 lca 到某个节点 $v_j$ 上已经有其它红点了，那么上式算出来的值一定大于等于 $\text{cost}(v_j)$，不比 $i = j - 1$ 时的代价优。因为我们只关心最小的最大代价，所以这并不影响最终答案的计算。
+Enumerate $i$ from $1$ to $k$ and select the smallest maximum cost. If there are already other red vertices on the path from the LCA to a vertex $v_j$, the value calculated by the above equation will certainly be greater than or equal to $\text{cost}(v_j)$, and it won't be better than the cost at $i = j - 1$. Since we only care about the smallest maximum cost, this does not affect the final answer.
 
-复杂度 $\mathcal{O}(n\log n + \sum k_i \log \sum k_i)$。
+The complexity is $\mathcal{O}(n\log n + \sum k_i \log \sum k_i)$.
 
-## 参考代码
+## Solution
 
 ```c++ linenums="1"
 #include <bits/stdc++.h>
@@ -45,10 +45,10 @@ int n, m, q;
 bool flag[MAXN + 10];
 
 vector<int> e[MAXN + 10], v[MAXN + 10];
-// dis[i]：从根到节点 i 的距离
-// cost[i]：不加入新红点时，节点 i 的代价
+// dis[i]: distance from the root to vertex i
+// cost[i]: cost of vertex i without adding new red vertex
 long long dis[MAXN + 10], cost[MAXN + 10];
-// 在 dfs 序列上维护 rmq 求 lca
+// maintain RMQ on the DFS sequence to calculate LCA
 int clk, bgn[MAXN + 10];
 int lg[MAXN * 2 + 10], f[MAXP][MAXN * 2 + 10];
 
@@ -68,7 +68,7 @@ void dfs(int sn, int fa) {
     }
 }
 
-// rmq 预处理
+// RMQ pre-calculation
 void preLca() {
     for (int p = 1; p < MAXP; p++) for (int i = 1; i + (1 << p) - 1 <= clk; i++) {
         int j = i + (1 << (p - 1));
@@ -77,7 +77,7 @@ void preLca() {
     }
 }
 
-// 求节点 x 和 y 的 lca
+// calculate LCA of vertices x and y
 int lca(int x, int y) {
     if (bgn[x] > bgn[y]) swap(x, y);
     int p = lg[bgn[y] - bgn[x] + 1];
@@ -119,7 +119,7 @@ void solve() {
 
         int anc = vec[0];
         long long mx = dis[vec[0]], ans = cost[vec[1]];
-        // 枚举新的红点要覆盖几个节点
+        // enumerate how many vertices will the new red vertex affect
         for (int i = 1; i + 1 < vec.size(); i++) {
             anc = lca(anc, vec[i]);
             mx = max(mx, dis[vec[i]]);

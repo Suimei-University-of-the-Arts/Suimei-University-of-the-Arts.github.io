@@ -33,7 +33,7 @@ using namespace std;
 int n, m;
 
 int calc(int lim) {
-    // 如果 m 刚好整除 lim，最后一组 PERFECT 后面就不用放 NON-PERFECT 了
+    // 如果 m 刚好被 lim 整除，最后一组 PERFECT 后面就不用放 NON-PERFECT 了
     if (m % lim == 0) return m / lim * (lim + 1) - 1;
     else return m / lim * (lim + 1) + m % lim;
 }
