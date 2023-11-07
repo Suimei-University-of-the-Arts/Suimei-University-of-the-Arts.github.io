@@ -63,6 +63,8 @@ markdown_extensions:
         - name: vegalite
           class: vegalite
           format: !!python/name:mkdocs_charts_plugin.fences.fence_vegalite
+  - attr_list
+  - md_in_html
 
 extra_css:
     - css/extra.css

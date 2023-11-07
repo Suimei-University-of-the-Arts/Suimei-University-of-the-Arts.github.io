@@ -26,7 +26,9 @@ date: 2023-09-05
 
 点 $A$ 的第一段运动可以拆分成跟着圆 $B$ 的，速度为 $v$ 的匀速直线运动，和绕着圆 $B$ 的，半径为 $2r$ 的变速圆周运动。
 
-![i.png](i.png)
+<figure markdown>
+![i.png](i.png){ width="500" }
+</figure>
 
 如上图所示，记 $AB$ 和 $x$ 轴负方向的夹角为 $\theta$，点 $A$ 相对点 $B$ 的切向速度为 $v_t(\theta)$，$v_x(\theta)$ 是 $v_t(\theta)$ 沿 $x$ 轴正方向的分解速度，$v_y(\theta)$ 是 $v_t(\theta)$ 沿 $y$ 轴正方向的分解速度，有以下方程组。
 
