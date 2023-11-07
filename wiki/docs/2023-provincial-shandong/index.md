@@ -18,7 +18,7 @@ date: 2023-06-07
 <td><b>竞赛榜单</b></td><td><a href="board">SUA Board</a> | <a href="https://board.xcpcio.com/provincial-contest/2023/shandong">XCPC Board</a></td>
 </tr>
 <tr>
-<td><b>在线练习</b></td><td><a href="https://codeforces.com/gym/104417">Codeforces Gym</a> | <a href="https://qoj.ac/contest/1280">QOJ</a></td>
+<td><b>在线练习</b></td><td><a href="https://codeforces.com/gym/104417">Codeforces Gym</a> | <a href="https://qoj.ac/contest/1280">QOJ</a> | <a href="https://www.luogu.com.cn/contest/126525#problems">洛谷</a></td>
 </tr>
 <tr>
 <td><b>选手评价</b></td><td><a href="https://www.zhihu.com/question/599924861">zhihu</a></td>

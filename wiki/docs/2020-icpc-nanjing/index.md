@@ -18,7 +18,7 @@ date: 2023-05-17
 <td><b>竞赛榜单</b></td><td><a href="board">SUA Board</a> | <a href="https://board.xcpcio.com/icpc/2020/nanjing">XCPC Board</a></td>
 </tr>
 <tr>
-<td><b>在线练习</b></td><td><a href="https://codeforces.com/gym/102992">Codeforces Gym</a> | <a href="https://qoj.ac/contest/1235">QOJ</a></td>
+<td><b>在线练习</b></td><td><a href="https://codeforces.com/gym/102992">Codeforces Gym</a> | <a href="https://qoj.ac/contest/1235">QOJ</a> | <a href="https://www.luogu.com.cn/contest/130129#problems">洛谷</a></td>
 </tr>
 <tr>
 <td><b>选手评价</b></td><td><a href="https://www.zhihu.com/question/434669683">zhihu</a></td>
