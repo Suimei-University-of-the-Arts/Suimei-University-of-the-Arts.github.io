@@ -8,6 +8,7 @@ This website contains the information and detailed tutorials/solutions of all pu
 
 ## Contest List
 
+* [The 2023 ICPC Asia Jinan Regional Contest](2023-icpc-jinan)
 * [The 2023 ICPC Asia Nanjing Regional Contest](2023-icpc-nanjing)
 * [The 2023 Shandong Provincial Collegiate Programming Contest](2023-provincial-shandong)
 * [The 2023 Guangdong Provincial Collegiate Programming Contest](2023-provincial-guangdong)
