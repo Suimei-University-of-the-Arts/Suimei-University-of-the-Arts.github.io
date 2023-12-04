@@ -13,7 +13,7 @@ SUA Wiki 基于 `mkdocs-material` 开发。构建 SUA Wiki 之前，需要准备
 pip install mkdocs-material
 pip install mkdocs-awesome-pages-plugin
 pip install mkdocs-charts-plugin
-pip install mkdocs-static-i18n
+pip install mkdocs-static-i18n==0.56
 ```
 
 ## 预览

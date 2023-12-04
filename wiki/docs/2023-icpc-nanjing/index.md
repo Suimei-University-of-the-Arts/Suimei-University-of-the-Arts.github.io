@@ -12,13 +12,13 @@ date: 2023-11-07
 <td><b>竞赛日期</b></td><td>2023/11/05</td>
 </tr>
 <tr>
-<td><b>竞赛试题</b></td><td></td>
+<td><b>竞赛试题</b></td><td><a href="contest-en.pdf">English</a> | <a href="contest-zh.pdf">中文</a></td>
 </tr>
 <tr>
 <td><b>竞赛榜单</b></td><td><a href="board">SUA Board</a> | <a href="https://board.xcpcio.com/icpc/48th/nanjing">XCPC Board</a></td>
 </tr>
 <tr>
-<td><b>在线练习</b></td><td></td>
+<td><b>在线练习</b></td><td><a href="https://codeforces.com/gym/104821">Codeforces Gym</a> | <a href="https://qoj.ac/contest/1435">QOJ</a></td>
 </tr>
 <tr>
 <td><b>选手评价</b></td><td><a href="https://www.zhihu.com/question/627281278">zhihu</a></td>
@@ -27,8 +27,6 @@ date: 2023-11-07
 <td><b>现场直播</b></td><td><a href="https://www.bilibili.com/video/BV1VQ4y1n7vC/">bilibili</a></td>
 </tr>
 </table>
-
-2023 ICPC 亚洲区域赛南京站将在 12 月 2 日作为 [Universal Cup](https://ucup.ac/) Season 2 Stage 12 的试题使用。电子版试题与题解将在 Universal Cup 赛后提供。
 
 ## 统计数据
 
@@ -242,9 +240,7 @@ date: 2023-11-07
 
 ### 简要题解
 
-<!--
 * [pdf](tutorial-sketch-zh.pdf)
--->
 
 ### 详细题解
 
