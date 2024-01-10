@@ -12,13 +12,13 @@ date: 2023-12-04
 <td><b>竞赛日期</b></td><td>2023/12/03</td>
 </tr>
 <tr>
-<td><b>竞赛试题</b></td><td></td>
+<td><b>竞赛试题</b></td><td><a href="contest-en.pdf">English</a> | <a href="contest-zh.pdf">中文</a></td>
 </tr>
 <tr>
 <td><b>竞赛榜单</b></td><td><a href="board">SUA Board</a> | <a href="https://board.xcpcio.com/icpc/48th/nanjing">XCPC Board</a></td>
 </tr>
 <tr>
-<td><b>在线练习</b></td><td></td>
+<td><b>在线练习</b></td><td><a href="https://codeforces.com/gym/104901">Codeforces Gym</a> | <a href="https://qoj.ac/contest/1472">QOJ</a></td>
 </tr>
 <tr>
 <td><b>选手评价</b></td><td><a href="https://www.zhihu.com/question/631214119">zhihu</a></td>
@@ -29,8 +29,6 @@ date: 2023-12-04
 </table>
 
 ## 统计数据
-
-2023 ICPC 亚洲区域赛济南站将在 2 月 10 日作为 [Universal Cup](https://ucup.ac/) Season 2 Stage 22 的试题使用（具体日期与场次后续可能调整）。电子版试题与题解将在 Universal Cup 赛后提供。
 
 ```vegalite
 {
@@ -242,9 +240,7 @@ date: 2023-12-04
 
 ### 简要题解
 
-<!--
 * [pdf](tutorial-sketch-zh.pdf)
--->
 
 ### 详细题解
 
