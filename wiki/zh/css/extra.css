@@ -1,0 +1,7 @@
+.md-grid {
+    max-width: max(85%, 70rem);
+}
+
+.md-typeset details {
+    font-size: inherit;
+}

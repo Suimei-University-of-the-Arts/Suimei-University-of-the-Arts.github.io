@@ -1,0 +1,197 @@
+<center>
+
+<h1>Crosses Puzzle</h1>
+
+<p>
+Controls: Click to rotate. Refresh to restart.
+</p>
+
+<div id="game-area" style="position: relative; width: 400px; height: 400px;"></div>
+
+</center>
+
+<script type="text/javascript">
+  var dx = [-1, 0, 1, 0];
+  var dy = [0, -1, 0, 1];
+  var ddx = [0, -1, 0, 1];
+  var ddy = [-1, 0, 1, 0];
+  var lineWidth = 3;
+  var block_len = 100;
+
+  function Board(size = 4) {
+    this.size = size;
+
+    // Generate chess board randomly
+    // 4: no allow, 0, up, 1, right, 2, down, 3, left
+    this.board = new Array();
+    for (var i = 0; i < size; i++) {
+      this.board[i] = new Array();
+      for (var j = 0; j < size; j++) {
+        this.board[i][j] = Math.floor(Math.random() * 5);
+      }
+    }
+    /*
+    this.board =
+    [[4, 0, 0, 0],
+    [0, 2, 0, 1],
+    [3, 2, 0, 0],
+    [1, 3, 2, 0]
+    ];*/
+  }
+
+  function in_board(x, y) {
+    return x >= 0 && x < board.size && y >= 0 && y < board.size;
+  }
+
+  function draw(ctx, angle) {
+    var r = block_len / 2;
+    ctx.translate(r, r);
+    ctx.rotate(angle);
+    ctx.translate(-r, -r);
+    ctx.beginPath();
+    ctx.lineWidth = lineWidth;
+    ctx.strokeStyle = '#1c86d1';
+    ctx.setLineDash([10, 5])
+    for (var i = 1; i < 4; ++i) {
+      ctx.moveTo(r, r);
+      ctx.lineTo(r + ddx[i] * 0.7 * r, r + ddy[i] * 0.7 * r);
+    }
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.lineWidth = lineWidth;
+    ctx.strokeStyle = 'red';
+    ctx.setLineDash([10, 0]);
+    ctx.moveTo(r, r);
+    ctx.lineTo(r, r - 0.7 * r);
+    ctx.stroke();
+    ctx.translate(r, r);
+    ctx.rotate(-angle);
+    ctx.translate(-r, -r);
+  }
+
+  function check() {
+    for (var i = 0; i < board.size; ++i)
+      for (var j = 0; j < board.size; ++j)
+        if (board.board[i][j] % 4 != 0)
+          return false;
+    return true;
+  }
+
+  function rotate(x, y) {
+    comPlaying = true;
+    //console.log('rotate', x, y, board.board[x][y])
+    if (!in_board(x, y) || board.board[x][y] == 4) {
+      comPlaying = false;
+      if (check())
+        alert('You Win! Refresh to restart.');
+      return;
+    }
+    var state = board.board[x][y];
+    var nxt_state = (state - 1);
+    if (nxt_state < 0)
+      nxt_state += 4
+    var cvs = document.querySelector('#r' + x + 'c' + y).firstElementChild;
+    var ctx = cvs.getContext('2d');
+    var nx = x + dx[nxt_state];
+    var ny = y + dy[nxt_state];
+    var st_angle = (4 - state) * Math.PI / 2.0;
+    var end_angle = (4 - nxt_state) * Math.PI / 2.0;
+    if (end_angle <= st_angle)
+      end_angle += Math.PI * 2
+    var tmp_angle = st_angle;
+    console.log('tmp_angle', tmp_angle, board.board[x][y]);
+    var delta = 4 * (Math.PI / 180);
+    console.log("rotate", state, nxt_state, st_angle, end_angle);
+    var draw_rotate = function () {
+      if (tmp_angle >= end_angle) {
+        return;
+      } else if (tmp_angle + delta > end_angle) {
+        tmp_angle = end_angle;
+      } else {
+        tmp_angle += delta;
+      }
+      //ctx.save();
+
+      ctx.clearRect(0, 0, block_len, block_len);
+      ctx.save();
+      draw(ctx, tmp_angle);
+      ctx.restore();
+      var id = requestAnimationFrame(draw_rotate);
+      if (tmp_angle >= end_angle) {
+        console.log(id);
+        board.board[x][y] = nxt_state;
+        cancelAnimationFrame(id);
+        rotate(nx, ny);
+      }
+
+    }
+    draw_rotate();
+  }
+
+  function drawBoard() {
+    var img = document.querySelector('#cute');
+    console.log(board.board);
+    for (var i = 0; i < board.size; i++) {
+      for (var j = 0; j < board.size; j++) {
+        var ctx = document.querySelector('#r' + i + 'c' + j).firstElementChild.getContext('2d');
+        ctx.clearRect(0, 0, block_len, block_len);
+        if (board.board[i][j] == 4)
+          continue;
+        console.log("draw i j", i, j, board.board[i][j], ((4 - board.board[i][j]) * Math.PI / 2) / Math.PI * 2);
+        draw(ctx, (4 - board.board[i][j]) * Math.PI / 2);
+      }
+    }
+    if (check())
+      alert('win');
+  }
+
+  function clickChess(e) {
+    if (comPlaying)
+      return;
+
+    var node = e.target.parentNode;
+    var i = parseInt(node.getAttribute('row'));
+    var j = parseInt(node.getAttribute('col'));
+
+    if (isNaN(i) || isNaN(j))
+      return;
+
+    if (board.board[i][j] == 4)
+      return;
+    console.log(i, j);
+    rotate(i, j);
+
+  }
+
+  var board = new Board();
+  var comPlaying = false;
+
+  window.addEventListener('DOMContentLoaded', function () {
+    var div = document.querySelector('#game-area');
+    for (var i = 0; i < board.size; i++)
+      for (var j = 0; j < board.size; j++) {
+        var canvas = document.createElement('canvas');
+        canvas.width = canvas.height = block_len;
+
+        var node = document.createElement('div');
+        node.style.width = node.style.height = block_len + 'px';
+        node.style.position = 'absolute';
+        node.style.top = i * block_len + 'px';
+        node.style.left = j * block_len + 'px';
+        node.style.borderTop = '1px solid black';
+        node.style.borderLeft = '1px solid black';
+        if (i == board.size - 1)
+          node.style.borderBottom = '1px solid black';
+        if (j == board.size - 1)
+          node.style.borderRight = '1px solid black';
+        node.setAttribute('row', i);
+        node.setAttribute('col', j);
+        node.setAttribute('id', 'r' + i + 'c' + j);
+        node.addEventListener('click', clickChess);
+
+        node.appendChild(canvas);
+        div.appendChild(node);
+      }
+    drawBoard();
+  })
+</script>
