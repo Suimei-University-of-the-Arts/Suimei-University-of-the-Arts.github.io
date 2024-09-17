@@ -35,6 +35,8 @@ plugins:
         en: english
       nav_translations:
         en:
+          2024 ICPC 全国邀请赛昆明站: The 2024 ICPC Kunming Invitational Contest
+          2024 CCPC 全国邀请赛山东站暨山东省大学生程序设计竞赛: The 2024 CCPC Shandong Invitational Contest and Provincial Collegiate Programming Contest
           2023 ICPC 亚洲区域赛济南站: The 2023 ICPC Asia Jinan Regional Contest
           2023 ICPC 亚洲区域赛南京站: The 2023 ICPC Asia Nanjing Regional Contest
           2023 山东省大学生程序设计竞赛: The 2023 Shandong Provincial Collegiate Programming Contest

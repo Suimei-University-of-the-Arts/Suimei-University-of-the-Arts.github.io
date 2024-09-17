@@ -8,6 +8,8 @@
 
 ## 竞赛列表
 
+* [2024 ICPC 全国邀请赛昆明站](2024-icpc-invitational-kunming)
+* [2024 CCPC 全国邀请赛山东站暨山东省大学生程序设计竞赛](2024-ccpc-invitational-shandong)
 * [2023 ICPC 亚洲区域赛济南站](2023-icpc-jinan)
 * [2023 ICPC 亚洲区域赛南京站](2023-icpc-nanjing)
 * [2023 山东省大学生程序设计竞赛](2023-provincial-shandong)
