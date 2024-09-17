@@ -60,7 +60,7 @@ date: 2022-12-16
 
     $$
     \begin{matrix}
-    f(u) & = & (s_u - 1)! \times \prod\limits_{v \in \text{son}(v)} s_v! \div \prod\limits_{v \in \text{son}(v)}\prod\limits_{w \in \text{tree}(v)} s_w \div \prod\limits_{v \in \text{son}(v)} s_v! \\
+    f(u) & = & (s_u - 1)! \times \prod\limits_{v \in \text{son}(u)} s_v! \div \prod\limits_{v \in \text{son}(u)}\prod\limits_{w \in \text{tree}(v)} s_w \div \prod\limits_{v \in \text{son}(u)} s_v! \\
     & = & (s_u - 1)! \div \prod\limits_{w \in \text{tree}(u) \backslash u} s_w \\
     & = & s_u! \div \prod\limits_{w \in \text{tree}(u)} s_w
     \end{matrix}
