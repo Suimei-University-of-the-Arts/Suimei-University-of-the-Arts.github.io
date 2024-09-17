@@ -1,0 +1,49 @@
+name: "Build website"
+
+on:
+  push:
+
+jobs:
+  build-website:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      - run: |
+          pip install mkdocs-material
+          pip install mkdocs-awesome-pages-plugin
+          pip install mkdocs-charts-plugin
+          pip install mkdocs-static-i18n==0.56
+      
+      - name: Create gh-pages branch
+        run: |
+          git checkout master
+          git branch -D gh-pages || true
+          git checkout --orphan gh-pages
+
+      - name: Build
+        run: |
+          mkdir /tmp/sua-ac-build
+          cd wiki
+          python -m mkdocs build
+          mv site /tmp/sua-ac-build/wiki
+          cd ..
+          cp -r main/* /tmp/sua-ac-build
+      
+      - name: Clean everything and copy back websites
+        run: |
+          rm -rf *
+          cp -r /tmp/sua-ac-build/* .
+
+      - name: Push to github
+        run: |
+          git add -A
+          git config --global user.name 'GitHub Actions'
+          git config --global user.email 'actions@github.com'
+          git commit -m "Build website"
+          git push -f origin gh-pages
