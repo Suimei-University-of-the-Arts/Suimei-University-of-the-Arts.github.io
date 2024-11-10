@@ -12,20 +12,18 @@ date: 2024-09-17
 <td><b>竞赛日期</b></td><td>2024/05/26</td>
 </tr>
 <tr>
-<td><b>竞赛试题</b></td><td></td>
+<td><b>竞赛试题</b></td><td><a href="contest-en.pdf">English</a> | <a href="contest-zh.pdf">中文</a></td>
 </tr>
 <tr>
 <td><b>竞赛榜单</b></td><td><a href="board">SUA Board</a> | <a href="https://board.xcpcio.com/provincial-contest/2024/shandong">XCPC Board</a></td>
 </tr>
 <tr>
-<td><b>在线练习</b></td><td></td>
+<td><b>在线练习</b></td><td><a href="https://codeforces.com/gym/105385">Codeforces Gym</a> | <a href="https://qoj.ac/contest/1801">QOJ</a>
 </tr>
 <tr>
 <td><b>选手评价</b></td><td><a href="https://www.zhihu.com/question/655020067">zhihu</a></td>
 </tr>
 </table>
-
-本次竞赛试题将用于不知道什么时候举行的 [Universal Cup](https://ucup.ac/) Stage West Lake。试题与题解等信息将在 Universal Cup 结束后公布。
 
 ## 统计数据
 
@@ -238,5 +236,7 @@ date: 2024-09-17
 ## 题解列表
 
 ### 简要题解
+
+* [pdf](tutorial-sketch-zh.pdf)
 
 ### 详细题解

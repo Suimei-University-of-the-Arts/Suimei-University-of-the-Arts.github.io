@@ -8,6 +8,8 @@ This website contains the information and detailed tutorials/solutions of all pu
 
 ## Contest List
 
+* [The 2024 ICPC Asia Hangzhou Regional Contest](2024-icpc-hangzhou)
+* [The 2024 ICPC Asia Nanjing Regional Contest](2024-icpc-nanjing)
 * [The 2024 ICPC Kunming Invitational Contest](2024-icpc-invitational-kunming)
 * [The 2024 CCPC Shandong Invitational Contest and Provincial Collegiate Programming Contest](2024-ccpc-invitational-shandong)
 * [The 2023 ICPC Asia Jinan Regional Contest](2023-icpc-jinan)
