@@ -27,198 +27,30 @@ date: 2023-05-20
 
 ## 统计数据
 
-```vegalite
-{
-  "title": {
-    "text": "题目通过数统计",
-    "fontSize": 20
-  },
-  "data": {
-    "values": [
-      {"id": "A", "ac": 134, "type": "正式赛队"},
-      {"id": "A", "ac": 42, "type": "非正式赛队"},
-      {"id": "B", "ac": 0, "type": "正式赛队"},
-      {"id": "B", "ac": 0, "type": "非正式赛队"},
-      {"id": "C", "ac": 56, "type": "正式赛队"},
-      {"id": "C", "ac": 26, "type": "非正式赛队"},
-      {"id": "D", "ac": 8, "type": "正式赛队"},
-      {"id": "D", "ac": 9, "type": "非正式赛队"},
-      {"id": "E", "ac": 0, "type": "正式赛队"},
-      {"id": "E", "ac": 0, "type": "非正式赛队"},
-      {"id": "F", "ac": 25, "type": "正式赛队"},
-      {"id": "F", "ac": 20, "type": "非正式赛队"},
-      {"id": "G", "ac": 55, "type": "正式赛队"},
-      {"id": "G", "ac": 31, "type": "非正式赛队"},
-      {"id": "H", "ac": 6, "type": "正式赛队"},
-      {"id": "H", "ac": 8, "type": "非正式赛队"},
-      {"id": "I", "ac": 6, "type": "正式赛队"},
-      {"id": "I", "ac": 5, "type": "非正式赛队"},
-      {"id": "J", "ac": 135, "type": "正式赛队"},
-      {"id": "J", "ac": 42, "type": "非正式赛队"}
-    ]
-  },
-  "transform": [{
-    "calculate": "if(datum.type === 'off', 0, 1)",
-    "as": "typeOrder"
-  }],
-  "layer": [
-    {
-      "mark": {"type": "bar", "tooltip": true, "width": {"band": 0.5}},
-      "encoding": {
-        "x": {
-          "field": "id",
-          "type": "nominal",
-          "axis": {"labelAngle": 0, "labelFontSize": 14, "title": "题目编号", "titleFontSize": 14},
-          "sort": "-y"
-        },
-        "y": {
-          "field": "ac",
-          "aggregate": "sum",
-          "type": "quantitative",
-          "axis": {"labelAngle": 0, "labelFontSize": 14, "title": "通过数", "titleFontSize": 14}
-        },
-        "tooltip": [
-          {
-            "field": "type",
-            "type": "nominal",
-            "title": "队伍类型"
-          },
-          {
-            "field": "ac",
-            "aggregate": "sum",
-            "type": "quantitative",
-            "title": "通过数"
-          }
-        ],
-        "color": {
-          "field": "type",
-          "type": "nominal",
-          "scale": {
-            "domain": ["正式赛队", "非正式赛队"],
-            "range": ["#4c78a8", "#616166"]
-          },
-          "legend": null
-        },
-        "order": {"field": "typeOrder"}
-      }
-    },
-    {
-      "mark": {"type": "text", "style": "label", "fontSize": 14, "dy": -10},
-      "encoding": {
-        "x": {
-          "field": "id",
-          "type": "nominal",
-          "sort": "-y"
-        },
-        "y": {
-          "field": "ac",
-          "aggregate": "sum",
-          "type": "quantitative"
-        },
-        "text": {
-          "field": "ac",
-          "aggregate": "sum",
-          "type": "quantitative"
-        }
-      }
-    }
-  ]
-}
-```
-
-```vegalite
-{
-  "title": {
-    "text": "队伍过题数统计",
-    "fontSize": 20
-  },
-  "data": {
-    "values": [
-      {"ac": 0, "cnt": 0, "type": "正式赛队"},
-      {"ac": 0, "cnt": 0, "type": "非正式赛队"},
-      {"ac": 1, "cnt": 1, "type": "正式赛队"},
-      {"ac": 1, "cnt": 0, "type": "非正式赛队"},
-      {"ac": 2, "cnt": 67, "type": "正式赛队"},
-      {"ac": 2, "cnt": 9, "type": "非正式赛队"},
-      {"ac": 3, "cnt": 22, "type": "正式赛队"},
-      {"ac": 3, "cnt": 7, "type": "非正式赛队"},
-      {"ac": 4, "cnt": 18, "type": "正式赛队"},
-      {"ac": 4, "cnt": 8, "type": "非正式赛队"},
-      {"ac": 5, "cnt": 16, "type": "正式赛队"},
-      {"ac": 5, "cnt": 5, "type": "非正式赛队"},
-      {"ac": 6, "cnt": 7, "type": "正式赛队"},
-      {"ac": 6, "cnt": 7, "type": "非正式赛队"},
-      {"ac": 7, "cnt": 2, "type": "正式赛队"},
-      {"ac": 7, "cnt": 3, "type": "非正式赛队"},
-      {"ac": 8, "cnt": 2, "type": "正式赛队"},
-      {"ac": 8, "cnt": 3, "type": "非正式赛队"},
-      {"ac": 9, "cnt": 0, "type": "正式赛队"},
-      {"ac": 9, "cnt": 0, "type": "非正式赛队"},
-      {"ac": 10, "cnt": 0, "type": "正式赛队"},
-      {"ac": 10, "cnt": 0, "type": "非正式赛队"}
-    ]
-  },
-  "layer": [
-    {
-      "mark": {"type": "bar", "tooltip": true, "width": {"band": 0.5}},
-      "encoding": {
-        "x": {
-          "field": "ac",
-          "type": "nominal",
-          "axis": {"labelAngle": 0, "labelFontSize": 14, "title": "过题数", "titleFontSize": 14}
-        },
-        "y": {
-          "field": "cnt",
-          "aggregate": "sum",
-          "type": "quantitative",
-          "axis": {"labelAngle": 0, "labelFontSize": 14, "title": "队伍数", "titleFontSize": 14}
-        },
-        "tooltip": [
-          {
-            "field": "type",
-            "type": "nominal",
-            "title": "类型"
-          },
-          {
-            "field": "cnt",
-            "aggregate": "sum",
-            "type": "quantitative",
-            "title": "队伍数"
-          }
-        ],
-        "color": {
-          "field": "type",
-          "type": "nominal",
-          "scale": {
-            "domain": ["正式赛队", "非正式赛队"],
-            "range": ["#4c78a8", "#616166"]
-          },
-          "legend": null
-        },
-        "order": {"field": "typeOrder"}
-      }
-    },
-    {
-      "mark": {"type": "text", "style": "label", "fontSize": 14, "dy": -10},
-      "encoding": {
-        "x": {
-          "field": "ac",
-          "type": "nominal"
-        },
-        "y": {
-          "field": "cnt",
-          "aggregate": "sum",
-          "type": "quantitative"
-        },
-        "text": {
-          "field": "cnt",
-          "aggregate": "sum",
-          "type": "quantitative"
-        }
-      }
-    }
-  ]
-}
+```stats
+problem_ac:
+  A: [134, 42]
+  B: [0, 0]
+  C: [56, 26]
+  D: [8, 9]
+  E: [0, 0]
+  F: [25, 20]
+  G: [55, 31]
+  H: [6, 8]
+  I: [6, 5]
+  J: [135, 42]
+team_ac:
+  0: [0, 0]
+  1: [1, 0]
+  2: [67, 9]
+  3: [22, 7]
+  4: [18, 8]
+  5: [16, 5]
+  6: [7, 7]
+  7: [2, 3]
+  8: [2, 3]
+  9: [0, 0]
+  10: [0, 0]
 ```
 
 ## 题解列表
