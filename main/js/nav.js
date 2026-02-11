@@ -54,6 +54,14 @@ navNode.innerHTML = `
       ${navCasesText}
       ${navProblemsText}
       ${navContactText}
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          友情链接
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="https://contest.hydro.ac/" target="_blank">Hydro Contest</a>
+        </div>
+      </li>
     </ul>
   </div>
 </nav>

@@ -19,6 +19,19 @@ nav {
   z-index: 9999;
 }
 
+.dropdown-menu {
+  background-color: #343a40;
+}
+
+.dropdown-item {
+  color: #fff;
+}
+
+.dropdown-item:hover {
+  background-color: #343a40;
+  color: rgba(255, 255, 255, 0.75);
+}
+
 #announcement-wrapper {
   width: 100%;
   position: absolute;
