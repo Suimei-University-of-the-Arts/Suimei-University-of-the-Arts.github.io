@@ -1,0 +1,754 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>The 18th Zhejiang University Programming Contest Sponsored by TuSimple</title>
+<meta charset="utf8">
+  <link rel="stylesheet" href="../../board/css/board.css" type="text/css">
+  <script type="text/javascript" src="../../board/js/jquery-2.1.3.js"></script>
+  <script src="../../board/js/show.js" type="text/javascript"></script>
+</head>
+<body>
+  <div id="popup" class="hidden">
+  	<button onclick="popdown();" class="close">Close</button>
+  	<p class="teamname">
+  		<label class="team">Hello</label>&nbsp;
+&nbsp;&nbsp;
+  		<input type="checkbox" id="concern" onclick="concernclick(this);"></input><small>点击关注</small>
+		<br>
+		<label class="members">World</label><br>
+		<label class="school">x</label>
+  	</p> 
+  	<h4 class="poptitle">Submissions for Problem </h4>
+  	<table id="submissions">
+  	  <thead>
+  	  </thead>
+  	  <tbody>
+	  </tbody>
+  	</table>
+  </div>
+  <div id="maindiv">
+  	<a id="ttop"></a>
+  	<p id="contest_title">The 18th Zhejiang University Programming Contest Sponsored by TuSimple</p>
+  	<p id="time_elapsed" sec="14400">Time Elapsed: </p>
+  	<a href="index.html">All</a>
+	<a href="index.html?filter=concerned">关注队伍</a>
+  	<a href="index.html?scroll=10">自动滚动</a>
+  	<table id="board">
+  		<thead><tr><th rowspan="2">Rank</th><th rowspan="2">Team</th> <th rowspan="2">Solved</th> <th rowspan="2">Penalty</th><th class="prob_h">A</th><th class="prob_h">B</th><th class="prob_h">C</th><th class="prob_h">D</th><th class="prob_h">E</th><th class="prob_h">F</th><th class="prob_h">G</th><th class="prob_h">H</th><th class="prob_h">I</th><th class="prob_h">J</th></tr>
+<tr><th class="prob_h">176/403</th><th class="prob_h">0/24</th><th class="prob_h">82/1105</th><th class="prob_h">17/116</th><th class="prob_h">0/20</th><th class="prob_h">45/244</th><th class="prob_h">86/476</th><th class="prob_h">14/88</th><th class="prob_h">11/139</th><th class="prob_h">177/270</th></tr></thead>
+<tr id="t118" class="unofficial"><td class="rank"></td><td class="team" members="张哲宇、周任飞、郎思轲">学军五队-幻想世界的采花萝莉阿瓦达</td>
+        <td class="solved">8</td>
+        <td class="penalty">488</td>
+        <td class="prob_d accepted" rec="494R523A">8(2)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="2217A">36(1)</td><td class="prob_d accepted" rec="8479R8688A">144(2)</td><td class="prob_d recent rejected" rec="11645R14309R14344R*">3</td><td class="prob_d accepted" rec="2698A">44(1)</td><td class="prob_d accepted" rec="1308A">21(1)</td><td class="prob_d firstblood" rec="4577A">76(1)</td><td class="prob_d firstblood" rec="6833A">113(1)</td><td class="prob_d accepted" rec="363A">6(1)</td></tr>
+<tr id="t71" class="unofficial"><td class="rank"></td><td class="team" members="刘弘洋、王淳扬、李一丁">zls是nju的红太阳</td>
+        <td class="solved">8</td>
+        <td class="penalty">689</td>
+        <td class="prob_d accepted" rec="475A">7(1)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="2143A">35(1)</td><td class="prob_d accepted" rec="6250R6328R6856A">114(3)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="3519A">58(1)</td><td class="prob_d accepted" rec="1359A">22(1)</td><td class="prob_d accepted" rec="12948R13441A">224(2)</td><td class="prob_d accepted" rec="8497R8714A">145(2)</td><td class="prob_d accepted" rec="258A">4(1)</td></tr>
+<tr id="t39" class="official"><td class="rank"></td><td class="team" members="蒋仕彪、刘振威、颜姜哲">Новая	Реконкиста</td>
+        <td class="solved">8</td>
+        <td class="penalty">730</td>
+        <td class="prob_d firstblood" rec="267A">4(1)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="2130A">35(1)</td><td class="prob_d firstblood" rec="5816A">96(1)</td><td class="prob_d recent rejected" rec="14226R14310R*">2</td><td class="prob_d accepted" rec="4190R5696A">94(2)</td><td class="prob_d accepted" rec="3362R3501A">58(2)</td><td class="prob_d accepted" rec="10496A">174(1)</td><td class="prob_d accepted" rec="13436A">223(1)</td><td class="prob_d accepted" rec="385A">6(1)</td></tr>
+<tr id="t188" class="unofficial"><td class="rank"></td><td class="team" members="陈博涵、毛嘉怡、岑周涛">学军一队-幻想世界的长草萝莉阿瓦达</td>
+        <td class="solved">8</td>
+        <td class="penalty">892</td>
+        <td class="prob_d accepted" rec="488R524A">8(2)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="1345A">22(1)</td><td class="prob_d accepted" rec="9417R10226A">170(2)</td><td class="prob_d recent rejected" rec="12533R13652R13681R13771R13792R13926R13953R14273R14324R14356R*">10</td><td class="prob_d accepted" rec="2683A">44(1)</td><td class="prob_d accepted" rec="1968A">32(1)</td><td class="prob_d accepted" rec="5232R5758R7079R7681R8005R8342R8522R9129A">152(8)</td><td class="prob_d accepted" rec="11388R11659R11829R11921R12013A">200(5)</td><td class="prob_d accepted" rec="278A">4(1)</td></tr>
+<tr id="t103" class="official"><td class="rank"></td><td class="team" members="陈靖邦、刘明锐、叶梓成">Хорошо</td>
+        <td class="solved">8</td>
+        <td class="penalty">1023</td>
+        <td class="prob_d accepted" rec="679R818A">13(2)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="2407R4108A">68(2)</td><td class="prob_d accepted" rec="9406R9890A">164(2)</td><td class="prob_d rejected" rec="14026R">1</td><td class="prob_d accepted" rec="2983R4426A">73(2)</td><td class="prob_d accepted" rec="1719A">28(1)</td><td class="prob_d accepted" rec="6271R7691R8355R11136R11175R11728A">195(6)</td><td class="prob_d accepted" rec="12232R12278R12493R12769R13167A">219(5)</td><td class="prob_d accepted" rec="208A">3(1)</td></tr>
+<tr id="t187" class="unofficial"><td class="rank"></td><td class="team" members="褚写庭、姜迅驰、王照梓">学军六队-幻想世界的种树萝莉阿瓦达</td>
+        <td class="solved">7</td>
+        <td class="penalty">452</td>
+        <td class="prob_d accepted" rec="332A">5(1)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="2122R2397R3076A">51(3)</td><td class="prob_d accepted" rec="8754R10950A">182(2)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="2584A">43(1)</td><td class="prob_d firstblood" rec="1301A">21(1)</td><td class="prob_d accepted" rec="5323A">88(1)</td><td class="prob_d recent rejected" rec="12844R13442R13516R13814R14222R14251R14284R14389R*">8</td><td class="prob_d accepted" rec="154A">2(1)</td></tr>
+<tr id="t117" class="unofficial"><td class="rank"></td><td class="team" members="范致远、吴治璋、陈挚信">学军四队－暴力出奇迹，n²过百万</td>
+        <td class="solved">7</td>
+        <td class="penalty">598</td>
+        <td class="prob_d accepted" rec="457A">7(1)</td><td class="prob_d untried">.</td><td class="prob_d firstblood" rec="880R1225A">20(2)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="3118A">51(1)</td><td class="prob_d accepted" rec="2608A">43(1)</td><td class="prob_d accepted" rec="6021R12464A">207(2)</td><td class="prob_d accepted" rec="9071R9386R9964A">166(3)</td><td class="prob_d accepted" rec="258R278A">4(2)</td></tr>
+<tr id="t184" class="unofficial"><td class="rank"></td><td class="team" members="邢竞择、张正非、翟明舒">学军九队-幻想世界的砍树萝莉阿瓦达</td>
+        <td class="solved">7</td>
+        <td class="penalty">601</td>
+        <td class="prob_d accepted" rec="518A">8(1)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="4800A">80(1)</td><td class="prob_d accepted" rec="7450A">124(1)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="3890A">64(1)</td><td class="prob_d accepted" rec="1541R1999R3010A">50(3)</td><td class="prob_d accepted" rec="8987R9206R9969R10280A">171(4)</td><td class="prob_d recent rejected" rec="13420R13945R14082R14204R14256R14316R14341R*">7</td><td class="prob_d accepted" rec="258A">4(1)</td></tr>
+<tr id="t122" class="official"><td class="rank"></td><td class="team" members="王宇晗、张鑫、欧阳逸飞">中国自动驾驶商业化领跑者</td>
+        <td class="solved">7</td>
+        <td class="penalty">714</td>
+        <td class="prob_d accepted" rec="408A">6(1)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="1256A">20(1)</td><td class="prob_d accepted" rec="11997R12357R12452R13163R13307R13603A">226(6)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="2733R2843R3663A">61(3)</td><td class="prob_d accepted" rec="3004A">50(1)</td><td class="prob_d accepted" rec="8672R9363R10120A">168(3)</td><td class="prob_d rejected" rec="14229R14298R">2</td><td class="prob_d accepted" rec="232A">3(1)</td></tr>
+<tr id="t95" class="official"><td class="rank"></td><td class="team" members="魏耀东、姜怡文、李彦奎">单子是自函子范畴上的幺半群有什么难理解的</td>
+        <td class="solved">7</td>
+        <td class="penalty">749</td>
+        <td class="prob_d accepted" rec="538R569A">9(2)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="5455R5621R5912R6163A">102(4)</td><td class="prob_d accepted" rec="10840R11163A">186(2)</td><td class="prob_d rejected" rec="13590R13630R13801R13939R">4</td><td class="prob_d firstblood" rec="1217A">20(1)</td><td class="prob_d accepted" rec="4113A">68(1)</td><td class="prob_d accepted" rec="2645R2673R9354R9767R10738A">178(5)</td><td class="prob_d recent rejected" rec="14096R14169R14302R*">3</td><td class="prob_d accepted" rec="369A">6(1)</td></tr>
+<tr id="t101" class="official"><td class="rank"></td><td class="team" members="周佳瑜、尚珂珂、郑卓林">忧郁rapper王子</td>
+        <td class="solved">6</td>
+        <td class="penalty">332</td>
+        <td class="prob_d accepted" rec="483A">8(1)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="1283A">21(1)</td><td class="prob_d accepted" rec="9224A">153(1)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="5731A">95(1)</td><td class="prob_d accepted" rec="3061A">51(1)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="9926R12419R13484R13511R13649R13725R13760R13810R14157R">9</td><td class="prob_d accepted" rec="299A">4(1)</td></tr>
+<tr id="t119" class="unofficial"><td class="rank"></td><td class="team" members="吴成彰、潘恩皓、朱江宁">学车⌊π⌋队-吾乃闪耀的芝士蛋挞</td>
+        <td class="solved">6</td>
+        <td class="penalty">364</td>
+        <td class="prob_d accepted" rec="322A">5(1)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="2104A">35(1)</td><td class="prob_d accepted" rec="7807R8152R10680A">178(3)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="4535A">75(1)</td><td class="prob_d accepted" rec="1705A">28(1)</td><td class="prob_d recent rejected" rec="9553R12355R12599R13556R14317R*">5</td><td class="prob_d rejected" rec="3291R4596R13911R">3</td><td class="prob_d accepted" rec="195A">3(1)</td></tr>
+<tr id="t185" class="unofficial"><td class="rank"></td><td class="team" members="钱行健、夏天睿、余能">学军8队-SpadeDOFtkandi</td>
+        <td class="solved">6</td>
+        <td class="penalty">372</td>
+        <td class="prob_d accepted" rec="494A">8(1)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="1023R2005A">33(2)</td><td class="prob_d accepted" rec="12182A">203(1)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="4185A">69(1)</td><td class="prob_d accepted" rec="2175A">36(1)</td><td class="prob_d rejected" rec="5341R9653R10256R10892R">4</td><td class="prob_d recent rejected" rec="14279R14325R14389R*">3</td><td class="prob_d accepted" rec="231A">3(1)</td></tr>
+<tr id="t102" class="official"><td class="rank"></td><td class="team" members="张程易、张翔宇、张奋翔">失败人士的眼泪</td>
+        <td class="solved">6</td>
+        <td class="penalty">392</td>
+        <td class="prob_d accepted" rec="527A">8(1)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="2268A">37(1)</td><td class="prob_d recent rejected" rec="11627R12270R12318R12467R12589R13407R13579R13606R13674R13894R13920R14026R14080R14123R14144R14204R14272R14294R14353R*">19</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="11935R12177R13821R">3</td><td class="prob_d accepted" rec="5559A">92(1)</td><td class="prob_d accepted" rec="6076A">101(1)</td><td class="prob_d accepted" rec="9110A">151(1)</td><td class="prob_d accepted" rec="234A">3(1)</td></tr>
+<tr id="t70" class="official"><td class="rank"></td><td class="team" members="郑鸿鹄、王义泽、陈翰逸">Κέικ_ανανά</td>
+        <td class="solved">6</td>
+        <td class="penalty">445</td>
+        <td class="prob_d accepted" rec="391A">6(1)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="2700R3010R3033A">50(3)</td><td class="prob_d accepted" rec="9677A">161(1)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="4172A">69(1)</td><td class="prob_d accepted" rec="6964A">116(1)</td><td class="prob_d untried">.</td><td class="prob_d recent rejected" rec="13456R14018R14209R14365R*">4</td><td class="prob_d accepted" rec="216A">3(1)</td></tr>
+<tr id="t28" class="official"><td class="rank"></td><td class="team" members="黄文璨、贺思睿、莫飞虎">你做防守我单矿影刀</td>
+        <td class="solved">6</td>
+        <td class="penalty">451</td>
+        <td class="prob_d accepted" rec="428A">7(1)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="1930A">32(1)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="5972A">99(1)</td><td class="prob_d accepted" rec="3646A">60(1)</td><td class="prob_d accepted" rec="10382R11141R12253A">204(3)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="596A">9(1)</td></tr>
+<tr id="t186" class="unofficial"><td class="rank"></td><td class="team" members="夏天翔、蒋昊迪、祁展华">学军7队-Selina0727</td>
+        <td class="solved">6</td>
+        <td class="penalty">477</td>
+        <td class="prob_d accepted" rec="736A">12(1)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="1323R1676R2486R4062A">67(4)</td><td class="prob_d rejected" rec="12831R13015R13294R">3</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="4991R5102A">85(2)</td><td class="prob_d accepted" rec="2815A">46(1)</td><td class="prob_d accepted" rec="9360R9824A">163(2)</td><td class="prob_d rejected" rec="13439R14083R">2</td><td class="prob_d accepted" rec="299A">4(1)</td></tr>
+<tr id="t65" class="official"><td class="rank"></td><td class="team" members="包文鼎、夏家桢、余定乾">buzz</td>
+        <td class="solved">6</td>
+        <td class="penalty">499</td>
+        <td class="prob_d accepted" rec="793A">13(1)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="2106A">35(1)</td><td class="prob_d accepted" rec="12524A">208(1)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="5107R6064R7049A">117(3)</td><td class="prob_d accepted" rec="4951A">82(1)</td><td class="prob_d untried">.</td><td class="prob_d recent rejected" rec="13662R13879R14115R14229R14301R14353R14369R14386R*">8</td><td class="prob_d accepted" rec="245A">4(1)</td></tr>
+<tr id="t29" class="official"><td class="rank"></td><td class="team" members="赵竟霖、鲁哲轩、段亦超">德桂提斯维扎德茨坎司彪曼尼抛尔否玛吉克斯</td>
+        <td class="solved">6</td>
+        <td class="penalty">512</td>
+        <td class="prob_d accepted" rec="537A10440R">8(1)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="2293A">38(1)</td><td class="prob_d recent rejected" rec="13533R13748R13991R14074R14225R14269R14332R14365R14391R*">9</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="6799A">113(1)</td><td class="prob_d accepted" rec="3641A">60(1)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="10630R11442R11778R11831R12531A">208(5)</td><td class="prob_d accepted" rec="301A">5(1)</td></tr>
+<tr id="t173" class="unofficial"><td class="rank"></td><td class="team" members="陈涵、陈雍之、周雨星">学军½队-真香！</td>
+        <td class="solved">6</td>
+        <td class="penalty">597</td>
+        <td class="prob_d accepted" rec="480A">8(1)</td><td class="prob_d rejected" rec="5276R13825R14259R">3</td><td class="prob_d accepted" rec="2588R2895R5379R6685A">111(4)</td><td class="prob_d accepted" rec="9005R11799A">196(2)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="6772R7739A">128(2)</td><td class="prob_d accepted" rec="1710A">28(1)</td><td class="prob_d rejected" rec="10177R10560R">2</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="1561A">26(1)</td></tr>
+<tr id="t23" class="unofficial"><td class="rank"></td><td class="team" members="陈泽群、李恒、蔡澄捷">G3-X</td>
+        <td class="solved">6</td>
+        <td class="penalty">700</td>
+        <td class="prob_d accepted" rec="405A">6(1)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="1955A">32(1)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="3276R3611R5429R9613R10333R10431R12545A">209(7)</td><td class="prob_d accepted" rec="2624A">43(1)</td><td class="prob_d accepted" rec="8098R8203R9044R9752R12407A">206(5)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="278A">4(1)</td></tr>
+<tr id="t93" class="official"><td class="rank"></td><td class="team" members="孙浩然、陶俊吉、张仕杰">太不懂了</td>
+        <td class="solved">6</td>
+        <td class="penalty">775</td>
+        <td class="prob_d accepted" rec="502A">8(1)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="4203R4261R4419A">73(3)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d recent accepted" rec="14008R14164R14363R14380A*">239(4)</td><td class="prob_d accepted" rec="11185A">186(1)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="5490R8316A">138(2)</td><td class="prob_d accepted" rec="710A">11(1)</td></tr>
+<tr id="t15" class="unofficial"><td class="rank"></td><td class="team" members="刘海丰、张焓、杨鸿辉">喋血胖头猫</td>
+        <td class="solved">6</td>
+        <td class="penalty">798</td>
+        <td class="prob_d accepted" rec="735A">12(1)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="3788R5629R5671R5875R7116R8637A">143(6)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="12626A">210(1)</td><td class="prob_d accepted" rec="6935A">115(1)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="12890A">214(1)</td><td class="prob_d accepted" rec="293A">4(1)</td></tr>
+<tr id="t38" class="unofficial"><td class="rank"></td><td class="team" members="董杨静、何泊谋、裴一凡">tan90°</td>
+        <td class="solved">6</td>
+        <td class="penalty">982</td>
+        <td class="prob_d accepted" rec="987A">16(1)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="13333A">222(1)</td><td class="prob_d accepted" rec="11269R11332R11409R14047A">234(4)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="7884R7923R10838R12312A">205(4)</td><td class="prob_d accepted" rec="10595A">176(1)</td><td class="prob_d untried">.</td><td class="prob_d recent rejected" rec="14370R*">1</td><td class="prob_d accepted" rec="592A">9(1)</td></tr>
+<tr id="t115" class="official"><td class="rank"></td><td class="team" members="陈哲凡、张璇、杨嘉诚">退役魔法少男(*╹▽╹*)</td>
+        <td class="solved">5</td>
+        <td class="penalty">235</td>
+        <td class="prob_d accepted" rec="359A12490R">5(1)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="1338R1666R3201A">53(3)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="3532A">58(1)</td><td class="prob_d accepted" rec="4201A">70(1)</td><td class="prob_d recent rejected" rec="9939R10023R10355R10590R10716R11414R11768R12343R13921R14304R14304R14361R*">12</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="567A">9(1)</td></tr>
+<tr id="t177" class="unofficial"><td class="rank"></td><td class="team" members="温圳、竺羽翔、程淦">zjut11</td>
+        <td class="solved">5</td>
+        <td class="penalty">329</td>
+        <td class="prob_d accepted" rec="599A">9(1)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="3152R5936A">98(2)</td><td class="prob_d recent rejected" rec="10049R10250R10783R14359R*">4</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="7266R7394A">123(2)</td><td class="prob_d accepted" rec="2103A">35(1)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="244R273A">4(2)</td></tr>
+<tr id="t120" class="unofficial"><td class="rank"></td><td class="team" members="钱韦克、马文浩、徐安矣">白马湖二队</td>
+        <td class="solved">5</td>
+        <td class="penalty">330</td>
+        <td class="prob_d accepted" rec="466A">7(1)</td><td class="prob_d rejected" rec="5626R5683R">2</td><td class="prob_d accepted" rec="2880R3000A">50(2)</td><td class="prob_d recent rejected" rec="10441R11277R13428R14356R*">4</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="8499R10609A">176(2)</td><td class="prob_d accepted" rec="3271A">54(1)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="203A">3(1)</td></tr>
+<tr id="t75" class="official"><td class="rank"></td><td class="team" members="唐小虎、黄洋逸、张非凡">黄非虎</td>
+        <td class="solved">5</td>
+        <td class="penalty">346</td>
+        <td class="prob_d accepted" rec="393A">6(1)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="4981R5430A">90(2)</td><td class="prob_d rejected" rec="12683R13770R14269R">3</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="6198R7871A">131(2)</td><td class="prob_d accepted" rec="4588A">76(1)</td><td class="prob_d rejected" rec="8348R10726R13174R13437R">4</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="227A">3(1)</td></tr>
+<tr id="t61" class="unofficial"><td class="rank"></td><td class="team" members="王相文、何其光、董叮咚">蒟蒻果冻</td>
+        <td class="solved">5</td>
+        <td class="penalty">389</td>
+        <td class="prob_d accepted" rec="697A">11(1)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="3332R3581A">59(2)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="7329R7519R8293A">138(3)</td><td class="prob_d accepted" rec="6436A">107(1)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="11090R12116R13300R13506R13884R14034R">6</td><td class="prob_d accepted" rec="856A">14(1)</td></tr>
+<tr id="t107" class="unofficial"><td class="rank"></td><td class="team" members="陈志渠、林初阜、周期律">zcmu-sdfasf</td>
+        <td class="solved">5</td>
+        <td class="penalty">419</td>
+        <td class="prob_d accepted" rec="471R534A">8(2)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="1875R2174R2380R5815R6951R8011A8030A">133(6)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="5579A">92(1)</td><td class="prob_d accepted" rec="3834A">63(1)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="11490R12757R13317R">3</td><td class="prob_d accepted" rec="195A">3(1)</td></tr>
+<tr id="t113" class="official"><td class="rank"></td><td class="team" members="高辰翔、田文杰、马宁">make_wrong_answer()</td>
+        <td class="solved">5</td>
+        <td class="penalty">422</td>
+        <td class="prob_d accepted" rec="442A">7(1)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="4456A">74(1)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="2332R6182R7579R7694R8061R8843A">147(6)</td><td class="prob_d accepted" rec="4926A">82(1)</td><td class="prob_d recent rejected" rec="13518R14334R*">2</td><td class="prob_d rejected" rec="12331R12366R12867R12938R13537R13701R">6</td><td class="prob_d accepted" rec="737A">12(1)</td></tr>
+<tr id="t27" class="unofficial"><td class="rank"></td><td class="team" members="魏礼鑫、沈季涛、张凯庆">白</td>
+        <td class="solved">5</td>
+        <td class="penalty">429</td>
+        <td class="prob_d accepted" rec="1015A">16(1)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="5990R6302A">105(2)</td><td class="prob_d recent rejected" rec="14341R*">1</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="10182R12293A">204(2)</td><td class="prob_d accepted" rec="3064A">51(1)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="823A">13(1)</td></tr>
+<tr id="t137" class="official"><td class="rank"></td><td class="team" members="段政、祁佳晨、谢金唯">队伍密码不是zju100</td>
+        <td class="solved">5</td>
+        <td class="penalty">441</td>
+        <td class="prob_d accepted" rec="665R723A">12(2)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="2513R4104A">68(2)</td><td class="prob_d accepted" rec="11531R12128A">202(2)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="12731R12840R">2</td><td class="prob_d accepted" rec="5616A">93(1)</td><td class="prob_d untried">.</td><td class="prob_d recent rejected" rec="14245R14307R14353R*">3</td><td class="prob_d accepted" rec="405A">6(1)</td></tr>
+<tr id="t16" class="official"><td class="rank"></td><td class="team" members="朱鹤鸣、由鸿周、胡滨">搞搞搞搞搞搞学长POI</td>
+        <td class="solved">5</td>
+        <td class="penalty">448</td>
+        <td class="prob_d accepted" rec="833A4968R5084R">13(1)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="2372R4877R5125R6731A">112(4)</td><td class="prob_d recent rejected" rec="14347R*">1</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="10151A">169(1)</td><td class="prob_d accepted" rec="5376A">89(1)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="330A">5(1)</td></tr>
+<tr id="t80" class="official"><td class="rank"></td><td class="team" members="肖鸢、楼震宇、唐作鑫">Z++</td>
+        <td class="solved">5</td>
+        <td class="penalty">472</td>
+        <td class="prob_d accepted" rec="674A">11(1)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="1824R3074R3275A">54(3)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="9316R11751R12661A">211(3)</td><td class="prob_d accepted" rec="6211A">103(1)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="836A">13(1)</td></tr>
+<tr id="t191" class="official"><td class="rank"></td><td class="team" members="叶景晨">夕立酱的poipoi</td>
+        <td class="solved">5</td>
+        <td class="penalty">542</td>
+        <td class="prob_d accepted" rec="713A">11(1)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="4436R4478R4695R4864R7065A">117(5)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="8658R8679R9196R9303A">155(4)</td><td class="prob_d accepted" rec="6689A">111(1)</td><td class="prob_d recent rejected" rec="14077R14293R14348R*">3</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="483A">8(1)</td></tr>
+<tr id="t180" class="official"><td class="rank"></td><td class="team" members="徐鹏、陈凯隆、陆凯晨">End_Emptiness</td>
+        <td class="solved">5</td>
+        <td class="penalty">546</td>
+        <td class="prob_d accepted" rec="566A">9(1)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="1071R1243R1573R3348R3816R4897R5588A">93(7)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="6467R6708R7964R11451R11527A">192(5)</td><td class="prob_d accepted" rec="2931A">48(1)</td><td class="prob_d recent rejected" rec="13350R13491R14173R14355R*">4</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="246A">4(1)</td></tr>
+<tr id="t104" class="official"><td class="rank"></td><td class="team" members="白升利、丁汀、周凡">我永远喜欢御坂美琴</td>
+        <td class="solved">5</td>
+        <td class="penalty">624</td>
+        <td class="prob_d accepted" rec="705A">11(1)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="1667R2499R3399A">56(3)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="10615R10771R11990R12127R12151R12636R12756A">212(7)</td><td class="prob_d accepted" rec="7813R7868R7930A">132(3)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="829A">13(1)</td></tr>
+<tr id="t111" class="official"><td class="rank"></td><td class="team" members="昂震东、马千里、张岱">TuTu</td>
+        <td class="solved">5</td>
+        <td class="penalty">678</td>
+        <td class="prob_d accepted" rec="939R986R1330A">22(3)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="2657R2706R3372R3519R3645R4566R4656A4707A">77(7)</td><td class="prob_d recent rejected" rec="14361R*">1</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="9185R9359R9500R10596R10678A">177(5)</td><td class="prob_d accepted" rec="6184R6437R6887A6887A">114(3)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="11700R11917R12058R12555R13076R13309R">6</td><td class="prob_d accepted" rec="510A">8(1)</td></tr>
+<tr id="t165" class="official"><td class="rank"></td><td class="team" members="梁立、吕昱萌、王绅朴">橘势不妙</td>
+        <td class="solved">5</td>
+        <td class="penalty">683</td>
+        <td class="prob_d accepted" rec="480A">8(1)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="1660R2137R6354A">105(3)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="8156R9150R9259A">154(3)</td><td class="prob_d accepted" rec="8262R8524R9376R10243R10393R10519R10616R10970A">182(8)</td><td class="prob_d rejected" rec="13599R14095R">2</td><td class="prob_d rejected" rec="14064R">1</td><td class="prob_d accepted" rec="850A">14(1)</td></tr>
+<tr id="t127" class="official"><td class="rank"></td><td class="team" members="沈霁、林益鑫、金天">以上队伍成绩无效</td>
+        <td class="solved">5</td>
+        <td class="penalty">760</td>
+        <td class="prob_d accepted" rec="374R478A">7(2)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="2239R4751R11516A">191(3)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="7049R7105R7274R9260R9589A">159(5)</td><td class="prob_d accepted" rec="6284R6340R7815R8579R10336A">172(5)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="13186R13220R13248R13310R13387R13762R13779R">7</td><td class="prob_d accepted" rec="670A">11(1)</td></tr>
+<tr id="t158" class="official"><td class="rank"></td><td class="team" members="吕耀维、李广林、刘书含">Legilimens</td>
+        <td class="solved">5</td>
+        <td class="penalty">766</td>
+        <td class="prob_d accepted" rec="408A">6(1)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="4646R5103R5163R5420R5788R7260R10129R10178R10903R11598R13920A">232(11)</td><td class="prob_d recent rejected" rec="10320R10387R11633R11701R11887R12065R14075R14101R14149R14252R14317R*">11</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="9826A">163(1)</td><td class="prob_d accepted" rec="3577R3577R6109A">101(3)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="225R255A">4(2)</td></tr>
+<tr id="t141" class="official"><td class="rank"></td><td class="team" members="王俊吉、陈泓宇、罗俊丹">JudgeInternalError</td>
+        <td class="solved">5</td>
+        <td class="penalty">821</td>
+        <td class="prob_d accepted" rec="2796A">46(1)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="5047R5367R8806R9756R10367R12388R12867R13159A">219(8)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="12724R13635A">227(2)</td><td class="prob_d accepted" rec="9425A">157(1)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="744A">12(1)</td></tr>
+<tr id="t18" class="official"><td class="rank"></td><td class="team" members="杨文卓、沈滨、李纬同">ZJUCHC</td>
+        <td class="solved">5</td>
+        <td class="penalty">851</td>
+        <td class="prob_d accepted" rec="1033A">17(1)</td><td class="prob_d untried">.</td><td class="prob_d recent accepted" rec="5944R5988R8432R11995R12084R12498R12540R13839R14153R14216R14279R14351A*">239(12)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="10141R11589R12252A">204(3)</td><td class="prob_d accepted" rec="3457R6192A">103(2)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="488A">8(1)</td></tr>
+<tr id="t112" class="official"><td class="rank"></td><td class="team" members="金连源、谢子豪、郭慧钊">凌晨三点的紫金港</td>
+        <td class="solved">5</td>
+        <td class="penalty">963</td>
+        <td class="prob_d accepted" rec="982A">16(1)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="2305R2424R8399A">139(3)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="9770R10130R10157R11041R11086R11331R11383R11682R12224R12304R12486R12599R12892R13552R13602R13757R13885R13927R13954R14020A">233(20)</td><td class="prob_d accepted" rec="8822A">147(1)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="488A">8(1)</td></tr>
+<tr id="t40" class="official"><td class="rank"></td><td class="team" members="漆翔宇、陈先玮、陆金涛">2333</td>
+        <td class="solved">4</td>
+        <td class="penalty">160</td>
+        <td class="prob_d accepted" rec="762A">12(1)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="1707A">28(1)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="9696R13723R">2</td><td class="prob_d accepted" rec="3910R5591A">93(2)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="464A">7(1)</td></tr>
+<tr id="t148" class="official"><td class="rank"></td><td class="team" members="范浩正、陈舒扬">商汤科技</td>
+        <td class="solved">4</td>
+        <td class="penalty">221</td>
+        <td class="prob_d accepted" rec="813A">13(1)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="4309A">71(1)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="7826A">130(1)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="470A">7(1)</td></tr>
+<tr id="t14" class="unofficial"><td class="rank"></td><td class="team" members="郑丁瑞、姚起龙、张亲翰">建兰哲♂学队</td>
+        <td class="solved">4</td>
+        <td class="penalty">237</td>
+        <td class="prob_d accepted" rec="416A">6(1)</td><td class="prob_d untried">.</td><td class="prob_d recent rejected" rec="11272R11464R13090R14380R*">4</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="6009R6132R6277R6516A">108(4)</td><td class="prob_d accepted" rec="3206A">53(1)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="8257R8496R">2</td><td class="prob_d accepted" rec="609A">10(1)</td></tr>
+<tr id="t26" class="unofficial"><td class="rank"></td><td class="team" members="蔡林达、吴银杰、于化鹏">仓前皇家女子学院</td>
+        <td class="solved">4</td>
+        <td class="penalty">241</td>
+        <td class="prob_d accepted" rec="554A">9(1)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="3803R4856A">80(2)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="13796R">1</td><td class="prob_d accepted" rec="7676A">127(1)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="341A">5(1)</td></tr>
+<tr id="t82" class="unofficial"><td class="rank"></td><td class="team" members="王晓安、王泽宇、林欧亚">BTC归零</td>
+        <td class="solved">4</td>
+        <td class="penalty">275</td>
+        <td class="prob_d accepted" rec="602A">10(1)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="4797R6846R8601A">143(3)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d recent rejected" rec="9854R10523R13682R14167R14267R14292R14309R14343R14374R*">9</td><td class="prob_d accepted" rec="4511A">75(1)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="421A">7(1)</td></tr>
+<tr id="t36" class="unofficial"><td class="rank"></td><td class="team" members="郑卓男、李泽昊、欧阳鹏翔">zjut12</td>
+        <td class="solved">4</td>
+        <td class="penalty">339</td>
+        <td class="prob_d accepted" rec="275A">4(1)</td><td class="prob_d untried">.</td><td class="prob_d recent rejected" rec="3408R3582R4008R6341R11098R13143R14363R14397R*">8</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="9394A">156(1)</td><td class="prob_d accepted" rec="6163A">102(1)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="12757R12801R12926R13762R14047R14121R14166R14235R">8</td><td class="prob_d accepted" rec="552R686R768R1063A">17(4)</td></tr>
+<tr id="t106" class="unofficial"><td class="rank"></td><td class="team" members="黄哲、陈健、陈程洁">zcmu_1234567</td>
+        <td class="solved">4</td>
+        <td class="penalty">368</td>
+        <td class="prob_d accepted" rec="495A">8(1)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="6904R7095A">118(2)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="13294R13616R">2</td><td class="prob_d accepted" rec="4749R4917R5062R5182R5321R5598R5912A">98(7)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="262A">4(1)</td></tr>
+<tr id="t147" class="official"><td class="rank"></td><td class="team" members="万子昱、黎金洪">メリークリスマス</td>
+        <td class="solved">4</td>
+        <td class="penalty">368</td>
+        <td class="prob_d accepted" rec="631A">10(1)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="11222R12591R13534R13781R13869R13970R">6</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="6965A">116(1)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="10224R12420A">207(2)</td><td class="prob_d accepted" rec="903A">15(1)</td></tr>
+<tr id="t17" class="official"><td class="rank"></td><td class="team" members="王霄阳、周益聪、熊博云">Source_Code</td>
+        <td class="solved">4</td>
+        <td class="penalty">374</td>
+        <td class="prob_d accepted" rec="1247R1298A">21(2)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="3979R4029R4129A">68(3)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="11226R11781A">196(2)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="553A">9(1)</td></tr>
+<tr id="t50" class="official"><td class="rank"></td><td class="team" members="黄亦非、李彬、方泽宇">组团炒菜队</td>
+        <td class="solved">4</td>
+        <td class="penalty">410</td>
+        <td class="prob_d accepted" rec="541R692R933A">15(3)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="4269R4664R6740R6969R7771R8976R9355R9983A">166(8)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="12878R">1</td><td class="prob_d accepted" rec="2651A">44(1)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="331A">5(1)</td></tr>
+<tr id="t190" class="official"><td class="rank"></td><td class="team" members="陶汀、王秋鸿、金忆琳">瑟瑟发抖</td>
+        <td class="solved">4</td>
+        <td class="penalty">440</td>
+        <td class="prob_d accepted" rec="764A">12(1)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="7851R9603A">160(2)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="4200R4721R5733R11121A">185(4)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="231A">3(1)</td></tr>
+<tr id="t64" class="official"><td class="rank"></td><td class="team" members="邱兆林、黄山、刘秉贤">除了大佬都是黄山</td>
+        <td class="solved">4</td>
+        <td class="penalty">446</td>
+        <td class="prob_d accepted" rec="412A">6(1)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="1368R3572R3684R5333R10165A">169(5)</td><td class="prob_d rejected" rec="7806R7840R7873R8620R13223R13358R13883R13975R14048R14069R14144R">11</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="3079R3121R3167R3826R3918R5351A">89(6)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="166A">2(1)</td></tr>
+<tr id="t44" class="official"><td class="rank"></td><td class="team" members="马恒瑞、施金轲、李铭扬">浅白现实</td>
+        <td class="solved">4</td>
+        <td class="penalty">464</td>
+        <td class="prob_d accepted" rec="494A">8(1)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="2558R2733A">45(2)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="4332R4674R5385R6696R8064R8241R8797R8900R9903R10263R11348A">189(11)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="14158R">1</td><td class="prob_d accepted" rec="179A">2(1)</td></tr>
+<tr id="t114" class="official"><td class="rank"></td><td class="team" members="程浩然、彭帷、李泺秋">程序员的自我修养</td>
+        <td class="solved">4</td>
+        <td class="penalty">468</td>
+        <td class="prob_d accepted" rec="673A">11(1)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="4072R4436R8868R9297R11023A">183(5)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="6931R7019R7060R7240A">120(4)</td><td class="prob_d rejected" rec="12865R12890R13825R">3</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="883A">14(1)</td></tr>
+<tr id="t30" class="official"><td class="rank"></td><td class="team" members="叶大源、张震铄、张淼">渔村摸鱼</td>
+        <td class="solved">4</td>
+        <td class="penalty">472</td>
+        <td class="prob_d accepted" rec="925A">15(1)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="4741R4864R6608R7127R9067R9911A">165(6)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d recent rejected" rec="14339R14361R*">2</td><td class="prob_d accepted" rec="11183A">186(1)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="390A">6(1)</td></tr>
+<tr id="t46" class="unofficial"><td class="rank"></td><td class="team" members="杨一凡、范金楷、吴与伦">白马湖三队</td>
+        <td class="solved">4</td>
+        <td class="penalty">486</td>
+        <td class="prob_d accepted" rec="959A">15(1)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="5088R5548R10182A">169(3)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="11885R12981R">2</td><td class="prob_d accepted" rec="3425R5835R8379R8564R9092R9535A">158(6)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="281A">4(1)</td></tr>
+<tr id="t67" class="official"><td class="rank"></td><td class="team" members="金志华、田尤知、梁伟欣">则通猫</td>
+        <td class="solved">4</td>
+        <td class="penalty">489</td>
+        <td class="prob_d accepted" rec="618R640R744R955R1011A">16(5)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="2479R4241R4334R4950R5236A">87(5)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d recent rejected" rec="12048R12135R14396R14396R*">4</td><td class="prob_d accepted" rec="7583R7964R8042R8302R8506A">141(5)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="333A">5(1)</td></tr>
+<tr id="t33" class="official"><td class="rank"></td><td class="team" members="赵阳、李承曦、彭雅欣">码的都队</td>
+        <td class="solved">4</td>
+        <td class="penalty">500</td>
+        <td class="prob_d accepted" rec="815A">13(1)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="9869R9914R10320R10661R10702R11097R11117A">185(7)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="8409R11417R">2</td><td class="prob_d accepted" rec="9133R9230A">153(2)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="553A">9(1)</td></tr>
+<tr id="t22" class="unofficial"><td class="rank"></td><td class="team" members="褚真真、刘鑫超、余赛康">提交成功！</td>
+        <td class="solved">4</td>
+        <td class="penalty">521</td>
+        <td class="prob_d accepted" rec="853A">14(1)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="2004R2634R5262R5325R6162R7243R8335R11464R11962R12400A">206(10)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="4098R4146R4653A">77(3)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="242A">4(1)</td></tr>
+<tr id="t142" class="official"><td class="rank"></td><td class="team" members="曾子轩、王若成、钱尚书">139</td>
+        <td class="solved">4</td>
+        <td class="penalty">540</td>
+        <td class="prob_d accepted" rec="1334R1452R1621A">27(3)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="4836R7739R10787R10803R12188A">203(5)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="8600R9781A">163(2)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="13668R13974R14058R14181R">4</td><td class="prob_d accepted" rec="458A">7(1)</td></tr>
+<tr id="t83" class="official"><td class="rank"></td><td class="team" members="叶少杰、周阳、王翊民">我们也想跟大佬玩</td>
+        <td class="solved">4</td>
+        <td class="penalty">545</td>
+        <td class="prob_d accepted" rec="1529R1839R1982R2027A">33(4)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="5650R5981A">99(2)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="9241R">1</td><td class="prob_d accepted" rec="12657R12773R13426A">223(3)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="2968R3059A3075A">50(2)</td></tr>
+<tr id="t167" class="official"><td class="rank"></td><td class="team" members="梁杰、丁毅、陈立华">皮卡皮卡</td>
+        <td class="solved">4</td>
+        <td class="penalty">634</td>
+        <td class="prob_d accepted" rec="840A">14(1)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="3696R4181R4201R4219R5736R12384R12848R13242R13395R13777A">229(10)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="8856R8928R9121A">152(3)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="1162A">19(1)</td></tr>
+<tr id="t25" class="unofficial"><td class="rank"></td><td class="team" members="应泽林、蔡梦璋、林亨泽">名字随便起</td>
+        <td class="solved">4</td>
+        <td class="penalty">690</td>
+        <td class="prob_d accepted" rec="9143A">152(1)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="1368R1786R1811R4525R5543R8332A">138(6)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="3126R5005R6832A">113(3)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="8835A">147(1)</td></tr>
+<tr id="t189" class="official"><td class="rank"></td><td class="team" members="周德阳、周佳辉、吴成铭">//freopen()</td>
+        <td class="solved">4</td>
+        <td class="penalty">703</td>
+        <td class="prob_d accepted" rec="563A">9(1)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="1846R2309R3951R4227R4635R7829R10009R10028R10388A">173(9)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="4030R4139R4260R9331R11679R12620R12763R13074A">217(8)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="290A">4(1)</td></tr>
+<tr id="t161" class="official"><td class="rank"></td><td class="team" members="陈士俊、郁力之、汪好盛">为美好的比赛献上过气咸鱼</td>
+        <td class="solved">4</td>
+        <td class="penalty">791</td>
+        <td class="prob_d accepted" rec="691A">11(1)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="5068R5500R5706R6110R8667R9273R9387R9406R9613R9649R9773R10659A">177(12)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d recent rejected" rec="7643R7928R8054R8765R12989R13941R14371R14393R*">8</td><td class="prob_d accepted" rec="12805R12807R13257R13473R13575R13658R13702R13800A">230(8)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="839A">13(1)</td></tr>
+<tr id="t205" class="official"><td class="rank"></td><td class="team" members="曾治华">Maye</td>
+        <td class="solved">4</td>
+        <td class="penalty">1474</td>
+        <td class="prob_d accepted" rec="739R854A">14(2)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="2197R2754R2781R2801R2889R2942R2958R3004R3053R3253R3331R3385R4514R4535R4833R6460R6502R6609R6640R6658R6675R6722R6745R6786R6822R6860R6914R6938R7063R7096R7143R7164R7180R7198R7218R7244R7271R7323R7342R7392R7469R7485R7593R7796R8044R8073A">134(46)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="10603R10623R10780R11012R11081R11178R11195R11212R11230A11665R11698A">187(9)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="3589A">59(1)</td></tr>
+<tr id="t121" class="official"><td class="rank"></td><td class="team" members="郭书廷、蒋潭、王书含">Accepted</td>
+        <td class="solved">3</td>
+        <td class="penalty">75</td>
+        <td class="prob_d accepted" rec="342A">5(1)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="2009R2299R8835R12493R12792R12814R13978R14023R">8</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="11734R11936R">2</td><td class="prob_d accepted" rec="4072A">67(1)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="7495R13477R">2</td><td class="prob_d accepted" rec="195A">3(1)</td></tr>
+<tr id="t85" class="official"><td class="rank"></td><td class="team" members="桂晓琬、任意、孙占林">采气球的小朋友</td>
+        <td class="solved">3</td>
+        <td class="penalty">91</td>
+        <td class="prob_d accepted" rec="304A">5(1)</td><td class="prob_d untried">.</td><td class="prob_d recent rejected" rec="1446R1762R9675R9785R9823R9943R11473R11517R11843R12256R12287R12321R14313R*">13</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="7640R9222R9697R12141R12864R">5</td><td class="prob_d accepted" rec="4574A">76(1)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="628A">10(1)</td></tr>
+<tr id="t174" class="official"><td class="rank"></td><td class="team" members="薛伟、李珂、张瑶睿">吃我小拳拳</td>
+        <td class="solved">3</td>
+        <td class="penalty">108</td>
+        <td class="prob_d accepted" rec="836A">13(1)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="2191R4200A">70(2)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="10835R10878R10963R11007R11494R11535R11578R12326R12943R13479R13860R14126R">12</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="327A">5(1)</td></tr>
+<tr id="t45" class="official"><td class="rank"></td><td class="team" members="许津铭、郑博文">贪玩图森</td>
+        <td class="solved">3</td>
+        <td class="penalty">109</td>
+        <td class="prob_d accepted" rec="715A">11(1)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="7336R7662R7961R8091R8498R12837R">6</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="11480R11648R11770R12118R12150R12669R12777R12923R13125R13162R13716R13793R13836R13908R">14</td><td class="prob_d accepted" rec="5091A">84(1)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="854A">14(1)</td></tr>
+<tr id="t19" class="unofficial"><td class="rank"></td><td class="team" members="罗伟斌、赵凌、薛鸿涛">三傻大闹zju</td>
+        <td class="solved">3</td>
+        <td class="penalty">120</td>
+        <td class="prob_d accepted" rec="615A">10(1)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="1466R1621R4160R4387R6514R7502R8915R8975R10792R11499R12968R12995R13415R13456R13921R13942R13964R13992R14009R14046R14083R14135R14176R">23</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="10662R13851R">2</td><td class="prob_d accepted" rec="6379A">106(1)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="260A">4(1)</td></tr>
+<tr id="t66" class="official"><td class="rank"></td><td class="team" members="谢禹、罗培超">跪求轻虐</td>
+        <td class="solved">3</td>
+        <td class="penalty">128</td>
+        <td class="prob_d accepted" rec="1102A">18(1)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="3903R9802R9850R9906R13237R13277R">6</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="5883A">98(1)</td><td class="prob_d rejected" rec="12415R13865R14153R">3</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="750A">12(1)</td></tr>
+<tr id="t21" class="unofficial"><td class="rank"></td><td class="team" members="高笑芸、吴寅、吕张凯">韦达柯西炖菜吃</td>
+        <td class="solved">3</td>
+        <td class="penalty">131</td>
+        <td class="prob_d accepted" rec="579A">9(1)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="7511R7720R7764R7891R10747R10763R10783R10844R12183R13233R14095R14132R14159R14176R14194R">15</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="2950R5888A">98(2)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="269A">4(1)</td></tr>
+<tr id="t99" class="official"><td class="rank"></td><td class="team" members="林锦铿、菅浩然、潘耀霖">&gt;_&lt;</td>
+        <td class="solved">3</td>
+        <td class="penalty">131</td>
+        <td class="prob_d accepted" rec="1077A">17(1)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="1947R2317R2533R2919R2954R3078R3665R14188R14209R">9</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="13878R13947R13947R">3</td><td class="prob_d accepted" rec="5115R5189A">86(2)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="522A">8(1)</td></tr>
+<tr id="t146" class="official"><td class="rank"></td><td class="team" members="张子健、周洋、刘纯一">Rampage</td>
+        <td class="solved">3</td>
+        <td class="penalty">140</td>
+        <td class="prob_d accepted" rec="1667A">27(1)</td><td class="prob_d rejected" rec="11761R11974R12367R">3</td><td class="prob_d accepted" rec="6036A">100(1)</td><td class="prob_d rejected" rec="9293R9326R10673R13739R">4</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="818A">13(1)</td></tr>
+<tr id="t81" class="unofficial"><td class="rank"></td><td class="team" members="许成、罗天松、夏哲臻">我们分头打钱</td>
+        <td class="solved">3</td>
+        <td class="penalty">151</td>
+        <td class="prob_d accepted" rec="628R726R911A">15(3)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="1954R2771R11560R">3</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="13836R13938R13979R">3</td><td class="prob_d accepted" rec="5481A">91(1)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="307A">5(1)</td></tr>
+<tr id="t159" class="unofficial"><td class="rank"></td><td class="team" members="吴到宽、张润哲、杨锦皓">建兰拆迁队</td>
+        <td class="solved">3</td>
+        <td class="penalty">163</td>
+        <td class="prob_d accepted" rec="675A">11(1)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="8919A">148(1)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="5710R5746R5895R5982R9222R9802R12066R12319R14272R">9</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="260A">4(1)</td></tr>
+<tr id="t132" class="unofficial"><td class="rank"></td><td class="team" members="高晨俊、杨子恒、朱子晗">建兰ﾉ(´・ω・)ﾉ</td>
+        <td class="solved">3</td>
+        <td class="penalty">200</td>
+        <td class="prob_d accepted" rec="1041A">17(1)</td><td class="prob_d rejected" rec="2807R">1</td><td class="prob_d rejected" rec="8861R8945R9042R12902R13136R14081R14122R">7</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="10616A">176(1)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="469A">7(1)</td></tr>
+<tr id="t59" class="official"><td class="rank"></td><td class="team" members="罗天翔、谢洵、谢宇">TTXX</td>
+        <td class="solved">3</td>
+        <td class="penalty">209</td>
+        <td class="prob_d accepted" rec="1078A">17(1)</td><td class="prob_d rejected" rec="10995R11031R11058R11561R12054R12991R">6</td><td class="prob_d accepted" rec="6799R6951R7191R7339A">122(4)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="622A">10(1)</td></tr>
+<tr id="t20" class="unofficial"><td class="rank"></td><td class="team" members="潘律旨、杨依一、佘羽铖">一大树一小图</td>
+        <td class="solved">3</td>
+        <td class="penalty">214</td>
+        <td class="prob_d accepted" rec="1168A">19(1)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="2298R11170R11436R12358R12661R">5</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="5660R5834R5856R6245R6745A">112(5)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="9858R9879R">2</td><td class="prob_d accepted" rec="214A">3(1)</td></tr>
+<tr id="t131" class="official"><td class="rank"></td><td class="team" members="沈心逸、廖钰、魏诗甜">想不出名字队</td>
+        <td class="solved">3</td>
+        <td class="penalty">230</td>
+        <td class="prob_d accepted" rec="1113A">18(1)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="4264R4296R">2</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="9167R9235R9889A">164(3)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="488A">8(1)</td></tr>
+<tr id="t163" class="official"><td class="rank"></td><td class="team" members="滕达、骆一辉、刘雨霏">打个比赛怎么可能睡vmlknegl</td>
+        <td class="solved">3</td>
+        <td class="penalty">244</td>
+        <td class="prob_d accepted" rec="506A">8(1)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="1175R11072R11577R11827R">4</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="2851R4188R4559R5018R5563R8089A">134(6)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="166A">2(1)</td></tr>
+<tr id="t76" class="official"><td class="rank"></td><td class="team" members="郑宇航、谢楚琳">qwq队</td>
+        <td class="solved">3</td>
+        <td class="penalty">256</td>
+        <td class="prob_d accepted" rec="1065A">17(1)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="4198R4298R7096R8698R9116A">151(5)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="13356R">1</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="502A">8(1)</td></tr>
+<tr id="t123" class="official"><td class="rank"></td><td class="team" members="王涵、石磊、蒋文">染色体组</td>
+        <td class="solved">3</td>
+        <td class="penalty">257</td>
+        <td class="prob_d accepted" rec="1141R1201R1448A">24(3)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="7757R8393R">2</td><td class="prob_d accepted" rec="11070A">184(1)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="575A">9(1)</td></tr>
+<tr id="t84" class="official"><td class="rank"></td><td class="team" members="谭子奇、王旻昊、顾孟瀚">一起van游戏</td>
+        <td class="solved">3</td>
+        <td class="penalty">288</td>
+        <td class="prob_d accepted" rec="2145R2261R2290A">38(3)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="7211A">120(1)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="10344R10406R11942R12000R13333R13371R13419R13870R13950R">9</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="2927R2973R3037A">50(3)</td></tr>
+<tr id="t97" class="official"><td class="rank"></td><td class="team" members="王赛卓、袁林">技不如人甘拜下风</td>
+        <td class="solved">3</td>
+        <td class="penalty">312</td>
+        <td class="prob_d accepted" rec="638R1205R1455R1761R3025A">50(5)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="6337R7067R7615A">126(3)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d recent rejected" rec="13520R13598R13802R14300R14338R14369R*">6</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="1009A">16(1)</td></tr>
+<tr id="t164" class="official"><td class="rank"></td><td class="team" members="孙嘉炜、罗贤哲、孙华阳">我们的代码全队</td>
+        <td class="solved">3</td>
+        <td class="penalty">321</td>
+        <td class="prob_d accepted" rec="643A">10(1)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="4628R4752R4906R4955R8840R8915R12400R12442R12702R13042R13066R13190R13253R13908R14011R14044R14202R14275R">18</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="10832R10991R11820R11981R12002R12271A">204(6)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="430A">7(1)</td></tr>
+<tr id="t172" class="official"><td class="rank"></td><td class="team" members="张佳琦、李爱军、邱俊">SmellyJio</td>
+        <td class="solved">3</td>
+        <td class="penalty">375</td>
+        <td class="prob_d accepted" rec="1337R1919R3202A">53(3)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="6822R7690R7917R12419R">4</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="11912R12131R12795R12857A">214(4)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="530A">8(1)</td></tr>
+<tr id="t88" class="official"><td class="rank"></td><td class="team" members="崔恩雪、朱文欣、杨佳妮">v587</td>
+        <td class="solved">3</td>
+        <td class="penalty">383</td>
+        <td class="prob_d accepted" rec="955A">15(1)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="6541R6626R7457R8014R8759R13396A">223(6)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="12857R">1</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="2709A">45(1)</td></tr>
+<tr id="t49" class="official"><td class="rank"></td><td class="team" members="马文博、黄栋成、林威">随便吧</td>
+        <td class="solved">3</td>
+        <td class="penalty">436</td>
+        <td class="prob_d accepted" rec="652R755A">12(2)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="1361R1396R1467R1504R1670R1698R1735R2340R2406R11350A">189(10)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="11644R11711R">2</td><td class="prob_d recent rejected" rec="5637R5701R5753R5778R5958R6131R6201R6401R6680R6749R6780R6863R6993R7213R7335R7387R7793R7956R12551R13433R13461R13492R13674R13695R14293R14337R14359R*">27</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="2144A">35(1)</td></tr>
+<tr id="t8" class="official"><td class="rank"></td><td class="team" members="路继开、刘哲、文梓豪">我不是修吉嘎</td>
+        <td class="solved">3</td>
+        <td class="penalty">459</td>
+        <td class="prob_d accepted" rec="719R952R2082R2993R3158R3221A">53(6)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="3487R3774R7059R8668R8951R9158R9972A">166(7)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="13478R13552R13573R13886R">4</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="1239A">20(1)</td></tr>
+<tr id="t140" class="official"><td class="rank"></td><td class="team" members="严文隆、柳裕文、杨逸飞">求是绿鸽</td>
+        <td class="solved">3</td>
+        <td class="penalty">535</td>
+        <td class="prob_d accepted" rec="1895R2222R2796R3302A">55(4)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="8895R8922R8958R8999R9059R12691R12856R13276A">221(8)</td><td class="prob_d rejected" rec="14264R14292R">2</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="1053R1124R1150A">19(3)</td></tr>
+<tr id="t143" class="official"><td class="rank"></td><td class="team" members="吴威涛、李士豪、季意昕">咸鱼一轮游</td>
+        <td class="solved">3</td>
+        <td class="penalty">576</td>
+        <td class="prob_d accepted" rec="2742R4177R5335A">88(3)</td><td class="prob_d recent rejected" rec="14304R14341R*">2</td><td class="prob_d accepted" rec="3912R3942R5217R5726R5788R5815R5908R5939R8434R8463R8763R8783R9224R9281A9299A">154(14)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="12781R13878R">2</td><td class="prob_d rejected" rec="11375R11536R">2</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="830R899A">14(2)</td></tr>
+<tr id="t204" class="unofficial"><td class="rank"></td><td class="team" members=" ^ ">**</td>
+        <td class="solved">3</td>
+        <td class="penalty">614</td>
+        <td class="prob_d accepted" rec="1416R1566R1682R1760R1872R1916R2202R2359R2510R6695R9662R9973A">166(12)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="4622R6341R6576A">109(3)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="3526R3562A">59(2)</td></tr>
+<tr id="t13" class="official"><td class="rank"></td><td class="team" members="杨隽、肖文彬">水水水</td>
+        <td class="solved">3</td>
+        <td class="penalty">1140</td>
+        <td class="prob_d accepted" rec="686R868R1069R1360R3498R3792R3938R4526R4795R5166R7414R7787R7870R8331R8443R8529A">142(16)</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="10136R10606R10906R11745R12137R12175R12251R12559R12728R13045R13437R13475R13498R13639R13963A">232(15)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="1983R2071R2136R2534R2624R2682R2706R2798A">46(8)</td></tr>
+<tr id="t41" class="official"><td class="rank"></td><td class="team" members="张文捷、章启航、罗文卿">PHPisthebestlanguage</td>
+        <td class="solved">2</td>
+        <td class="penalty">17</td>
+        <td class="prob_d accepted" rec="775A">12(1)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="6069R6986R10850R12189R13376R13427R13572R13849R13908R">9</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="3380R4156R4491R4771R8258R8550R12132R12273R12406R12516R">10</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="344A">5(1)</td></tr>
+<tr id="t86" class="official"><td class="rank"></td><td class="team" members="张宏伟、康凯彰、龚成悦">老腊肉</td>
+        <td class="solved">2</td>
+        <td class="penalty">20</td>
+        <td class="prob_d accepted" rec="939A">15(1)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="3222R4395R7468R7694R11416R11504R11850R12299R12350R12389R12502R12884R13099R13099R13163R13232R13394R13833R13889R13889R13942R13987R14006R14027R14047R14070R14087R14105R14126R14145R">30</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="351A">5(1)</td></tr>
+<tr id="t162" class="official"><td class="rank"></td><td class="team" members="沈臻阳、王逸康、王旭东">摸不动了</td>
+        <td class="solved">2</td>
+        <td class="penalty">20</td>
+        <td class="prob_d accepted" rec="941A">15(1)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="2751R3091R9577R9610R9913R9935R9951R11465R12524R12790R">10</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="318A">5(1)</td></tr>
+<tr id="t32" class="unofficial"><td class="rank"></td><td class="team" members="胡杨、金雷博、林正敏">江南实验队</td>
+        <td class="solved">2</td>
+        <td class="penalty">22</td>
+        <td class="prob_d accepted" rec="588A">9(1)</td><td class="prob_d untried">.</td><td class="prob_d recent rejected" rec="1826R2044R2752R3396R3817R4318R4385R4756R8453R8514R11351R11471R11969R12630R13165R13358R13459R13486R13605R13635R14323R*">21</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="10763R11165R11245R13973R14138R14194R14241R">7</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="798A">13(1)</td></tr>
+<tr id="t35" class="official"><td class="rank"></td><td class="team" members="张智焕、张行健、吴同">Mr.Hacker</td>
+        <td class="solved">2</td>
+        <td class="penalty">23</td>
+        <td class="prob_d accepted" rec="1035A">17(1)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="9664R11411R11555R11632R11697R11722R11867R11896R">8</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="377A">6(1)</td></tr>
+<tr id="t24" class="unofficial"><td class="rank"></td><td class="team" members="谭洁、金硕伟、孙凡晴">A完全OK</td>
+        <td class="solved">2</td>
+        <td class="penalty">30</td>
+        <td class="prob_d accepted" rec="1141A">19(1)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="3206R4497R9100R9166R9254R9996R10052R10436R10526R11104R11590R11593R">12</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="5826R5918R7097R8948R11199R11400R13140R13366R13984R14104R">10</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="693A">11(1)</td></tr>
+<tr id="t90" class="official"><td class="rank"></td><td class="team" members="姜金池、郑镇宇、杨樾人">AAB</td>
+        <td class="solved">2</td>
+        <td class="penalty">30</td>
+        <td class="prob_d accepted" rec="1229A">20(1)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="6449R6480R6599R8992R">4</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="615A">10(1)</td></tr>
+<tr id="t79" class="unofficial"><td class="rank"></td><td class="team" members="刘兴松、倪思涛、林邑多">贫僧自东土大唐而来前往西天取经</td>
+        <td class="solved">2</td>
+        <td class="penalty">32</td>
+        <td class="prob_d accepted" rec="632R651A">10(2)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="4068R5292R5340R5434R12043R12208R12665R12755R12773R">9</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="7947R8001R8053R8110R10948R10970R10994R11632R11683R12958R13052R">11</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d firstblood" rec="135A">2(1)</td></tr>
+<tr id="t139" class="official"><td class="rank"></td><td class="team" members="韩弘拓、岑佳辉、陈鉴">头样头森po</td>
+        <td class="solved">2</td>
+        <td class="penalty">32</td>
+        <td class="prob_d accepted" rec="1144A">19(1)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="2941R3193R3387R4016R4058R4817R">6</td><td class="prob_d recent rejected" rec="14329R*">1</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="821A">13(1)</td></tr>
+<tr id="t34" class="official"><td class="rank"></td><td class="team" members="李仁钟、庄稼捷、林治轩">牛奶味威化饼干</td>
+        <td class="solved">2</td>
+        <td class="penalty">37</td>
+        <td class="prob_d accepted" rec="1139A">18(1)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="2810R3250R3779R8092R13099R13137R13240R13308R13478R13580R">10</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="12195R12256R12293R12356R12503R">5</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="1187A">19(1)</td></tr>
+<tr id="t124" class="official"><td class="rank"></td><td class="team" members="陈镇东、严晨源、胡啸川">少年望着烟雨骑白马</td>
+        <td class="solved">2</td>
+        <td class="penalty">37</td>
+        <td class="prob_d accepted" rec="998A">16(1)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="4689R">1</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="9603R">1</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="1260A">21(1)</td></tr>
+<tr id="t133" class="official"><td class="rank"></td><td class="team" members="潘启璠、张一粟、王克">混完二课就跑</td>
+        <td class="solved">2</td>
+        <td class="penalty">37</td>
+        <td class="prob_d accepted" rec="1445A">24(1)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="4920R6468R">2</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="825A">13(1)</td></tr>
+<tr id="t196" class="official"><td class="rank"></td><td class="team" members="田野">可怜，无助，又肥胖</td>
+        <td class="solved">2</td>
+        <td class="penalty">37</td>
+        <td class="prob_d accepted" rec="1469A">24(1)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="8228R9220R10284R12473R12913R">5</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="7997R">1</td><td class="prob_d rejected" rec="5002R5243R5886R10837R11052R">5</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="837A">13(1)</td></tr>
+<tr id="t130" class="official"><td class="rank"></td><td class="team" members="应承峻、沈韬立、朱璟森">菜鸡做的都不队</td>
+        <td class="solved">2</td>
+        <td class="penalty">41</td>
+        <td class="prob_d accepted" rec="1562A">26(1)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="3406R3532R3647R3965R6095R6223R12266R12358R12380R">9</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="9987R10171R11601R11644R">4</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="949A">15(1)</td></tr>
+<tr id="t72" class="unofficial"><td class="rank"></td><td class="team" members="陈昱澄、孔令丞、王蔚澄">建兰中学魔芋果冻队</td>
+        <td class="solved">2</td>
+        <td class="penalty">42</td>
+        <td class="prob_d accepted" rec="413R518A">8(2)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="2781R3069R10093R13429R13445R">5</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="6354R6621R6703R6851R11108R11681R11710R11757R12263R12356R12409R12774R14191R">13</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="8694R9188R9367R13120R">4</td><td class="prob_d accepted" rec="856A">14(1)</td></tr>
+<tr id="t168" class="official"><td class="rank"></td><td class="team" members="李万成、李政希">int_mian()</td>
+        <td class="solved">2</td>
+        <td class="penalty">44</td>
+        <td class="prob_d accepted" rec="1019A">16(1)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="1723A">28(1)</td></tr>
+<tr id="t192" class="official"><td class="rank"></td><td class="team" members="李政彦">shuaiqifeiyang</td>
+        <td class="solved">2</td>
+        <td class="penalty">45</td>
+        <td class="prob_d accepted" rec="1952A">32(1)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="6093R10762R">2</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="813A">13(1)</td></tr>
+<tr id="t175" class="unofficial"><td class="rank"></td><td class="team" members="王泽诚、李其轩、谢之昀">crocodinosaur</td>
+        <td class="solved">2</td>
+        <td class="penalty">49</td>
+        <td class="prob_d accepted" rec="627R746A">12(2)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="2990R3216R3279R3418R3551R3694R4750R7298R7382R7631R8874R9302R9373R10014R10042R10062R10661R12046R12074R12107R12604R12713R12733R">23</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="12028R">1</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="1050A">17(1)</td></tr>
+<tr id="t105" class="official"><td class="rank"></td><td class="team" members="王忠华、林宇箫">1150241747</td>
+        <td class="solved">2</td>
+        <td class="penalty">50</td>
+        <td class="prob_d accepted" rec="602R759A">12(2)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="3290R3350R3479R3514R3696R9342R9589R10427R10800R10896R11481R11529R11549R11612R11630R11691R12029R12094R12293R12412R12473R12558R13046R13174R13393R13511R">26</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="5341R5745R6049R6664R6704R7293R8174R8304R8321R8588R">10</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="1106A">18(1)</td></tr>
+<tr id="t166" class="official"><td class="rank"></td><td class="team" members="郑钰杰、仇盛显、王赫廷">苟非吾之所有，虽一毫而莫取</td>
+        <td class="solved">2</td>
+        <td class="penalty">53</td>
+        <td class="prob_d accepted" rec="2116A">35(1)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="6399R6497R9809R10362R">4</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="1093A">18(1)</td></tr>
+<tr id="t96" class="official"><td class="rank"></td><td class="team" members="陈凌昊、余淏">划水队</td>
+        <td class="solved">2</td>
+        <td class="penalty">56</td>
+        <td class="prob_d accepted" rec="369R390A">6(2)</td><td class="prob_d untried">.</td><td class="prob_d recent rejected" rec="1565R1608R1632R2362R2504R2864R3011R5256R5283R5558R5595R5948R6080R8135R8156R8188R13535R13579R13755R13868R13977R14030R14118R14281R14304R*">25</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="10733R10932R11012R11051R11110R11141R11180R12051R12092R12258R">10</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="1830A">30(1)</td></tr>
+<tr id="t171" class="official"><td class="rank"></td><td class="team" members="胡凯文、蔡田、黄思思">写不队</td>
+        <td class="solved">2</td>
+        <td class="penalty">56</td>
+        <td class="prob_d accepted" rec="1318A">21(1)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="5277R5323R5434R5528R13139R13230R13493R13658R13693R">9</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="2124A">35(1)</td></tr>
+<tr id="t193" class="official"><td class="rank"></td><td class="team" members="肖云鹏">我永远喜欢姬野永远</td>
+        <td class="solved">2</td>
+        <td class="penalty">56</td>
+        <td class="prob_d accepted" rec="1253A">20(1)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="4141R4236R5154R5413R5476R5499R5516R5533R5533R5553R5575R5640R5658R5676R5770R5790R">16</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="11508R11778R11981R">3</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="2171A">36(1)</td></tr>
+<tr id="t201" class="official"><td class="rank"></td><td class="team" members="杜林峰">J.Ripper</td>
+        <td class="solved">2</td>
+        <td class="penalty">56</td>
+        <td class="prob_d accepted" rec="955A">15(1)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="5914R5980R6005R6244R6338R6355R6518R6535R6926R7488R7675R8022R9623R">13</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="8850R">1</td><td class="prob_d accepted" rec="1253R1312A">21(2)</td></tr>
+<tr id="t134" class="official"><td class="rank"></td><td class="team" members="钟子鹏、黄子安、黄怡璠">killkyupi</td>
+        <td class="solved">2</td>
+        <td class="penalty">57</td>
+        <td class="prob_d accepted" rec="1427R1552A">25(2)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="13709R">1</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="722A">12(1)</td></tr>
+<tr id="t178" class="official"><td class="rank"></td><td class="team" members="刘静林、曾筱峰">untitled</td>
+        <td class="solved">2</td>
+        <td class="penalty">58</td>
+        <td class="prob_d accepted" rec="922R960A">16(2)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="3212R3411R8346R8667R9193R9228R9304R11882R12017R12248R12368R12415R12504R13694R13722R13781R">16</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="8169R8882R8915R8953R8980R13636R13976R14280R">8</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="1364A">22(1)</td></tr>
+<tr id="t68" class="unofficial"><td class="rank"></td><td class="team" members="翁昊越、祝浩然、郑凯文">超能三人组</td>
+        <td class="solved">2</td>
+        <td class="penalty">59</td>
+        <td class="prob_d accepted" rec="1611A">26(1)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="8212R8430R10651R11430R11580R11746R11846R12098R">8</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="502R805A805A">13(2)</td></tr>
+<tr id="t43" class="official"><td class="rank"></td><td class="team" members="雷骁、武翰杰、车宸智">&lt;!--铁道游击队--&gt;</td>
+        <td class="solved">2</td>
+        <td class="penalty">65</td>
+        <td class="prob_d accepted" rec="1589R1662A">27(2)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="9679R10388R10642R11225R13112R">5</td><td class="prob_d rejected" rec="13745R13783R13818R13860R13860R13894R">6</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="13709R">1</td><td class="prob_d accepted" rec="1116A">18(1)</td></tr>
+<tr id="t129" class="official"><td class="rank"></td><td class="team" members="陈泽昂、曾子腾、陈浩东">帮我照顾好我七舅姥爷</td>
+        <td class="solved">2</td>
+        <td class="penalty">66</td>
+        <td class="prob_d accepted" rec="1787R1896A">31(2)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="3257R3336R4185R6502R8106R8141R8763R8983R11307R11367R11468R11783R11838R11868R11937R12036R13613R13752R">18</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="6827R7657R">2</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="925A">15(1)</td></tr>
+<tr id="t181" class="official"><td class="rank"></td><td class="team" members="陈清源、庄祥、吴奕竑">i++</td>
+        <td class="solved">2</td>
+        <td class="penalty">66</td>
+        <td class="prob_d accepted" rec="996R1133A">18(2)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="3274R3396R3447R3990R5631R5994R9468R10518R13032R13979R14232R">11</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="1690A">28(1)</td></tr>
+<tr id="t12" class="official"><td class="rank"></td><td class="team" members="张智彬、方子健、任皓天">100千克5千米</td>
+        <td class="solved">2</td>
+        <td class="penalty">67</td>
+        <td class="prob_d accepted" rec="2404A">40(1)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="3388R3439R3513R5765R5959R">5</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="13788R14128R">2</td><td class="prob_d rejected" rec="7274R7309R7352R7406R7429R7451R7664R9376R9467R9531R9554R9793R9837R10167R10238R10382R11325R11446R11604R">19</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="357R462A">7(2)</td></tr>
+<tr id="t126" class="official"><td class="rank"></td><td class="team" members="董玮豪、刘冠洲、赵宴锋">图样未来官方代表队</td>
+        <td class="solved">2</td>
+        <td class="penalty">67</td>
+        <td class="prob_d accepted" rec="3481A">58(1)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="2698R2806R2861R2912R6317R">5</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="11859R12179R12943R">3</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="598A">9(1)</td></tr>
+<tr id="t203" class="official"><td class="rank"></td><td class="team" members="刘逸群">害怕坑队友</td>
+        <td class="solved">2</td>
+        <td class="penalty">68</td>
+        <td class="prob_d accepted" rec="1055A">17(1)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="10182R10428R">2</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="6487R7104R11031R11051R11121R11142R11491R11651R11704R11924R12046R12074R">12</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="3064A">51(1)</td></tr>
+<tr id="t58" class="official"><td class="rank"></td><td class="team" members="吕立聪、郑雪静、孙竞超">一二三</td>
+        <td class="solved">2</td>
+        <td class="penalty">73</td>
+        <td class="prob_d accepted" rec="823R945A">15(2)</td><td class="prob_d untried">.</td><td class="prob_d recent rejected" rec="9691R9729R9780R9807R9849R9904R10080R10264R10746R11189R11208R11242R11274R13610R13661R13729R13814R14217R14341R*">19</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="2323A">38(1)</td></tr>
+<tr id="t94" class="official"><td class="rank"></td><td class="team" members="刘子旋、孙健、王大鑫">图图图图图图图灵</td>
+        <td class="solved">2</td>
+        <td class="penalty">74</td>
+        <td class="prob_d accepted" rec="727R759A">12(2)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="2071R4560R4599R6328R6876R12945R13624R14254R14272R">9</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="2524A">42(1)</td></tr>
+<tr id="t136" class="unofficial"><td class="rank"></td><td class="team" members="张睿、谢欧阳、陈可汗">养正队</td>
+        <td class="solved">2</td>
+        <td class="penalty">80</td>
+        <td class="prob_d accepted" rec="1241R1630A">27(2)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="4738R5357R5451R5489R5837R5869R12853R">7</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="12014R12089R12180R12617R12955R13511R13602R14166R">8</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="738R780A">13(2)</td></tr>
+<tr id="t98" class="official"><td class="rank"></td><td class="team" members="杜仲烁、翁沛楠、高哲康">三头猪头三</td>
+        <td class="solved">2</td>
+        <td class="penalty">81</td>
+        <td class="prob_d accepted" rec="933R1521A">25(2)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="11854R13026R">2</td><td class="prob_d rejected" rec="6356R6511R8056R8231R8774R13418R13439R14021R14130R14224R">10</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="2160A">36(1)</td></tr>
+<tr id="t170" class="official"><td class="rank"></td><td class="team" members="李钰尧、胡春永、张家铭">东北三少</td>
+        <td class="solved">2</td>
+        <td class="penalty">86</td>
+        <td class="prob_d accepted" rec="2690A">44(1)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="1239R1359A">22(2)</td></tr>
+<tr id="t125" class="official"><td class="rank"></td><td class="team" members="姜增凯、马麟">0_Error(s)</td>
+        <td class="solved">2</td>
+        <td class="penalty">94</td>
+        <td class="prob_d accepted" rec="925A">15(1)</td><td class="prob_d rejected" rec="7779R7802R9246R10003R">4</td><td class="prob_d rejected" rec="3603R5011R7968R8678R9305R9924R10178R13532R13615R13838R">10</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="14057R">1</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="4755A">79(1)</td></tr>
+<tr id="t37" class="official"><td class="rank"></td><td class="team" members="张鸿、潘黎铖、李熠豪">5023</td>
+        <td class="solved">2</td>
+        <td class="penalty">97</td>
+        <td class="prob_d accepted" rec="735R799A">13(2)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="4541R5138R6496R6874R7359R8421R8548R10098R14211R14229R">10</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="1394R1417R1463A">24(3)</td></tr>
+<tr id="t135" class="official"><td class="rank"></td><td class="team" members="王晓强、修海博、李洋">大吉大利,今晚全队</td>
+        <td class="solved">2</td>
+        <td class="penalty">101</td>
+        <td class="prob_d accepted" rec="2582R2625R2755A">45(3)</td><td class="prob_d untried">.</td><td class="prob_d recent rejected" rec="4518R4752R5117R5365R14008R14347R*">6</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="1015A">16(1)</td></tr>
+<tr id="t89" class="official"><td class="rank"></td><td class="team" members="周皓钺、钱已澄、廖天一">jmpFFFF:0000</td>
+        <td class="solved">2</td>
+        <td class="penalty">103</td>
+        <td class="prob_d accepted" rec="1573A">26(1)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="7023R7212R7275R12737R13052R13092R13529R">7</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="3407R3427A">57(2)</td></tr>
+<tr id="t183" class="official"><td class="rank"></td><td class="team" members="徐寅健、孙谦、陈鑫">Deep♂Dark♂Fantasy</td>
+        <td class="solved">2</td>
+        <td class="penalty">107</td>
+        <td class="prob_d accepted" rec="1122R1523A">25(2)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="3446R4492R7324R">3</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="10613R10676R10931R10973R11110R13175R">6</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="3748A">62(1)</td></tr>
+<tr id="t78" class="official"><td class="rank"></td><td class="team" members="陈欢、张筱寒">不会起名</td>
+        <td class="solved">2</td>
+        <td class="penalty">113</td>
+        <td class="prob_d accepted" rec="652R1059R1360A">22(3)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="8443R">1</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="1827R1888A">31(2)</td></tr>
+<tr id="t55" class="unofficial"><td class="rank"></td><td class="team" members=" ^ ">**</td>
+        <td class="solved">2</td>
+        <td class="penalty">117</td>
+        <td class="prob_d accepted" rec="1006A">16(1)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="1773R2243R2302R2505A">41(4)</td></tr>
+<tr id="t31" class="official"><td class="rank"></td><td class="team" members="孙增金、金卫、胡耀鹏">我缺二课分</td>
+        <td class="solved">2</td>
+        <td class="penalty">119</td>
+        <td class="prob_d accepted" rec="2385R2534R2666A">44(3)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="7751R7814R7950R7980R8088R8177R8223R8285R8360R8391R8493R8565R8623R8646R8750R8933R8956R8998R9232R9850R9894R10163R10198R10473R12977R13876R13956R14253R">28</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="841R935A">15(2)</td></tr>
+<tr id="t179" class="official"><td class="rank"></td><td class="team" members="武靖超、吴丽泽、彭天舜">三毛拼搏队</td>
+        <td class="solved">2</td>
+        <td class="penalty">119</td>
+        <td class="prob_d accepted" rec="1568R1614R1702A">28(3)</td><td class="prob_d rejected" rec="5305R">1</td><td class="prob_d rejected" rec="5362R5393R5443R5463R5513R5539R5566R5640R6339R6362R6385R6403R11798R11896R11998R">15</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="8743R8790R8905R">3</td><td class="prob_d rejected" rec="11030R11057R">2</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="527R561R680A">11(3)</td></tr>
+<tr id="t199" class="official"><td class="rank"></td><td class="team" members="陶耀业">vvv</td>
+        <td class="solved">2</td>
+        <td class="penalty">129</td>
+        <td class="prob_d accepted" rec="1386R2265A">37(2)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="9984R10024R10040R10080R">4</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="6266R6454R6475R7205R">4</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="3137R3155A">52(2)</td></tr>
+<tr id="t69" class="official"><td class="rank"></td><td class="team" members="吴宁超、萧芷晴">划水摸鱼队</td>
+        <td class="solved">2</td>
+        <td class="penalty">137</td>
+        <td class="prob_d accepted" rec="3058R3118A">51(2)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="7923R8211R10226R10260R10315R12878R">6</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="12130R12249R13040R13040R">4</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="3979A">66(1)</td></tr>
+<tr id="t154" class="official"><td class="rank"></td><td class="team" members="赵逸智、施方丹">Egg</td>
+        <td class="solved">2</td>
+        <td class="penalty">138</td>
+        <td class="prob_d accepted" rec="1060A">17(1)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="4430R5232R5311R5747R6227R6634R7386R7420R7456R8347R">10</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="7305A">121(1)</td></tr>
+<tr id="t100" class="official"><td class="rank"></td><td class="team" members="张耀予">酷爱来一起现充吧</td>
+        <td class="solved">2</td>
+        <td class="penalty">140</td>
+        <td class="prob_d accepted" rec="1295R1390R1547R1684A">28(4)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="494R716R755A">12(3)</td></tr>
+<tr id="t138" class="official"><td class="rank"></td><td class="team" members="张韫哲、王睿鹏、何哲成">莓办法，尽梨了，银不了</td>
+        <td class="solved">2</td>
+        <td class="penalty">140</td>
+        <td class="prob_d accepted" rec="3856R4141A">69(2)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="13980R14030R14067R">3</td><td class="prob_d accepted" rec="3087A">51(1)</td></tr>
+<tr id="t10" class="official"><td class="rank"></td><td class="team" members="李康辉、刘晓语、傅诤哲">帅帅皮卡丘</td>
+        <td class="solved">2</td>
+        <td class="penalty">146</td>
+        <td class="prob_d accepted" rec="1130R1607A">26(2)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="6394R6423R6545R6838R7121R7599R">6</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="3392R3452R3630A">60(3)</td></tr>
+<tr id="t157" class="unofficial"><td class="rank"></td><td class="team" members=" ^ ">**</td>
+        <td class="solved">2</td>
+        <td class="penalty">152</td>
+        <td class="prob_d accepted" rec="2331R2548R3286A">54(3)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="13737R">1</td><td class="prob_d accepted" rec="3510A">58(1)</td></tr>
+<tr id="t110" class="official"><td class="rank"></td><td class="team" members="邵尧、邵宏宇、余林恩">Base_Attackers</td>
+        <td class="solved">2</td>
+        <td class="penalty">168</td>
+        <td class="prob_d accepted" rec="1103R1603A">26(2)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="7499R7553R7586R7629R7722R8318R9019R9078R9258R9334R9366R9585R9703R">13</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="2977R3434R3502R3758A">62(4)</td></tr>
+<tr id="t194" class="official"><td class="rank"></td><td class="team" members="李健萌">JIANMENGLI</td>
+        <td class="solved">2</td>
+        <td class="penalty">174</td>
+        <td class="prob_d accepted" rec="715R803R847R882R907R968R1100A">18(7)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="3684R3957R3980R10392R12490R12924R">6</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="2172A">36(1)</td></tr>
+<tr id="t92" class="official"><td class="rank"></td><td class="team" members="彭嘉伟、张品涵、金志豪">水二课分</td>
+        <td class="solved">2</td>
+        <td class="penalty">176</td>
+        <td class="prob_d accepted" rec="1755R1784R1881R2091R3061A">51(5)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="2752A">45(1)</td></tr>
+<tr id="t91" class="official"><td class="rank"></td><td class="team" members="孔伊宁、张雪、马思涵">我永远喜欢AR15</td>
+        <td class="solved">2</td>
+        <td class="penalty">181</td>
+        <td class="prob_d accepted" rec="1037R1255R1374R1700R1798R1891A">31(6)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="3047A">50(1)</td></tr>
+<tr id="t195" class="official"><td class="rank"></td><td class="team" members="章晨">第一题都不队</td>
+        <td class="solved">2</td>
+        <td class="penalty">184</td>
+        <td class="prob_d accepted" rec="988R1054R1202A">20(3)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="6636R6702R6817R6844R6868R7667R7971R8432R8539R">9</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="10341R12765R13703R13874R13899R13919R14091R">7</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="7457A">124(1)</td></tr>
+<tr id="t128" class="official"><td class="rank"></td><td class="team" members="张晟、蒋蔚旻、沈彬">随你吧</td>
+        <td class="solved">2</td>
+        <td class="penalty">199</td>
+        <td class="prob_d accepted" rec="2776R2907R2936R3380A">56(4)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="8918R9267R12570R12867R13767R13850R13903R13928R13968R14000R14027R14053R14074R14144R">14</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="10598R10732R10803R">3</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="2475R2497R2584A">43(3)</td></tr>
+<tr id="t73" class="official"><td class="rank"></td><td class="team" members="蒋皓俊、颜治宇、施叶昕">野山椒队</td>
+        <td class="solved">2</td>
+        <td class="penalty">215</td>
+        <td class="prob_d accepted" rec="1506R1760R1910R2420R4592R4642A">77(6)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="13514R13590R">2</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="949R1119A">18(2)</td></tr>
+<tr id="t62" class="official"><td class="rank"></td><td class="team" members="陆晨昕、张宸玥、楼亦斌">qwertyuiop</td>
+        <td class="solved">2</td>
+        <td class="penalty">216</td>
+        <td class="prob_d accepted" rec="4853A">80(1)</td><td class="prob_d rejected" rec="7903R">1</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="2322R5722R5803A">96(3)</td></tr>
+<tr id="t87" class="official"><td class="rank"></td><td class="team" members="高鑫瑞、李思聪、王中伟">BELOVEDPROGRAMMING</td>
+        <td class="solved">2</td>
+        <td class="penalty">245</td>
+        <td class="prob_d accepted" rec="1093R1119R1378R1643R2007A">33(5)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="13282R13305R13372R13391R13466R13900R13945R">7</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="2912R2936R2989R3105R3165A">52(5)</td></tr>
+<tr id="t42" class="official"><td class="rank"></td><td class="team" members="曾奕久、路伊琳、潘思红">freestyle</td>
+        <td class="solved">2</td>
+        <td class="penalty">263</td>
+        <td class="prob_d accepted" rec="1501R1652R1972R2012R2127R2283R2356R2525R2590A">43(9)</td><td class="prob_d rejected" rec="3617R">1</td><td class="prob_d rejected" rec="9465R10717R10753R10810R11295R11327R11357R12121R">8</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="3655A">60(1)</td></tr>
+<tr id="t48" class="official"><td class="rank"></td><td class="team" members="陈睿彬、楼宁、徐金焱">旅游观光</td>
+        <td class="solved">2</td>
+        <td class="penalty">277</td>
+        <td class="prob_d accepted" rec="1113R1414R1585R1714R1935R1963R2424A">40(7)</td><td class="prob_d untried">.</td><td class="prob_d recent rejected" rec="7380R7380R8343R8476R8759R8788R8899R9012R9230R9344R9437R9528R10142R10252R12607R14235R14267R14304R14351R*">19</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="5823R5838A">97(2)</td></tr>
+<tr id="t63" class="official"><td class="rank"></td><td class="team" members="吴道义、李刚">菜鸡队</td>
+        <td class="solved">2</td>
+        <td class="penalty">305</td>
+        <td class="prob_d accepted" rec="1994R2296R2370R2395R2498R3696A">61(6)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="8499R8551R8679R9104R9612R9632R9667R10570R13555R13591R13926R13982R">12</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="1129R1274R1407R2137R2631R2685A">44(6)</td></tr>
+<tr id="t200" class="official"><td class="rank"></td><td class="team" members="李虹林">Navisimple</td>
+        <td class="solved">2</td>
+        <td class="penalty">307</td>
+        <td class="prob_d accepted" rec="3976R4022R4273R4406R5995R6484R6632R6702A">111(8)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="9654R10149R10635R11389R11536R11676R11715R11759R12295R12322R13214R13347R13402R13547R13591R13617R13765R14221R">18</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="3398A">56(1)</td></tr>
+<tr id="t176" class="official"><td class="rank"></td><td class="team" members="彭子帆、杨溆峰、陈宇威">开局三双手，代码全靠编</td>
+        <td class="solved">2</td>
+        <td class="penalty">318</td>
+        <td class="prob_d accepted" rec="4667R4747R4747R4806R4938R5148R5170R5487R5538A">92(9)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="8566R8657R9790R">3</td><td class="prob_d rejected" rec="13110R13295R13563R13691R13822R13858R14041R">7</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="3998A">66(1)</td></tr>
+<tr id="t144" class="official"><td class="rank"></td><td class="team" members="刘子威、刘鑫、余思杰">三瓜皮</td>
+        <td class="solved">2</td>
+        <td class="penalty">320</td>
+        <td class="prob_d accepted" rec="6993R7043R7075R7166A">119(4)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="2509R2546R2727R2981R3049R3165R3328R5116R5282R5612R6099R">11</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="11063R11744R11788R12059R12156R12691R">6</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="5839R5879R6080A">101(3)</td></tr>
+<tr id="t169" class="official"><td class="rank"></td><td class="team" members="洪乾晖、孟煜伟、陈仲一">阿森纳是冠军</td>
+        <td class="solved">2</td>
+        <td class="penalty">358</td>
+        <td class="prob_d accepted" rec="2853R2923R2986R3084R3767A3770A">62(5)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="7747R7833R7926R11229R11305R11338R11721R11925R13023R13045R13081R13152R13205R13223R">14</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="4369R4395R4427R4444R4473R4496R4528R4565A">76(8)</td></tr>
+<tr id="t145" class="official"><td class="rank"></td><td class="team" members="韩昌昊、杨毅、云亮">为了二课</td>
+        <td class="solved">2</td>
+        <td class="penalty">370</td>
+        <td class="prob_d accepted" rec="592R1468R1547R2054R2279R2398R2817R4741R5007R5732R6600A">110(11)</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="10510R10532R11733R11832R12208R">5</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="3654A">60(1)</td></tr>
+<tr id="t11" class="official"><td class="rank"></td><td class="team" members="钱泽诚、季俊涛、孟宏丽">签到题做完就走</td>
+        <td class="solved">2</td>
+        <td class="penalty">386</td>
+        <td class="prob_d accepted" rec="781A">13(1)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d recent rejected" rec="11115R11528R11597R13581R14231R14326R*">6</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="4298R4371R4814R4845R5298R6972R7073R12766R12785A">213(9)</td></tr>
+<tr id="t74" class="official"><td class="rank"></td><td class="team" members="李济成、郑浩文、黄自豪">orz</td>
+        <td class="solved">2</td>
+        <td class="penalty">415</td>
+        <td class="prob_d accepted" rec="2684R2751R2960R3318R3901R4119R4427R4502R4541R5651R5695R6071A">101(12)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="4375R4474A">74(2)</td></tr>
+<tr id="t197" class="official"><td class="rank"></td><td class="team" members="谢一鸣">划水来玩</td>
+        <td class="solved">2</td>
+        <td class="penalty">437</td>
+        <td class="prob_d accepted" rec="1921R2082R2251R2596A2614A">43(4)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="10880R11710R11786R12181R12375R12720R13011R13202R13265R13473R13604R13666R14039R">13</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="3536R3560R3766R4028R4073R4182R4248R4291R5047R5087R5568R5605R5666A">94(13)</td></tr>
+<tr id="t77" class="official"><td class="rank"></td><td class="team" members="宋浩波、张勉一、童鑫远">txydltql</td>
+        <td class="solved">2</td>
+        <td class="penalty">443</td>
+        <td class="prob_d accepted" rec="1171R1283R1371R2303R3766R4242R4539R4637R4905R5365R5660R6159R6625R6722A7217R">112(14)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="12307R12415R12877R13114R13166R13326R13418R13971R14020R14205R">10</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="2933R3118A">51(2)</td></tr>
+<tr id="t198" class="official"><td class="rank"></td><td class="team" members="乔子涵">启真湖畔的千纸鹤</td>
+        <td class="solved">2</td>
+        <td class="penalty">460</td>
+        <td class="prob_d accepted" rec="11308R11328R11366R11651A">194(4)</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="8402R8460R8605R8786A">146(4)</td></tr>
+<tr id="t182" class="official"><td class="rank"></td><td class="team" members="李岸洲、傅晨华、王宜霖">segmemofish</td>
+        <td class="solved">1</td>
+        <td class="penalty">46</td>
+        <td class="prob_d rejected" rec="853R875R956R1891R1919R1954R2124R2652R2704R8395R11157R11275R">12</td><td class="prob_d untried">.</td><td class="prob_d rejected" rec="7355R">1</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d untried">.</td><td class="prob_d accepted" rec="1536R1595A">26(2)</td></tr>
+
+  	</table>
+  	<a id="tbottom"></a>
+  </div>
+  <script src="../../board/js/board.js" type="text/javascript"></script>
+</body>
+</html>

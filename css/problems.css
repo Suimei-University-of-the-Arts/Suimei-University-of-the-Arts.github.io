@@ -1,0 +1,96 @@
+.info {
+  margin: 0 20px 40px 20px;
+}
+
+.info > h4 {
+  margin: 10px;
+}
+
+.info > table > thead > tr > th, .info > table > tbody > tr > td {
+  padding: 3px 10px;
+  text-align: center;
+  font-size: 18px;
+}
+
+#prob-chart, #team-chart {
+  margin: 20px auto 0 auto;
+  width: 95%;
+}
+
+#contest-list > a {
+  cursor: pointer;
+}
+
+@media (min-width: 992px) {
+  #wrapper {
+    width: 100%;
+    height: calc(100% - 60px);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #left {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    width: 25%;
+    max-width: 375px;
+    height: 90%;
+    margin: 10px;
+    padding: 10px 10px 0 10px;
+    overflow-y: auto;
+  }
+
+  #left-padding {
+    height: 10px;
+  }
+
+  #right {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    width: 70%;
+    max-width: 1050px;
+    height: 90%;
+    margin: 10px;
+    padding: 10px;
+    overflow-y: auto;
+  }
+
+  #info-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 991.98px) {
+  #wrapper {
+    width: 100%;
+    height: calc(100% - 60px);
+    position: absolute;
+    top: 60px;
+    left: 0;
+  }
+
+  #left {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    width: 95%;
+    margin: 10px auto 10px auto;
+    padding: 10px;
+    overflow-y: auto;
+  }
+
+  #right {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    width: 95%;
+    height: calc(100% - 90px);
+    margin: 10px auto 10px auto;
+    padding: 10px;
+    overflow-y: auto;
+  }
+}

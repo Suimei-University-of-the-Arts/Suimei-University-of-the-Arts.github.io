@@ -1,0 +1,57 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+#background {
+  background-image: url("../img/balloon.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+  z-index: -9999;
+}
+
+nav {
+  z-index: 9999;
+}
+
+.dropdown-menu {
+  background-color: #343a40;
+}
+
+.dropdown-item {
+  color: #fff;
+}
+
+.dropdown-item:hover {
+  background-color: #343a40;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+#announcement-wrapper {
+  width: 100%;
+  position: absolute;
+  top: 80px;
+  left: 0;
+}
+
+@media (min-width: 992px) {
+  #announcement {
+    width: 60%;
+    max-width: 800px;
+    margin: auto;
+    z-index: 9998;
+  }
+}
+
+@media (max-width: 991.98px) {
+  #announcement {
+    width: 90%;
+    margin: auto;
+    z-index: 9998;
+  }
+}
