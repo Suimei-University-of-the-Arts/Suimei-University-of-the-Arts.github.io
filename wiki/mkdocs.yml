@@ -22,6 +22,9 @@ theme:
   features:
     - navigation.indexes
 
+hooks:
+  - hooks/stats_hook.py
+
 plugins:
   - search:
       lang: ja
@@ -35,6 +38,10 @@ plugins:
         en: english
       nav_translations:
         en:
+          2025 ICPC 东亚区总决赛（EC-Final）: The 2025 ICPC Asia East Continent Final (EC-Final)
+          2025 ICPC 亚洲区域赛南京站: The 2025 ICPC Asia Nanjing Regional Contest
+          2025 山东省大学生程序设计竞赛: The 2025 Shandong Provincial Collegiate Programming Contest
+          2025 ICPC 全国邀请赛武汉站: The 2025 ICPC Wuhan Invitational Contest
           2024 ICPC 亚洲区域赛杭州站: The 2024 ICPC Asia Hangzhou Regional Contest
           2024 ICPC 亚洲区域赛南京站: The 2024 ICPC Asia Nanjing Regional Contest
           2024 ICPC 全国邀请赛昆明站: The 2024 ICPC Kunming Invitational Contest
@@ -58,7 +65,7 @@ plugins:
           2018 浙江大学程序设计竞赛: The 2018 Zhejiang University Programming Contest
           2017 中国大学生程序设计竞赛秦皇岛站: The 2017 China Collegiate Programming Contest Qinhuangdao Site
           2017 浙江省大学生程序设计竞赛: The 2017 Zhejiang Provincial Collegiate Programming Contest
-          2017 浙江大学程序设计竞赛: The 2017 Zhejiang University Programming Contest
+          2017 浙江大学程序设计竞赛: The 2017 Zhejiang University Programming Contest  
 
 markdown_extensions:
   - pymdownx.arithmatex:

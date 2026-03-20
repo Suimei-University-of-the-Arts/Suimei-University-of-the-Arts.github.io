@@ -8,6 +8,10 @@
 
 ## 竞赛列表
 
+* [2025 ICPC 东亚区总决赛（EC-Final）](2025-icpc-ecfinal)
+* [2025 ICPC 亚洲区域赛南京站](2025-icpc-nanjing)
+* [2025 山东省大学生程序设计竞赛](2025-provincial-shandong)
+* [2025 ICPC 全国邀请赛武汉站](2025-icpc-invitational-wuhan)
 * [2024 ICPC 亚洲区域赛杭州站](2024-icpc-hangzhou)
 * [2024 ICPC 亚洲区域赛南京站](2024-icpc-nanjing)
 * [2024 ICPC 全国邀请赛昆明站](2024-icpc-invitational-kunming)

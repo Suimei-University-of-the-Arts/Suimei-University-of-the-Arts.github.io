@@ -8,6 +8,10 @@ This website contains the information and detailed tutorials/solutions of all pu
 
 ## Contest List
 
+* [The 2025 ICPC Asia East Continent Final (EC-Final)](2025-icpc-ecfinal)
+* [The 2025 ICPC Asia Nanjing Regional Contest](2025-icpc-nanjing)
+* [The 2025 Shandong Provincial Collegiate Programming Contest](2025-provincial-shandong)
+* [The 2025 ICPC Wuhan Invitational Contest](2025-icpc-invitational-wuhan)
 * [The 2024 ICPC Asia Hangzhou Regional Contest](2024-icpc-hangzhou)
 * [The 2024 ICPC Asia Nanjing Regional Contest](2024-icpc-nanjing)
 * [The 2024 ICPC Kunming Invitational Contest](2024-icpc-invitational-kunming)
