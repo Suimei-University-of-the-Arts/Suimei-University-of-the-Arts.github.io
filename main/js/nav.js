@@ -21,6 +21,10 @@ let navContactText = `<li class="nav-item">
   <a class="nav-link" href="contact.html" data-toggle="modal" data-target="#contact-modal">联系我们</a>
 </li>`;
 
+let navCopyrightText = `<li class="nav-item">
+  <a class="nav-link" href="https://zhuanlan.zhihu.com/p/2017281027115065777" target="_blank">版权声明</a>
+</li>`;
+
 let contactModalText = `<div class="modal fade" id="contact-modal" tabindex="-1" role="dialog" aria-labelledby="contact-modal-label" aria-hidden="true" style="z-index: 99999">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -54,6 +58,7 @@ navNode.innerHTML = `
       ${navCasesText}
       ${navProblemsText}
       ${navContactText}
+      ${navCopyrightText}
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           友情链接
