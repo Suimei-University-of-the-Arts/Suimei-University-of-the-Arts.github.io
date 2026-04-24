@@ -1,0 +1,104 @@
+.block > h2 {
+  text-align: center;
+  margin: 20px 0 1px 0;
+}
+
+.block > hr {
+  width: 300px;
+  color: #0077ff;
+  background-color: #0077ff;
+  border: 1px solid #0077ff;
+  margin: 10px auto 20px auto;
+}
+
+.between-block {
+  margin-top: 60px;
+}
+
+.left-text > p {
+  text-indent: 2em;
+  font-size: 18px;
+}
+
+.right-card {
+  font-size: 18px;
+}
+
+.right-card > .card-body > ul > li  {
+  margin-bottom: 1em;
+}
+
+.right-card > .card-body > ul > li > p {
+  margin-bottom: 0;
+}
+
+@media (min-width: 992px) {
+  #wrapper {
+    width: 100%;
+    height: calc(100% - 60px);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #left {
+    height: 90%;
+  }
+
+  #left > .btn-group-vertical {
+    margin-top: 10px;
+  }
+
+  #right {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    width: 70%;
+    max-width: 1050px;
+    height: 90%;
+    margin: 10px 10px 10px 0;
+    padding: 10px;
+    overflow-y: auto;
+  }
+
+  .block {
+    margin: 0 40px 0 40px;
+  }
+
+  .left-text {
+    float: left;
+    width: calc(max(100% - 420px, 50%));
+  }
+
+  .right-card {
+    float: right;
+    width: 45%;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  #wrapper {
+    width: 100%;
+    height: calc(100% - 60px);
+    position: absolute;
+    top: 60px;
+    left: 0;
+  }
+
+  #right {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    width: 95%;
+    height: calc(100% - 20px);
+    margin: 10px auto 10px auto;
+    padding: 10px;
+    overflow-y: auto;
+  }
+
+  .block {
+    margin: 0 20px 0 20px;
+  }
+}
