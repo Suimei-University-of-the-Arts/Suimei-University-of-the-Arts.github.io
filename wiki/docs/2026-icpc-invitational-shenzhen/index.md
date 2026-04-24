@@ -18,7 +18,7 @@ date: 2026-04-23
 <td><b>竞赛榜单</b></td><td><a href="board">SUA Board</a> | <a href="https://board.xcpcio.com/icpc/51st/shenzhen-invitational">XCPC Board</a></td>
 </tr>
 <tr>
-<td><b>在线练习</b></td><td><a href="https://qoj.ac/contest/3587">QOJ</a></td>
+<td><b>在线练习</b></td><td><a href="https://qoj.ac/contest/3588?v=1">QOJ</a></td>
 </tr>
 <tr>
 <td><b>选手评价</b></td><td><a href="https://www.zhihu.com/question/2012528096838984086">zhihu</a></td>
