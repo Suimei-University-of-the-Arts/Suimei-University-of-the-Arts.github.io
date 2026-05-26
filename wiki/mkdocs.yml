@@ -38,6 +38,7 @@ plugins:
         en: english
       nav_translations:
         en:
+          2026 山东省大学生程序设计竞赛: The 2026 Shandong Provincial Collegiate Programming Contest
           2026 ICPC 全国邀请赛深圳站: The 2026 ICPC Shenzhen Invitational Contest
           2025 ICPC 东亚区总决赛（EC-Final）: The 2025 ICPC Asia East Continent Final (EC-Final)
           2025 ICPC 亚洲区域赛南京站: The 2025 ICPC Asia Nanjing Regional Contest
